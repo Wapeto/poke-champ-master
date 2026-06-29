@@ -12,6 +12,13 @@ const oppPool  = [];    // matchup opponent team
 let lastSuggest = null;
 let lastBuild   = null;
 let lastMatchup = null;
+
+// Team-builder editable state (one entry per built team slot).
+let tbTeam     = [];   // [{name,tier,types,image_url,role,build,movePool,bestNames(Set),selected[]}]
+let tbCoverage = { covered_types: [], uncovered_types: [] };
+let tbShared   = {};   // shared weaknesses (type-based, unaffected by move edits)
+let tbScore    = 0;
+let tbEditing  = -1;   // index of the slot whose move editor is open (-1 = none)
 let tierQuery   = "";
 let currentModalName = null;
 
@@ -423,15 +430,103 @@ $('#tb-build-btn').addEventListener('click', async () => {
   btn.disabled = tbPool.length === 0;
 
   if (res.error) { alert(res.error); return; }
+  lastBuild = res;
+  buildTbState(res);    // fresh team → reset movesets/editor
   renderBuild(res);
 });
 
+// Seed the editable team state from a /api/team/build response.
+function buildTbState(res) {
+  tbEditing = -1;
+  tbTeam = res.team.map(p => {
+    const build = p.best_build || {};
+    const selected = (build.moves || []).map(m => ({ ...m }));
+    return {
+      name: p.name, tier: p.tier, types: p.types || [],
+      image_url: p.image_url, role: p.role, build,
+      movePool: p.move_pool || [],
+      bestNames: new Set(selected.map(m => m.name)),  // the source-recommended four
+      selected,
+    };
+  });
+  const a = res.analysis;
+  tbCoverage = { covered_types: a.covered_types, uncovered_types: a.uncovered_types };
+  tbShared = a.shared_weaknesses || {};
+  tbScore = a.score;
+}
+
+// Re-render the team result (language switch reuses existing state + edits).
 function renderBuild(res) {
   lastBuild = res;
-  $('#tb-team-cards').innerHTML = res.team.map(p => pokeCard(p, p.best_build, p.role)).join('');
+  if (!tbTeam.length) buildTbState(res);
+  renderTbCards();
+  renderTbAnalysis();
+  $('#tb-result').classList.remove('hidden');
+}
 
-  const a = res.analysis;
-  const weakHtml = Object.entries(a.shared_weaknesses)
+// One editable move pill. `best` = recommended by sources, `selected` = in the
+// current moveset, `editable` = clickable inside the editor.
+function tbMovePill(m, { best, selected, editable }) {
+  const ty  = m.type || '';
+  const bg  = ty ? `style="background:var(--${ty})"` : '';
+  const cat = m.category ? `<span class="move-cat cat-${m.category}">${catAbbr(m.category)}</span>` : '';
+  const cls = ['move-pill', `type-text-${ty}`];
+  if (best) cls.push('move-best');
+  if (editable) { cls.push('move-edit'); cls.push(selected ? 'move-sel' : 'move-off'); }
+  const data = editable ? `data-tbmove="${encodeURIComponent(m.name)}"` : '';
+  return `<span class="${cls.join(' ')}" ${bg} data-type="${ty}" ${data}>${tMove(m.name)}${cat}</span>`;
+}
+
+function tbCard(m, idx) {
+  const types = m.types.map(typeBadge).join('');
+  const nat   = m.build && m.build.nature
+    ? `<div class="card-nature">${tNature(m.build.nature)} | ${tAbility(m.build.ability)}</div>` : '';
+  const role  = m.role ? `<div class="card-role">${roleLabel(m.role)}</div>` : '';
+  const moves = m.selected
+    .map(mv => tbMovePill(mv, { best: m.bestNames.has(mv.name), selected: true, editable: false }))
+    .join('');
+
+  const editing = tbEditing === idx;
+  let editor = '';
+  if (editing && m.movePool.length) {
+    const pool = m.movePool
+      .map(mv => tbMovePill(mv, {
+        best: m.bestNames.has(mv.name),
+        selected: m.selected.some(s => s.name === mv.name),
+        editable: true,
+      }))
+      .join('');
+    editor = `<div class="tb-move-editor">
+        <p class="tb-edit-hint">${t('tb.moves.hint')}</p>
+        <div class="move-pills">${pool}</div>
+      </div>`;
+  }
+  const editBtn = m.movePool.length > 1
+    ? `<button class="ghost-btn tb-edit-btn" type="button" data-tb-edit="${idx}">${editing ? t('tb.moves.done') : t('tb.moves.edit')}</button>`
+    : '';
+
+  return `
+    <div class="poke-card tb-card" data-tb-idx="${idx}">
+      <div class="card-head clickable" ${pokeRef(m.name)}>
+        ${sprite(m, 'sprite sm')}
+        <div class="card-name">${tName(m.name)} ${tierBadge(m.tier || '')}</div>
+      </div>
+      ${role}
+      <div style="margin-bottom:8px">${types}</div>
+      ${nat}
+      ${itemTag(m.build)}
+      <div class="move-pills">${moves}</div>
+      ${editBtn}
+      ${editor}
+    </div>`;
+}
+
+function renderTbCards() {
+  $('#tb-team-cards').innerHTML = tbTeam.map(tbCard).join('');
+}
+
+function renderTbAnalysis() {
+  const weakHtml = Object.entries(tbShared)
     .map(([ty, members]) => {
       const ms = members.map(m => {
         const ix = m.lastIndexOf(' (');
@@ -442,14 +537,65 @@ function renderBuild(res) {
     .join('<br>');
 
   $('#tb-analysis').innerHTML = `
-    <h4>${t('tb.analysis.title', { score: a.score })}</h4>
-    <p class="good">${t('tb.analysis.covers')} ${a.covered_types.map(typeBadge).join(' ')}</p>
-    ${a.uncovered_types.length ? `<p class="warn">${t('tb.analysis.nocover')} ${a.uncovered_types.map(typeBadge).join(' ')}</p>` : ''}
+    <h4>${t('tb.analysis.title', { score: tbScore })}</h4>
+    <p class="good">${t('tb.analysis.covers')} ${tbCoverage.covered_types.map(typeBadge).join(' ')}</p>
+    ${tbCoverage.uncovered_types.length ? `<p class="warn">${t('tb.analysis.nocover')} ${tbCoverage.uncovered_types.map(typeBadge).join(' ')}</p>` : ''}
     ${weakHtml ? `<p style="margin-top:8px"><strong>${t('tb.analysis.shared')}</strong><br>${weakHtml}</p>` : ''}
   `;
-
-  $('#tb-result').classList.remove('hidden');
 }
+
+// Toggle a move in/out of a slot's moveset (max 4; adding a 5th drops the oldest).
+function toggleMove(idx, name) {
+  const slot = tbTeam[idx];
+  const inSet = slot.selected.some(s => s.name === name);
+  let selected;
+  if (inSet) {
+    selected = slot.selected.filter(s => s.name !== name);
+  } else {
+    const move = slot.movePool.find(s => s.name === name);
+    if (!move) return;
+    selected = [...slot.selected, { ...move }];
+    if (selected.length > 4) selected = selected.slice(selected.length - 4);
+  }
+  tbTeam = tbTeam.map((s, i) => (i === idx ? { ...s, selected } : s));
+  renderTbCards();
+  updateTbCoverage();
+}
+
+// Recompute offensive coverage from the edited movesets (server keeps the type
+// chart as the single source of truth) and re-render the analysis box.
+async function updateTbCoverage() {
+  const members = tbTeam.map(s => ({
+    name: s.name,
+    types: s.types,
+    move_types: s.selected.map(mv => mv.type).filter(Boolean),
+  }));
+  const res = await fetch('/api/team/coverage', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ members }),
+  }).then(r => r.json()).catch(() => null);
+  if (!res) return;
+  tbCoverage = res;
+  renderTbAnalysis();
+}
+
+// Delegated clicks for the editable team cards (edit toggle + move selection).
+$('#tb-team-cards').addEventListener('click', e => {
+  const editBtn = e.target.closest('[data-tb-edit]');
+  if (editBtn) {
+    const i = Number(editBtn.dataset.tbEdit);
+    tbEditing = tbEditing === i ? -1 : i;
+    renderTbCards();
+    return;
+  }
+  const pill = e.target.closest('[data-tbmove]');
+  if (pill) {
+    const card = pill.closest('[data-tb-idx]');
+    if (!card) return;
+    toggleMove(Number(card.dataset.tbIdx), decodeURIComponent(pill.dataset.tbmove));
+  }
+});
 
 // ── MATCHUP ADVISOR ───────────────────────────────────────────────────────────
 makeSearch('my-search',  'my-suggestions',  myPool,  'my-pool',  null);

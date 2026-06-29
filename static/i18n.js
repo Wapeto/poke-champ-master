@@ -58,6 +58,9 @@ const UI = {
     "tb.analysis.covers": "✅ Covers:",
     "tb.analysis.nocover": "⚠️ No coverage vs:",
     "tb.analysis.shared": "Shared weaknesses:",
+    "tb.moves.edit": "✎ Edit moveset",
+    "tb.moves.done": "✓ Done",
+    "tb.moves.hint": "Pick up to 4. Outlined moves are the source-recommended best.",
 
     "mu.title": "Matchup Advisor",
     "mu.subtitle": "Enter your team and the opponent's team to find out which 3 to bring and who to lead.",
@@ -154,6 +157,9 @@ const UI = {
     "tb.analysis.covers": "✅ Couvre :",
     "tb.analysis.nocover": "⚠️ Aucune couverture contre :",
     "tb.analysis.shared": "Faiblesses communes :",
+    "tb.moves.edit": "✎ Modifier les attaques",
+    "tb.moves.done": "✓ Terminé",
+    "tb.moves.hint": "Choisissez jusqu'à 4. Les attaques encadrées sont les meilleures (sources).",
 
     "mu.title": "Analyse de Match",
     "mu.subtitle": "Entrez votre équipe et celle de l'adversaire pour savoir lesquels emmener (3) et qui envoyer en premier.",

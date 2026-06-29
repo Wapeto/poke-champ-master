@@ -17,6 +17,10 @@ from .type_chart import TYPES, effectiveness, weaknesses
 
 TIER_SCORE = {"S": 6, "A+": 5, "A": 4, "B": 3, "C": 2, "D": 1}
 
+# Only one Pokemon can Mega Evolve per battle, so a team gains nothing from
+# stacking Mega Stones beyond one active + one backup. Cap suggestions at two.
+MAX_MEGAS = 2
+
 # Simple role classification from a build's moves
 SETUP_MOVES = {"swords dance", "nasty plot", "dragon dance", "calm mind", "quiver dance",
                "bulk up", "shell smash", "no retreat", "iron defense", "amnesia"}
@@ -115,48 +119,90 @@ def expand_forms(name: str, roster: dict[str, dict]) -> list[dict]:
     return forms
 
 
+def _item_of(build: dict | None) -> str | None:
+    """The held item that identifies a build for the item clause (None if unheld)."""
+    return (build or {}).get("held_item") or None
+
+
+def _choose_build(form: dict, used_items: set[str]) -> dict | None:
+    """
+    Pick the form's best build whose held item is still free (item clause: no two
+    team members may hold the same item). Builds are ordered best-first; fall back
+    to the top build only when every option collides.
+    """
+    builds = form.get("builds") or []
+    if not builds:
+        return None
+    for build in builds:
+        item = _item_of(build)
+        if item is None or item not in used_items:
+            return build
+    return builds[0]
+
+
 def build_best_team(pool: list[dict], team_size: int = 6) -> list[dict]:
     """
     Greedy team builder: iteratively add the Pokemon that maximises
-    the team score at each step.
+    the team score at each step. Returns the chosen battle forms.
     """
     if not pool:
         return []
-    return build_best_team_from_groups([(i, [p]) for i, p in enumerate(pool)], team_size)
+    pairs = build_best_team_from_groups([(i, [p]) for i, p in enumerate(pool)], team_size)
+    return [form for form, _ in pairs]
 
 
 def build_best_team_from_groups(
     groups: list[tuple[Any, list[dict]]], team_size: int = 6
-) -> list[dict]:
+) -> list[tuple[dict, dict | None]]:
     """
     Greedy builder over groups of interchangeable forms. Each group is one owned
     Pokemon offering several battle forms (base / Mega); at most one form per group
     is chosen, so duplicates in the pool become independent groups.
+
+    Enforces two team-legality rules from Pokemon Champions:
+      - Item clause: no two members hold the same item (build chosen accordingly).
+      - At most MAX_MEGAS Mega forms, since only one Mega can activate per battle.
+
+    Returns (form, chosen_build) pairs so the caller knows each member's exact build.
     """
     team: list[dict] = []
+    chosen: list[dict | None] = []
     used: set[Any] = set()
+    used_items: set[str] = set()
+    megas = 0
 
     while len(team) < team_size:
-        best_form = None
-        best_gid = None
-        best_score = -9999.0
+        candidates: list[tuple[float, Any, dict, dict | None, str | None, bool]] = []
         for gid, forms in groups:
             if gid in used:
                 continue
             for form in forms:
                 if not form:
                     continue
-                s = score_team(team + [form])
-                if s > best_score:
-                    best_score = s
-                    best_form = form
-                    best_gid = gid
-        if best_form is None:
+                is_mega = bool(form.get("is_mega"))
+                if is_mega and megas >= MAX_MEGAS:
+                    continue
+                build = _choose_build(form, used_items)
+                item = _item_of(build)
+                item_ok = item is None or item not in used_items
+                score = score_team(team + [form])
+                candidates.append((score, gid, form, build, item, item_ok))
+        if not candidates:
             break
-        team.append(best_form)
-        used.add(best_gid)
+        # Prefer candidates that satisfy the item clause; only duplicate an item
+        # when no clause-legal option remains to fill the slot.
+        legal = [c for c in candidates if c[5]]
+        score, gid, form, build, item, _ = max(legal or candidates, key=lambda c: c[0])
 
-    return team
+        team.append(form)
+        chosen.append(build)
+        used.add(gid)
+        if item:
+            used_items.add(item)
+        if form.get("is_mega"):
+            megas += 1
+
+    return list(zip(team, chosen))
 
 
 def suggest_additions(
@@ -225,6 +271,42 @@ def suggest_additions(
         "attack_types_needed": attack_types_needed,
         "weak_spots": weak_spots,
         "defensive_types_needed": resist_needed,
+    }
+
+
+def move_pool(form: dict) -> list[dict[str, str]]:
+    """All distinct moves the form is known to run, across its builds (best-first)."""
+    seen: set[str] = set()
+    pool: list[dict[str, str]] = []
+    for build in form.get("builds", []):
+        for move in build.get("moves", []):
+            name = move.get("name", "")
+            if name and name not in seen:
+                seen.add(name)
+                pool.append({
+                    "name": name,
+                    "type": move.get("type", ""),
+                    "category": move.get("category", ""),
+                })
+    return pool
+
+
+def team_coverage(members: list[dict]) -> dict[str, list[str]]:
+    """
+    Offensive type coverage for an (edited) team. Each member supplies its own
+    `types` (STAB) and the `move_types` of its selected moveset; a type is covered
+    when some member hits it super-effectively.
+    """
+    covered: set[str] = set()
+    for member in members:
+        atk_types = set(member.get("types", [])) | set(member.get("move_types", []))
+        for mtype in atk_types:
+            for dt in TYPES:
+                if effectiveness(mtype, [dt]) >= 2:
+                    covered.add(dt)
+    return {
+        "covered_types": sorted(covered),
+        "uncovered_types": [t for t in TYPES if t not in covered],
     }
 
 

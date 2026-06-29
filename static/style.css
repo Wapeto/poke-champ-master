@@ -460,6 +460,20 @@ h3 { font-size: 1.1rem; margin-bottom: 12px; }
   background: rgba(0,0,0,0.35); letter-spacing: 0.03em; text-shadow: none;
 }
 .cat-Status { background: rgba(0,0,0,0.45); }
+
+/* ── TEAM BUILDER: editable movesets ── */
+/* The four source-recommended moves get a gold outline so "best" stays visible
+   even after the user swaps moves around. */
+.move-best { box-shadow: 0 0 0 2px #ffd700, 0 0 0 3px rgba(0,0,0,0.35); }
+.move-edit { cursor: pointer; transition: opacity 0.12s, filter 0.12s; }
+.move-off  { opacity: 0.4; filter: grayscale(0.4); }
+.move-edit:hover { opacity: 1; filter: none; }
+.tb-edit-btn { margin-top: 8px; font-size: 0.75rem; padding: 3px 10px; }
+.tb-move-editor {
+  margin-top: 8px; padding: 8px; border-radius: 8px;
+  background: var(--surface2); border: 1px solid var(--border);
+}
+.tb-edit-hint { font-size: 0.72rem; color: var(--muted); margin: 0 0 6px; }
 /* darker text on light type backgrounds */
 .type-text-Electric, .type-text-Ground, .type-text-Ice,
 .type-text-Normal, .type-text-Steel, .type-text-Fairy { color: #1a1a1a; text-shadow: none; }

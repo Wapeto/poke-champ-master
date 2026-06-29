@@ -8,7 +8,9 @@ from .team_builder import (
     build_best_team_from_groups,
     expand_forms,
     explain_team,
+    move_pool,
     suggest_additions,
+    team_coverage,
 )
 from .matchup import recommend
 from .pokemon_card import build_card, attach_item_images
@@ -107,29 +109,52 @@ def api_team_build():
     if not groups:
         return jsonify({"error": "No valid Pokemon found in the list"}), 400
 
-    team = build_best_team_from_groups(groups)
+    pairs = build_best_team_from_groups(groups)
+    team = [form for form, _ in pairs]
     explanation = explain_team(team)
+
+    # Coverage reflects each member's *selected* moveset (the displayed build),
+    # so it stays consistent when the user edits movesets in the UI.
+    coverage = team_coverage([
+        {
+            "name": form["name"],
+            "types": form.get("types", []),
+            "move_types": [m.get("type") for m in (build or {}).get("moves", []) if m.get("type")],
+        }
+        for form, build in pairs
+    ])
 
     return jsonify({
         "team": [
             {
-                "name": p["name"],
-                "tier": p["tier"],
-                "types": p["types"],
-                "image_url": p.get("image_url"),
-                "role": explanation["roles"].get(p["name"], ""),
-                "best_build": attach_item_images(p["builds"][0] if p.get("builds") else None, ITEM_IMAGES),
-                "build_url": p.get("build_url", ""),
+                "name": form["name"],
+                "tier": form["tier"],
+                "types": form["types"],
+                "image_url": form.get("image_url"),
+                "role": explanation["roles"].get(form["name"], ""),
+                "best_build": attach_item_images(build, ITEM_IMAGES),
+                "move_pool": move_pool(form),
+                "build_url": form.get("build_url", ""),
             }
-            for p in team
+            for form, build in pairs
         ],
         "analysis": {
             "score": explanation["score"],
-            "covered_types": explanation["covered_types"],
-            "uncovered_types": explanation["uncovered_types"],
+            "covered_types": coverage["covered_types"],
+            "uncovered_types": coverage["uncovered_types"],
             "shared_weaknesses": explanation["shared_weaknesses"],
         },
     })
+
+
+@app.post("/api/team/coverage")
+def api_team_coverage():
+    """
+    Body: {"members": [{"name", "types": [...], "move_types": [...]}, ...]}
+    Recompute offensive type coverage for an edited team moveset.
+    """
+    body = request.get_json(silent=True) or {}
+    return jsonify(team_coverage(body.get("members", [])))
 
 
 @app.post("/api/team/suggest")

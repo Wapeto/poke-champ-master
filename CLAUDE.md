@@ -37,8 +37,13 @@ the serverless bundle stays small; scraping deps live in `requirements-dev.txt`.
   `base_form`.
 - `app/team_builder.py` — `expand_forms()` turns one owned base into its battle forms (base +
   Mega; a Mega is an equippable stone, not an owned mon); `build_best_team_from_groups()` picks
-  one best form per owned slot. Suggestions rank by complementarity (offensive gaps +
-  stacked-weakness resists), not raw tier.
+  one best form per owned slot and returns `(form, chosen_build)` pairs, enforcing two
+  Champions legality rules: the **item clause** (no two members hold the same item — the build is
+  chosen to avoid collisions) and a **Mega cap** (`MAX_MEGAS = 2`; only one Mega can activate per
+  battle). `move_pool(form)` lists a form's known moves; `team_coverage(members)` recomputes
+  offensive coverage from an edited moveset (served at `POST /api/team/coverage`) so the UI can
+  let users swap moves — the four source-recommended moves keep a gold outline. Suggestions rank
+  by complementarity (offensive gaps + stacked-weakness resists), not raw tier.
 - `app/matchup.py`, `app/type_chart.py` — domain logic.
 - **i18n (EN/FR):** `data_loader.load_i18n(lang)` reads `data/i18n/<lang>.json` (committed,
   built by `scrapers/translate_fr.py` from authoritative PokeAPI French names — Pokémon, types,
