@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594791",
+  "name": "Chesnaught",
+  "types": [
+    "Grass",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 88,
+    "atk": 107,
+    "def": 122,
+    "spa": 74,
+    "spd": 75,
+    "spe": 64
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Chesnaught",
+      "nature": "Impish",
+      "ability": "Bulletproof",
+      "held_item": "Chesnaughtite",
+      "final_stats": {
+        "hp": 195,
+        "atk": 157,
+        "def": 246,
+        "spa": 84,
+        "spd": 137,
+        "spe": 64
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Synthesis",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Dragonite",
+    "Mega Skarmory",
+    "Corviknight"
+  ]
+}

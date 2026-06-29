@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605787",
+  "name": "Musharna",
+  "types": [
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 116,
+    "atk": 55,
+    "def": 85,
+    "spa": 107,
+    "spd": 95,
+    "spe": 29
+  },
+  "builds": [
+    {
+      "pokemon": "Musharna",
+      "nature": "Impish",
+      "ability": "Telepathy",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 223,
+        "atk": 75,
+        "def": 133,
+        "spa": 114,
+        "spd": 133,
+        "spe": 49
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 16,
+        "spa": 0,
+        "spd": 18,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Moonlight",
+          "type": "Fairy",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aerodactyl",
+    "Maushold (Family of Four)"
+  ]
+}

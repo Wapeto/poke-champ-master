@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597645",
+  "name": "Spiritomb",
+  "types": [
+    "Ghost",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 92,
+    "def": 108,
+    "spa": 92,
+    "spd": 108,
+    "spe": 35
+  },
+  "builds": [
+    {
+      "pokemon": "Spiritomb",
+      "nature": "Relaxed",
+      "ability": "Pressure",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 125,
+        "atk": 112,
+        "def": 128,
+        "spa": 112,
+        "spd": 128,
+        "spe": 55
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Snarl",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Hippowdon",
+    "Gliscor",
+    "Mega Scovillain"
+  ]
+}

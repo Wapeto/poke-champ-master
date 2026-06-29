@@ -1,0 +1,63 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594148",
+  "name": "Frost Rotom",
+  "types": [
+    "Electric",
+    "Ice"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86
+  },
+  "builds": [
+    {
+      "pokemon": "Frost Rotom",
+      "nature": "Modest",
+      "ability": "Levitate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 157,
+        "atk": 76,
+        "def": 127,
+        "spa": 172,
+        "spd": 127,
+        "spe": 107
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": []
+}

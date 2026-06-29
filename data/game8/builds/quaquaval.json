@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596429",
+  "name": "Quaquaval",
+  "types": [
+    "Water",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 120,
+    "def": 80,
+    "spa": 85,
+    "spd": 75,
+    "spe": 85
+  },
+  "builds": [
+    {
+      "pokemon": "Quaquaval",
+      "nature": "Adamant",
+      "ability": "Moxie",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 85,
+        "atk": 120,
+        "def": 80,
+        "spa": 85,
+        "spd": 75,
+        "spe": 85
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Aqua Step",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Triple Axel",
+          "type": "Ice",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Victreebel",
+    "Vaporeon",
+    "Toxapex"
+  ]
+}

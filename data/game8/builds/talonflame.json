@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594355",
+  "name": "Talonflame",
+  "types": [
+    "Fire",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 81,
+    "def": 71,
+    "spa": 74,
+    "spd": 69,
+    "spe": 126
+  },
+  "builds": [
+    {
+      "pokemon": "Talonflame",
+      "nature": "Jolly",
+      "ability": "Gale Wings",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 155,
+        "atk": 133,
+        "def": 91,
+        "spa": 84,
+        "spd": 89,
+        "spe": 195
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Brave Bird",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Delphox",
+    "Hatterene",
+    "Farigiraf"
+  ]
+}

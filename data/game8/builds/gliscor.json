@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596507",
+  "name": "Gliscor",
+  "types": [
+    "Ground",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 95,
+    "def": 125,
+    "spa": 45,
+    "spd": 75,
+    "spe": 95
+  },
+  "builds": [
+    {
+      "pokemon": "Gliscor",
+      "nature": "Impish",
+      "ability": "Hyper Cutter",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 75,
+        "atk": 95,
+        "def": 125,
+        "spa": 45,
+        "spd": 75,
+        "spe": 95
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 2,
+        "def": 32,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Toxic Spikes",
+          "type": "Poison",
+          "category": "Status"
+        },
+        {
+          "name": "Spikes",
+          "type": "Ground",
+          "category": "Status"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Clefable",
+    "Espeon"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594296",
+  "name": "Sylveon",
+  "types": [
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 65,
+    "def": 65,
+    "spa": 110,
+    "spd": 130,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Sylveon",
+      "nature": "Bold",
+      "ability": "Pixilate",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 193,
+        "atk": 76,
+        "def": 128,
+        "spa": 141,
+        "spd": 150,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 23,
+        "atk": 0,
+        "def": 32,
+        "spa": 11,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Wish",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sylveon",
+      "nature": "Modest",
+      "ability": "Pixilate",
+      "held_item": "Fairy Feather",
+      "final_stats": {
+        "hp": 172,
+        "atk": 76,
+        "def": 85,
+        "spa": 178,
+        "spd": 150,
+        "spe": 112
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Hyper Beam",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Quick Attack",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Detect",
+          "type": "Fighting",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Beedrill",
+    "Mega Scizor",
+    "Sneasler"
+  ]
+}

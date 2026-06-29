@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/606743",
+  "name": "Abomasnow",
+  "types": [
+    "Grass",
+    "Ice"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 92,
+    "def": 75,
+    "spa": 92,
+    "spd": 85,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Abomasnow",
+      "nature": "Quiet",
+      "ability": "Snow Warning",
+      "held_item": "Abomasite",
+      "final_stats": {
+        "hp": 165,
+        "atk": 156,
+        "def": 125,
+        "spa": 171,
+        "spd": 125,
+        "spe": 45
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Gallade",
+    "Delphox",
+    "Incineroar"
+  ]
+}

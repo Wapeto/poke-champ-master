@@ -1,0 +1,199 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593940",
+  "name": "Archaludon",
+  "types": [
+    "Dragon",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 105,
+    "def": 130,
+    "spa": 125,
+    "spd": 65,
+    "spe": 85
+  },
+  "builds": [
+    {
+      "pokemon": "Archaludon",
+      "nature": "Timid",
+      "ability": "Stamina",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 175,
+        "atk": 99,
+        "def": 150,
+        "spa": 194,
+        "spd": 85,
+        "spe": 176
+      },
+      "ev_spread": {
+        "hp": 10,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 22
+      },
+      "moves": [
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Electro Shot",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Archaludon",
+      "nature": "Modest",
+      "ability": "Stamina",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 197,
+        "atk": 112,
+        "def": 151,
+        "spa": 194,
+        "spd": 86,
+        "spe": 105
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 1,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Electro Shot",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Archaludon",
+      "nature": "Bold",
+      "ability": "Stamina",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 197,
+        "atk": 112,
+        "def": 176,
+        "spa": 145,
+        "spd": 109,
+        "spe": 105
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 10,
+        "spa": 0,
+        "spd": 24,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Roar",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Archaludon",
+      "nature": "Modest",
+      "ability": "Stamina",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 166,
+        "atk": 112,
+        "def": 150,
+        "spa": 194,
+        "spd": 86,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Dragon Pulse",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Electro Shot",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Snarl",
+          "type": "Dark",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Gengar",
+    "Delphox",
+    "Eternal Flower Floette"
+  ]
+}

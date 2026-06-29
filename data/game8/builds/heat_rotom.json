@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595430",
+  "name": "Heat Rotom",
+  "types": [
+    "Fire",
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86
+  },
+  "builds": [
+    {
+      "pokemon": "Heat Rotom",
+      "nature": "Timid",
+      "ability": "Levitate",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 127,
+        "atk": 76,
+        "def": 127,
+        "spa": 157,
+        "spd": 127,
+        "spe": 151
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Overheat",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Trick",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Heat Rotom",
+      "nature": "Bold",
+      "ability": "Levitate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 157,
+        "atk": 76,
+        "def": 174,
+        "spa": 125,
+        "spd": 128,
+        "spe": 107
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 1,
+        "spe": 1
+      },
+      "moves": [
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Overheat",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Foul Play",
+          "type": "Dark",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Hisuian Arcanine",
+    "Mega Camerupt",
+    "Mega Emboar"
+  ]
+}

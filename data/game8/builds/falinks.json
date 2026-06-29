@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/606407",
+  "name": "Falinks",
+  "types": [
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 100,
+    "def": 100,
+    "spa": 70,
+    "spd": 60,
+    "spe": 75
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Falinks",
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "held_item": "Falinksite",
+      "final_stats": {
+        "hp": 140,
+        "atk": 174,
+        "def": 155,
+        "spa": 81,
+        "spd": 85,
+        "spe": 124
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "No Retreat",
+          "type": "Fighting",
+          "category": "Status"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Swampert",
+    "Hippowdon",
+    "Skeledirge"
+  ]
+}

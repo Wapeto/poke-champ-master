@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594400",
+  "name": "Best Trick Room Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Trick Room Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Trick Room team is, how to make the Best Trick Room team in this Regulation, what strategies to use with one, and how to counter Trick Room teams here!",
+  "members": [
+    {
+      "pokemon": "Farigiraf",
+      "nature": "Relaxed",
+      "ability": "Armor Tail",
+      "held_item": "Mental Herb",
+      "final_stats": {
+        "hp": 219,
+        "atk": 132,
+        "def": 99,
+        "spa": 130,
+        "spd": 110,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 24,
+        "atk": 22,
+        "def": 0,
+        "spa": 0,
+        "spd": 20,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Twin Beam",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Pelipper",
+      "nature": "Quiet",
+      "ability": "Drizzle",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 167,
+        "atk": 70,
+        "def": 120,
+        "spa": 161,
+        "spd": 92,
+        "spe": 76
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Hurricane",
+          "type": "Flying",
+          "category": "Special"
+        },
+        {
+          "name": "Wide Guard",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Blastoise",
+      "nature": "Quiet",
+      "ability": "Mega Launcher",
+      "held_item": "Blastoisinite",
+      "final_stats": {
+        "hp": 186,
+        "atk": 125,
+        "def": 140,
+        "spa": 205,
+        "spd": 135,
+        "spe": 88
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Water Spout",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Incineroar",
+      "nature": "Brave",
+      "ability": "Intimidate",
+      "held_item": "Chople Berry",
+      "final_stats": {
+        "hp": 202,
+        "atk": 183,
+        "def": 112,
+        "spa": 100,
+        "spd": 110,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Throat Chop",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Parting Shot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sinistcha",
+      "nature": "Sassy",
+      "ability": "Hospitality",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 178,
+        "atk": 80,
+        "def": 140,
+        "spa": 141,
+        "spd": 132,
+        "spe": 81
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 14,
+        "spa": 0,
+        "spd": 20,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Matcha Gotcha",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Rage Powder",
+          "type": "Bug",
+          "category": "Status"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Jolly",
+      "ability": "Adaptability",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 195,
+        "atk": 164,
+        "def": 87,
+        "spa": 90,
+        "spd": 95,
+        "spe": 143
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    }
+  ]
+}

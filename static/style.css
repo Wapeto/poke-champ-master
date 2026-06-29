@@ -1,0 +1,319 @@
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d2e;
+  --surface2: #252840;
+  --accent: #6c63ff;
+  --accent2: #ff6b6b;
+  --text: #e8eaf6;
+  --muted: #9a9dc4;
+  --border: #2e3150;
+  --radius: 10px;
+
+  --S: #ffd700; --Sp: #e8b800;
+  --Ap: #ff8c00;
+  --A: #4caf50;
+  --B: #2196f3;
+  --C: #9c27b0;
+  --D: #607d8b;
+
+  /* type colours */
+  --Normal:#a8a77a; --Fire:#ee8130; --Water:#6390f0; --Electric:#f7d02c;
+  --Grass:#7ac74c; --Ice:#96d9d6; --Fighting:#c22e28; --Poison:#a33ea1;
+  --Ground:#e2bf65; --Flying:#a98ff3; --Psychic:#f95587; --Bug:#a6b91a;
+  --Rock:#b6a136; --Ghost:#735797; --Dragon:#6f35fc; --Dark:#705746;
+  --Steel:#b7b7ce; --Fairy:#d685ad;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1 { font-size: 1.25rem; white-space: nowrap; }
+
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.15s;
+}
+.tab-btn:hover { border-color: var(--accent); color: var(--text); }
+.tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ── MAIN ── */
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+h2 { font-size: 1.5rem; margin-bottom: 6px; }
+h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.subtitle { color: var(--muted); margin-bottom: 20px; }
+
+/* ── TIER LIST ── */
+.tier-section { margin-bottom: 24px; }
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.tier-badge {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tier-badge.S  { background: var(--S);  color: #000; }
+.tier-badge.Ap { background: var(--Ap); color: #fff; }
+.tier-badge.A  { background: var(--A);  color: #fff; }
+.tier-badge.B  { background: var(--B);  color: #fff; }
+.tier-badge.C  { background: var(--C);  color: #fff; }
+.tier-badge.D  { background: var(--D);  color: #fff; }
+
+.tier-pokemon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.poke-chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.poke-chip:hover { border-color: var(--accent); background: var(--surface2); }
+
+/* ── SEARCH ── */
+.search-row { position: relative; margin-bottom: 12px; max-width: 400px; }
+.search-row input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+}
+.search-row input:focus { border-color: var(--accent); }
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+}
+.suggestions.open { display: block; }
+.suggestion-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.suggestion-item:hover { background: var(--surface); }
+
+/* ── CHIP LIST (selected pokemon) ── */
+.chip-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; min-height: 36px; }
+.chip {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 10px 4px 12px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.chip .remove {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+.chip .remove:hover { color: var(--accent2); }
+
+/* ── BUTTONS ── */
+.primary-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.primary-btn:hover { opacity: 0.85; }
+.primary-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── CARDS ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.card-grid.small { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+
+.poke-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  transition: border-color 0.15s;
+}
+.poke-card:hover { border-color: var(--accent); }
+.poke-card .card-name { font-weight: 600; margin-bottom: 6px; font-size: 0.95rem; }
+.poke-card .card-role {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.poke-card .card-moves { font-size: 0.8rem; color: var(--muted); }
+.poke-card .card-moves span { display: block; }
+.poke-card .card-item { font-size: 0.8rem; color: #ffd700; margin-top: 4px; }
+.poke-card .card-nature { font-size: 0.8rem; color: var(--muted); }
+
+/* lead card */
+#lead-card .poke-card {
+  border-color: var(--accent);
+  border-width: 2px;
+  background: var(--surface2);
+}
+#lead-card .poke-card .card-name { font-size: 1.1rem; }
+
+/* ── ANALYSIS BOX ── */
+.analysis-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+.analysis-box h4 { margin-bottom: 8px; font-size: 0.9rem; color: var(--muted); text-transform: uppercase; }
+.analysis-box p { margin-bottom: 6px; font-size: 0.9rem; }
+.analysis-box .warn { color: var(--accent2); }
+.analysis-box .good { color: #4caf50; }
+
+/* ── TYPE BADGES ── */
+.type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 1px;
+}
+.type-Normal   { background: var(--Normal);   color: #000; }
+.type-Fire     { background: var(--Fire); }
+.type-Water    { background: var(--Water); }
+.type-Electric { background: var(--Electric); color: #000; }
+.type-Grass    { background: var(--Grass); }
+.type-Ice      { background: var(--Ice);   color: #000; }
+.type-Fighting { background: var(--Fighting); }
+.type-Poison   { background: var(--Poison); }
+.type-Ground   { background: var(--Ground);  color: #000; }
+.type-Flying   { background: var(--Flying); }
+.type-Psychic  { background: var(--Psychic); }
+.type-Bug      { background: var(--Bug); }
+.type-Rock     { background: var(--Rock); }
+.type-Ghost    { background: var(--Ghost); }
+.type-Dragon   { background: var(--Dragon); }
+.type-Dark     { background: var(--Dark); }
+.type-Steel    { background: var(--Steel);   color: #000; }
+.type-Fairy    { background: var(--Fairy); }
+
+/* ── TWO COL ── */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+/* ── MATCHUP ── */
+.matchup-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 24px; }
+@media (max-width: 640px) { .matchup-grid { grid-template-columns: 1fr; } }
+
+/* ── SCORE TABLE ── */
+.score-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.score-table th, .score-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+.score-table th { color: var(--muted); font-weight: 600; }
+.score-table tr:hover td { background: var(--surface2); }
+
+/* ── META TEAMS ── */
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.team-card h4 { margin-bottom: 12px; }
+.member-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border);
+}
+.member-row:last-child { border-bottom: none; }
+.member-name { font-weight: 600; min-width: 180px; }
+.member-detail { color: var(--muted); }
+
+/* ── MISC ── */
+.hidden { display: none !important; }
+.muted { color: var(--muted); font-size: 0.85rem; }
+.tier-label { font-weight: 700; }
+.tier-S  { color: var(--S); }
+.tier-Ap { color: var(--Ap); }
+.tier-A  { color: var(--A); }
+.tier-B  { color: var(--B); }
+.tier-C  { color: var(--C); }
+.tier-D  { color: var(--D); }

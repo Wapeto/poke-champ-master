@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596417",
+  "name": "Hisuian Samurott",
+  "types": [
+    "Water",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 108,
+    "def": 80,
+    "spa": 100,
+    "spd": 65,
+    "spe": 85
+  },
+  "builds": [
+    {
+      "pokemon": "Hisuian Samurott",
+      "nature": "Adamant",
+      "ability": "Sharpness",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 167,
+        "atk": 176,
+        "def": 100,
+        "spa": 108,
+        "spd": 85,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Ceaseless Edge",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Sacred Sword",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Razor Shell",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Lopunny",
+    "Lucario"
+  ]
+}

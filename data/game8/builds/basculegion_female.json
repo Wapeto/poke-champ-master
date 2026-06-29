@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598342",
+  "name": "Basculegion (Female)",
+  "types": [
+    "Water",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 120,
+    "atk": 92,
+    "def": 65,
+    "spa": 100,
+    "spd": 75,
+    "spe": 78
+  },
+  "builds": [
+    {
+      "pokemon": "Basculegion (Female)",
+      "nature": "Timid",
+      "ability": "Adaptability",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 195,
+        "atk": 100,
+        "def": 87,
+        "spa": 152,
+        "spd": 95,
+        "spe": 143
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aegislash (Shield Forme)",
+    "Kingambit"
+  ]
+}

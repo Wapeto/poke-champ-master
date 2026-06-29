@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598598",
+  "name": "Krookodile",
+  "types": [
+    "Ground",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 117,
+    "def": 80,
+    "spa": 65,
+    "spd": 70,
+    "spe": 92
+  },
+  "builds": [
+    {
+      "pokemon": "Krookodile",
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 172,
+        "atk": 185,
+        "def": 100,
+        "spa": 76,
+        "spd": 90,
+        "spe": 144
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "High Horsepower",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Gyarados",
+    "Wash Rotom",
+    "Sinistcha"
+  ]
+}

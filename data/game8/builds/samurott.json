@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598483",
+  "name": "Samurott",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 100,
+    "def": 85,
+    "spa": 108,
+    "spd": 70,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Samurott",
+      "nature": "Adamant",
+      "ability": "Shell Armor",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 172,
+        "atk": 167,
+        "def": 105,
+        "spa": 115,
+        "spd": 90,
+        "spe": 122
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Aqua Cutter",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "X-Scissor",
+          "type": "Bug",
+          "category": "Physical"
+        },
+        {
+          "name": "Sacred Sword",
+          "type": "Fighting",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mow Rotom",
+    "Serperior",
+    "Whimsicott"
+  ]
+}

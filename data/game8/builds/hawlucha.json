@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593736",
+  "name": "Hawlucha",
+  "types": [
+    "Fighting",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 92,
+    "def": 75,
+    "spa": 74,
+    "spd": 63,
+    "spe": 118
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Hawlucha",
+      "nature": "Jolly",
+      "ability": "No Guard",
+      "held_item": "Hawluchanite",
+      "final_stats": {
+        "hp": 185,
+        "atk": 157,
+        "def": 120,
+        "spa": 84,
+        "spd": 114,
+        "spe": 187
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 2,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Entrainment",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Quick Guard",
+          "type": "Fighting",
+          "category": "Status"
+        },
+        {
+          "name": "Brave Bird",
+          "type": "Flying",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Froslass",
+    "Mega Greninja",
+    "Mega Meowstic (Female)"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593808",
+  "name": "Delphox",
+  "types": [
+    "Fire",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 69,
+    "def": 72,
+    "spa": 114,
+    "spd": 100,
+    "spe": 104
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Delphox",
+      "nature": "Timid",
+      "ability": "Levitate",
+      "held_item": "Delphoxite",
+      "final_stats": {
+        "hp": 181,
+        "atk": 80,
+        "def": 93,
+        "spa": 184,
+        "spd": 145,
+        "spe": 201
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 1,
+        "spa": 5,
+        "spd": 0,
+        "spe": 29
+      },
+      "moves": [
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Flamethrower",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Delphox",
+      "nature": "Timid",
+      "ability": "Levitate",
+      "held_item": "Delphoxite",
+      "final_stats": {
+        "hp": 152,
+        "atk": 80,
+        "def": 92,
+        "spa": 211,
+        "spd": 145,
+        "spe": 204
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Heat Wave",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Substitute",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Delphox",
+      "nature": "Timid",
+      "ability": "Levitate",
+      "held_item": "Delphoxite",
+      "final_stats": {
+        "hp": 152,
+        "atk": 80,
+        "def": 92,
+        "spa": 211,
+        "spd": 145,
+        "spe": 204
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Heat Wave",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Chandelure",
+    "Hatterene",
+    "Farigiraf"
+  ]
+}

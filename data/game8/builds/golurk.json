@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595927",
+  "name": "Golurk",
+  "types": [
+    "Ground",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 89,
+    "atk": 124,
+    "def": 80,
+    "spa": 55,
+    "spd": 80,
+    "spe": 55
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Golurk",
+      "nature": "Adamant",
+      "ability": "Unseen Fist",
+      "held_item": "Golurkite",
+      "final_stats": {
+        "hp": 195,
+        "atk": 232,
+        "def": 127,
+        "spa": 81,
+        "spd": 126,
+        "spe": 75
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 1,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Poltergeist",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Ice Punch",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Feraligatr",
+    "Hydreigon",
+    "Mega Greninja"
+  ]
+}

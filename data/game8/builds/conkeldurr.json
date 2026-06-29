@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596489",
+  "name": "Conkeldurr",
+  "types": [
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 105,
+    "atk": 140,
+    "def": 95,
+    "spa": 55,
+    "spd": 65,
+    "spe": 45
+  },
+  "builds": [
+    {
+      "pokemon": "Conkeldurr",
+      "nature": "Adamant",
+      "ability": "Guts",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 212,
+        "atk": 211,
+        "def": 117,
+        "spa": 67,
+        "spd": 85,
+        "spe": 65
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Wide Guard",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Conkeldurr",
+      "nature": "Adamant",
+      "ability": "Guts",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 212,
+        "atk": 211,
+        "def": 117,
+        "spa": 67,
+        "spd": 85,
+        "spe": 65
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Ice Punch",
+          "type": "Ice",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aerodactyl",
+    "Azumarill",
+    "Talonflame"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594223",
+  "name": "Maushold",
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 74,
+    "atk": 75,
+    "def": 70,
+    "spa": 65,
+    "spd": 75,
+    "spe": 111
+  },
+  "builds": [
+    {
+      "pokemon": "Maushold (Family of Four)",
+      "nature": "Jolly",
+      "ability": "Friend Guard",
+      "held_item": "Mental Herb",
+      "final_stats": {
+        "hp": 181,
+        "atk": 95,
+        "def": 91,
+        "spa": 76,
+        "spd": 95,
+        "spe": 179
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Super Fang",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Follow Me",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Maushold (Family of Four)",
+      "nature": "Timid",
+      "ability": "Friend Guard",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 181,
+        "atk": 85,
+        "def": 92,
+        "spa": 85,
+        "spd": 95,
+        "spe": 179
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Beat Up",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Follow Me",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Scovillain",
+    "Sinistcha"
+  ]
+}

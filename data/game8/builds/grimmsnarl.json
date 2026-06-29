@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605785",
+  "name": "Grimmsnarl",
+  "types": [
+    "Dark",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 120,
+    "def": 65,
+    "spa": 95,
+    "spd": 75,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Grimmsnarl",
+      "nature": "Impish",
+      "ability": "Prankster",
+      "held_item": "Light Clay",
+      "final_stats": {
+        "hp": 202,
+        "atk": 140,
+        "def": 128,
+        "spa": 103,
+        "spd": 97,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Spirit Break",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Reflect",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Light Screen",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Foul Play",
+          "type": "Dark",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Metagross",
+    "Gholdengo"
+  ]
+}

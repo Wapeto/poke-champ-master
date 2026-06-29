@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594354",
+  "name": "Best Snow Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Snow Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Snow team is, how to make the Best Snow team in this Regulation, what strategies to use with one, and how to counter Snow teams here!",
+  "members": [
+    {
+      "pokemon": "Mega Froslass",
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "held_item": "Froslassite",
+      "final_stats": {
+        "hp": 147,
+        "atk": 90,
+        "def": 90,
+        "spa": 192,
+        "spd": 120,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Aurora Veil",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Wash Rotom",
+      "nature": "Modest",
+      "ability": "Levitate",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 127,
+        "atk": 76,
+        "def": 127,
+        "spa": 172,
+        "spd": 127,
+        "spe": 138
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Trick",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Aerodactyl",
+      "nature": "Jolly",
+      "ability": "Unnerve",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 155,
+        "atk": 157,
+        "def": 85,
+        "spa": 72,
+        "spd": 95,
+        "spe": 200
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 185,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Kingambit",
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "held_item": "Chople Berry",
+      "final_stats": {
+        "hp": 207,
+        "atk": 205,
+        "def": 140,
+        "spa": 72,
+        "spd": 105,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Kowtow Cleave",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Incineroar",
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 202,
+        "atk": 183,
+        "def": 112,
+        "spa": 90,
+        "spd": 110,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Darkest Lariat",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Parting Shot",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597346",
+  "name": "Decidueye",
+  "types": [
+    "Grass",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 107,
+    "def": 75,
+    "spa": 100,
+    "spd": 100,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Decidueye",
+      "nature": "Adamant",
+      "ability": "Long Reach",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 153,
+        "atk": 174,
+        "def": 97,
+        "spa": 108,
+        "spd": 120,
+        "spe": 122
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Spirit Shackle",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Leaf Blade",
+          "type": "Grass",
+          "category": "Physical"
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Incineroar",
+    "Sneasler"
+  ]
+}

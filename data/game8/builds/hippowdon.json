@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594071",
+  "name": "Hippowdon",
+  "types": [
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 108,
+    "atk": 112,
+    "def": 118,
+    "spa": 68,
+    "spd": 72,
+    "spe": 47
+  },
+  "builds": [
+    {
+      "pokemon": "Hippowdon",
+      "nature": "Careful",
+      "ability": "Sand Stream",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 183,
+        "atk": 132,
+        "def": 138,
+        "spa": 88,
+        "spd": 92,
+        "spe": 67
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 2,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Whirlwind",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Slack Off",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Starmie",
+    "Forretress",
+    "Corviknight",
+    "Glimmora"
+  ]
+}

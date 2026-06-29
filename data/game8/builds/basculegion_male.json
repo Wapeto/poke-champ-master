@@ -1,0 +1,198 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594126",
+  "name": "Basculegion (Male)",
+  "types": [
+    "Water",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 120,
+    "atk": 112,
+    "def": 65,
+    "spa": 80,
+    "spd": 75,
+    "spe": 78
+  },
+  "builds": [
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Adamant",
+      "ability": "Adaptability",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 197,
+        "atk": 180,
+        "def": 85,
+        "spa": 90,
+        "spd": 95,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Adamant",
+      "ability": "Adaptability",
+      "held_item": "Life Orb",
+      "final_stats": {
+        "hp": 197,
+        "atk": 180,
+        "def": 85,
+        "spa": 90,
+        "spd": 95,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Adamant",
+      "ability": "Adaptability",
+      "held_item": "Mystic Water",
+      "final_stats": {
+        "hp": 197,
+        "atk": 180,
+        "def": 85,
+        "spa": 90,
+        "spd": 95,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Adamant",
+      "ability": "Adaptability",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 195,
+        "atk": 180,
+        "def": 86,
+        "spa": 90,
+        "spd": 96,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aegislash (Shield Forme)",
+    "Kingambit"
+  ]
+}

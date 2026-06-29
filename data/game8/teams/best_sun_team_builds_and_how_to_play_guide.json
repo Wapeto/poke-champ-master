@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594157",
+  "name": "Best Sun Team: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Sun Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Sun team is, how to make the Best Sun team in this Regulation, what strategies to use, and how to counter it, and view battle-ready Sun teams!",
+  "members": [
+    {
+      "pokemon": "Mega Charizard Y",
+      "nature": "Timid",
+      "ability": "Solar Power",
+      "held_item": "Charizardite Y",
+      "final_stats": {
+        "hp": 154,
+        "atk": 93,
+        "def": 98,
+        "spa": 161,
+        "spd": 106,
+        "spe": 167
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Heat Wave",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Venusaur",
+      "nature": "Modest",
+      "ability": "Chlorophyll",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 156,
+        "atk": 91,
+        "def": 103,
+        "spa": 167,
+        "spd": 121,
+        "spe": 132
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Sleep Powder",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "name": "Leaf Storm",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 184,
+        "atk": 200,
+        "def": 116,
+        "spa": 90,
+        "spd": 105,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Bulldoze",
+          "type": "Ground",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Wash Rotom",
+      "nature": "Bold",
+      "ability": "Levitate",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 157,
+        "atk": 76,
+        "def": 151,
+        "spa": 141,
+        "spd": 127,
+        "spe": 113
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 11,
+        "spa": 16,
+        "spd": 0,
+        "spe": 7
+      },
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sneasler",
+      "nature": "Jolly",
+      "ability": "Unburden",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 155,
+        "atk": 182,
+        "def": 80,
+        "spa": 54,
+        "spd": 100,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dire Claw",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Tomb",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Incineroar",
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 202,
+        "atk": 183,
+        "def": 110,
+        "spa": 90,
+        "spd": 110,
+        "spe": 82
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Darkest Lariat",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Parting Shot",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    }
+  ]
+}

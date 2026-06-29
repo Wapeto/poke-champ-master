@@ -1,0 +1,154 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594130",
+  "name": "Glimmora",
+  "types": [
+    "Poison",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 83,
+    "atk": 55,
+    "def": 90,
+    "spa": 130,
+    "spd": 81,
+    "spe": 86
+  },
+  "builds": [
+    {
+      "pokemon": "Glimmora",
+      "nature": "Timid",
+      "ability": "Toxic Debris",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 158,
+        "atk": 75,
+        "def": 110,
+        "spa": 150,
+        "spd": 101,
+        "spe": 106
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Mortal Spin",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Spikes",
+          "type": "Ground",
+          "category": "Status"
+        },
+        {
+          "name": "Explosion",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Glimmora",
+      "nature": "Modest",
+      "ability": "Adaptability",
+      "held_item": "Glimmoranite",
+      "final_stats": {
+        "hp": 158,
+        "atk": 75,
+        "def": 110,
+        "spa": 150,
+        "spd": 101,
+        "spe": 106
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 2,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Sludge Wave",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Power Gem",
+          "type": "Rock",
+          "category": "Special"
+        },
+        {
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Spiky Shield",
+          "type": "Grass",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Glimmora",
+      "nature": "Timid",
+      "ability": "Toxic Debris",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 158,
+        "atk": 75,
+        "def": 110,
+        "spa": 150,
+        "spd": 101,
+        "spe": 106
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Power Gem",
+          "type": "Rock",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Spiky Shield",
+          "type": "Grass",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Hippowdon",
+    "Excadrill"
+  ]
+}

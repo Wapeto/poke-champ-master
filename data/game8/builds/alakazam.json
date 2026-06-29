@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598670",
+  "name": "Alakazam",
+  "types": [
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 55,
+    "atk": 50,
+    "def": 45,
+    "spa": 135,
+    "spd": 95,
+    "spe": 120
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Alakazam",
+      "nature": "Modest",
+      "ability": "Trace",
+      "held_item": "Alakazite",
+      "final_stats": {
+        "hp": 130,
+        "atk": 70,
+        "def": 65,
+        "spa": 155,
+        "spd": 115,
+        "spe": 140
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Whimsicott",
+    "Zoroark",
+    "Incineroar"
+  ]
+}

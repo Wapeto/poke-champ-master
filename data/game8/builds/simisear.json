@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598417",
+  "name": "Simisear",
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 98,
+    "def": 63,
+    "spa": 98,
+    "spd": 63,
+    "spe": 101
+  },
+  "builds": [
+    {
+      "pokemon": "Simisear",
+      "nature": "Modest",
+      "ability": "Blaze",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 152,
+        "atk": 118,
+        "def": 83,
+        "spa": 150,
+        "spd": 83,
+        "spe": 153
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Fire Blast",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Grass Knot",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Burning Jealousy",
+          "type": "Fire",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Greninja",
+    "Primarina"
+  ]
+}

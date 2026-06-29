@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594198",
+  "name": "Politoed",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 75,
+    "def": 75,
+    "spa": 90,
+    "spd": 100,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Politoed",
+      "nature": "Bold",
+      "ability": "Drizzle",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 165,
+        "atk": 95,
+        "def": 95,
+        "spa": 110,
+        "spd": 120,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 32,
+        "spa": 2,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Perish Song",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Whirlpool",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Substitute",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Hypnosis",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Politoed",
+      "nature": "Bold",
+      "ability": "Drizzle",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 165,
+        "atk": 95,
+        "def": 95,
+        "spa": 110,
+        "spd": 120,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 32,
+        "spa": 2,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Muddy Water",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Hypnosis",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Whimsicott",
+    "Meowscarada",
+    "Kingambit"
+  ]
+}

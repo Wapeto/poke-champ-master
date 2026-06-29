@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594505",
+  "name": "Hisuian Zoroark",
+  "types": [
+    "Normal",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 55,
+    "atk": 100,
+    "def": 60,
+    "spa": 125,
+    "spd": 60,
+    "spe": 110
+  },
+  "builds": [
+    {
+      "pokemon": "Hisuian Zoroark",
+      "nature": "Naive",
+      "ability": "Illusion",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 131,
+        "atk": 120,
+        "def": 81,
+        "spa": 177,
+        "spd": 72,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Bitter Malice",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mamoswine",
+    "Mega Greninja",
+    "Dragapult"
+  ]
+}

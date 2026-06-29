@@ -1,0 +1,155 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593918",
+  "name": "Sneasler",
+  "types": [
+    "Fighting",
+    "Poison"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 130,
+    "def": 60,
+    "spa": 40,
+    "spd": 80,
+    "spe": 120
+  },
+  "builds": [
+    {
+      "pokemon": "Sneasler",
+      "nature": "Jolly",
+      "ability": "Unburden",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 157,
+        "atk": 182,
+        "def": 80,
+        "spa": 54,
+        "spd": 100,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dire Claw",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sneasler",
+      "nature": "Jolly",
+      "ability": "Unburden",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 157,
+        "atk": 182,
+        "def": 80,
+        "spa": 54,
+        "spd": 100,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dire Claw",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Coaching",
+          "type": "Fighting",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sneasler",
+      "nature": "Adamant",
+      "ability": "Unburden",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 187,
+        "atk": 165,
+        "def": 108,
+        "spa": 54,
+        "spd": 100,
+        "spe": 146
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 28,
+        "spa": 0,
+        "spd": 0,
+        "spe": 6
+      },
+      "moves": [
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Dire Claw",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Delphox",
+    "Hatterene",
+    "Farigiraf"
+  ]
+}

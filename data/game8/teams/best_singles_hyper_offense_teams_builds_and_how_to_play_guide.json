@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596263",
+  "name": "Best Singles Hyper Offense Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Singles Hyper Offense Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Hyper Offense team is, how to make the Best Singles Hyper Offense team in this Regulation, what strategies to use with one, and how to counter Singles Hyper Offense teams here!",
+  "members": [
+    {
+      "pokemon": "Mega Gengar",
+      "nature": "Timid",
+      "ability": "Shadow Tag",
+      "held_item": "Gengarite",
+      "final_stats": {
+        "hp": 137,
+        "atk": 76,
+        "def": 100,
+        "spa": 222,
+        "spd": 115,
+        "spe": 200
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Wave",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Substitute",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Greninja",
+      "nature": "Timid",
+      "ability": "Protean",
+      "held_item": "Greninjite",
+      "final_stats": {
+        "hp": 149,
+        "atk": 130,
+        "def": 97,
+        "spa": 185,
+        "spd": 101,
+        "spe": 213
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Surf",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Dark Pulse",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Wave",
+          "type": "Poison",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Meowscarada",
+      "nature": "Jolly",
+      "ability": "Protean",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 153,
+        "atk": 162,
+        "def": 90,
+        "spa": 90,
+        "spd": 90,
+        "spe": 192
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flower Trick",
+          "type": "Grass",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Triple Axel",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Ceruledge",
+      "nature": "Adamant",
+      "ability": "Weak Armor",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 155,
+        "atk": 194,
+        "def": 100,
+        "spa": 72,
+        "spd": 120,
+        "spe": 134
+      },
+      "ev_spread": {
+        "hp": 5,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 29
+      },
+      "moves": [
+        {
+          "name": "Poltergeist",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Bitter Blade",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Impish",
+      "ability": "Rough Skin",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 213,
+        "atk": 150,
+        "def": 155,
+        "spa": 90,
+        "spd": 106,
+        "spe": 131
+      },
+      "ev_spread": {
+        "hp": 30,
+        "atk": 0,
+        "def": 26,
+        "spa": 0,
+        "spd": 1,
+        "spe": 9
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Tomb",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Tail",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Corviknight",
+      "nature": "Impish",
+      "ability": "Mirror Armor",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 205,
+        "atk": 107,
+        "def": 172,
+        "spa": 65,
+        "spd": 107,
+        "spe": 87
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Heavy Slam",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    }
+  ]
+}

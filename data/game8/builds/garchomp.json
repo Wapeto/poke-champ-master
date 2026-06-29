@@ -1,0 +1,462 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593731",
+  "name": "Garchomp",
+  "types": [
+    "Ground",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 108,
+    "atk": 130,
+    "def": 95,
+    "spa": 80,
+    "spd": 85,
+    "spe": 102
+  },
+  "builds": [
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "Life Orb",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 18,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 12
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Haban Berry",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 18,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 12
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Outrage",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stone Edge",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Dragon Fang",
+      "final_stats": {
+        "hp": 203,
+        "atk": 187,
+        "def": 115,
+        "spa": 90,
+        "spd": 106,
+        "spe": 147
+      },
+      "ev_spread": {
+        "hp": 20,
+        "atk": 20,
+        "def": 0,
+        "spa": 0,
+        "spd": 1,
+        "spe": 25
+      },
+      "moves": [
+        {
+          "name": "Scale Shot",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 18,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 12
+      },
+      "moves": [
+        {
+          "name": "Scale Shot",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 184,
+        "atk": 182,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 169
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 18,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 12
+      },
+      "moves": [
+        {
+          "name": "Scale Shot",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 193,
+        "atk": 180,
+        "def": 119,
+        "spa": 90,
+        "spd": 105,
+        "spe": 158
+      },
+      "ev_spread": {
+        "hp": 10,
+        "atk": 30,
+        "def": 4,
+        "spa": 0,
+        "spd": 0,
+        "spe": 22
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Poison Jab",
+          "type": "Poison",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Skarmory",
+    "Hippowdon"
+  ]
+}

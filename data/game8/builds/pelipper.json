@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593930",
+  "name": "Pelipper",
+  "types": [
+    "Water",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 50,
+    "def": 100,
+    "spa": 95,
+    "spd": 70,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Pelipper",
+      "nature": "Timid",
+      "ability": "Drizzle",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 137,
+        "atk": 63,
+        "def": 120,
+        "spa": 147,
+        "spd": 90,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Muddy Water",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Hurricane",
+          "type": "Flying",
+          "category": "Special"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Jolteon",
+    "Mega Manectric",
+    "Wash Rotom"
+  ]
+}

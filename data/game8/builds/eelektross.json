@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/606014",
+  "name": "Eelektross",
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 115,
+    "def": 80,
+    "spa": 105,
+    "spd": 80,
+    "spe": 50
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Eelektross",
+      "nature": "Modest",
+      "ability": "Eelevate",
+      "held_item": "Eelektrossite",
+      "final_stats": {
+        "hp": 181,
+        "atk": 148,
+        "def": 100,
+        "spa": 205,
+        "spd": 110,
+        "spe": 113
+      },
+      "ev_spread": {
+        "hp": 21,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 13
+      },
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Flamethrower",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Grass Knot",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Venusaur",
+    "Snorlax",
+    "Bellibolt"
+  ]
+}

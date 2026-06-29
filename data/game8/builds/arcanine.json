@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597556",
+  "name": "Arcanine",
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 110,
+    "def": 80,
+    "spa": 100,
+    "spd": 80,
+    "spe": 95
+  },
+  "builds": [
+    {
+      "pokemon": "Arcanine",
+      "nature": "Calm",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 197,
+        "atk": 117,
+        "def": 122,
+        "spa": 120,
+        "spd": 123,
+        "spe": 115
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 22,
+        "spa": 0,
+        "spd": 12,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Snarl",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Howl",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aerodactyl",
+    "Garchomp",
+    "Basculegion (Male)"
+  ]
+}

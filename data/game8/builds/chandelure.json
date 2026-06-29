@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596254",
+  "name": "Chandelure",
+  "types": [
+    "Fire",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 55,
+    "def": 90,
+    "spa": 145,
+    "spd": 90,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Chandelure",
+      "nature": "Timid",
+      "ability": "Infiltrator",
+      "held_item": "Chandelurite",
+      "final_stats": {
+        "hp": 137,
+        "atk": 85,
+        "def": 130,
+        "spa": 227,
+        "spd": 130,
+        "spe": 156
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Minimize",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Tyranitar",
+    "Goodra",
+    "Primarina"
+  ]
+}

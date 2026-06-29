@@ -1,0 +1,155 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594716",
+  "name": "Gallade",
+  "types": [
+    "Fighting",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 68,
+    "atk": 125,
+    "def": 65,
+    "spa": 65,
+    "spd": 115,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Gallade",
+      "nature": "Jolly",
+      "ability": "Inner Focus",
+      "held_item": "Galladite",
+      "final_stats": {
+        "hp": 175,
+        "atk": 187,
+        "def": 115,
+        "spa": 76,
+        "spd": 135,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 2,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Psycho Cut",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Gallade",
+      "nature": "Jolly",
+      "ability": "Sharpness",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 145,
+        "atk": 177,
+        "def": 85,
+        "spa": 76,
+        "spd": 135,
+        "spe": 145
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Sacred Sword",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Psycho Cut",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Leaf Blade",
+          "type": "Grass",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Gallade",
+      "nature": "Adamant",
+      "ability": "Sharpness",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 145,
+        "atk": 194,
+        "def": 85,
+        "spa": 76,
+        "spd": 135,
+        "spe": 145
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Sacred Sword",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Leaf Blade",
+          "type": "Grass",
+          "category": "Physical"
+        },
+        {
+          "name": "Psycho Cut",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Hippowdon",
+    "Archaludon"
+  ]
+}

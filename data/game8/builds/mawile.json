@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605397",
+  "name": "Mawile",
+  "types": [
+    "Steel",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 85,
+    "def": 85,
+    "spa": 55,
+    "spd": 55,
+    "spe": 50
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Mawile",
+      "nature": "Adamant",
+      "ability": "Huge Power",
+      "held_item": "Mawilite",
+      "final_stats": {
+        "hp": 157,
+        "atk": 172,
+        "def": 145,
+        "spa": 67,
+        "spd": 117,
+        "spe": 70
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Sableye",
+    "Wash Rotom"
+  ]
+}

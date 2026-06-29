@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594484",
+  "name": "Medicham",
+  "types": [
+    "Fighting",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 60,
+    "def": 75,
+    "spa": 60,
+    "spd": 75,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Medicham",
+      "nature": "Adamant",
+      "ability": "Pure Power",
+      "held_item": "Medichamite",
+      "final_stats": {
+        "hp": 137,
+        "atk": 167,
+        "def": 105,
+        "spa": 90,
+        "spd": 105,
+        "spe": 152
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "High Jump Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Zen Headbutt",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Alakazam",
+    "Hawlucha"
+  ]
+}

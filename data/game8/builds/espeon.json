@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596397",
+  "name": "Espeon",
+  "types": [
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 95,
+    "spe": 110
+  },
+  "builds": [
+    {
+      "pokemon": "Espeon",
+      "nature": "Timid",
+      "ability": "Magic Bounce",
+      "held_item": "Kasib Berry",
+      "final_stats": {
+        "hp": 171,
+        "atk": 76,
+        "def": 80,
+        "spa": 153,
+        "spd": 115,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 0,
+        "spa": 3,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Reflect",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Light Screen",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Hippowdon",
+    "Gliscor"
+  ]
+}

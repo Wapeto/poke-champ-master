@@ -1,0 +1,153 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598548",
+  "name": "Raichu",
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 90,
+    "def": 55,
+    "spa": 90,
+    "spd": 80,
+    "spe": 110
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Raichu Y",
+      "nature": "Timid",
+      "ability": "No Guard",
+      "held_item": "Raichunite Y",
+      "final_stats": {
+        "hp": 137,
+        "atk": 108,
+        "def": 75,
+        "spa": 212,
+        "spd": 100,
+        "spe": 200
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Zap Cannon",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Focus Blast",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Raichu X",
+      "nature": "Timid",
+      "ability": "Electric Surge",
+      "held_item": "Raichunite X",
+      "final_stats": {
+        "hp": 137,
+        "atk": 139,
+        "def": 115,
+        "spa": 142,
+        "spd": 115,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Rising Voltage",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Raichu",
+      "nature": "Timid",
+      "ability": "Lightning Rod",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 167,
+        "atk": 99,
+        "def": 75,
+        "spa": 112,
+        "spd": 100,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 2,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Nuzzle",
+          "type": "Electric",
+          "category": "Physical"
+        },
+        {
+          "name": "Electroweb",
+          "type": "Electric",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Mega Excadrill"
+  ]
+}

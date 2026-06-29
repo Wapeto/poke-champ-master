@@ -1,0 +1,100 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594179",
+  "name": "Kangaskhan",
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 105,
+    "atk": 95,
+    "def": 80,
+    "spa": 40,
+    "spd": 80,
+    "spe": 90
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Kangaskhan",
+      "nature": "Adamant",
+      "ability": "Parental Bond",
+      "held_item": "Kangaskhanite",
+      "final_stats": {
+        "hp": 182,
+        "atk": 194,
+        "def": 120,
+        "spa": 72,
+        "spd": 120,
+        "spe": 152
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Double-Edge",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "nature": "Jolly",
+      "ability": "Scrappy",
+      "held_item": "Silk Scarf",
+      "final_stats": {
+        "hp": 182,
+        "atk": 147,
+        "def": 100,
+        "spa": 54,
+        "spd": 100,
+        "spe": 156
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Resort",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Sableye",
+    "Trevenant",
+    "Sinistcha"
+  ]
+}

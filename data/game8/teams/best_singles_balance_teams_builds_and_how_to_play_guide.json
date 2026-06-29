@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596629",
+  "name": "Best Singles Balance Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Singles Balance Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Balance team is, how to make the Best Singles Balance team in this Regulation, what strategies to use with one, and how to counter Singles Balance teams here!",
+  "members": [
+    {
+      "pokemon": "Mega Skarmory",
+      "nature": "Impish",
+      "ability": "Stalwart",
+      "held_item": "Skarmorite",
+      "final_stats": {
+        "hp": 172,
+        "atk": 160,
+        "def": 145,
+        "spa": 54,
+        "spd": 152,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Clefable",
+      "nature": "Bold",
+      "ability": "Magic Bounce",
+      "held_item": "Clefablite",
+      "final_stats": {
+        "hp": 202,
+        "atk": 90,
+        "def": 159,
+        "spa": 155,
+        "spd": 132,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Stored Power",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Moonlight",
+          "type": "Fairy",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Dragonite",
+      "nature": "Adamant",
+      "ability": "Multiscale",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 198,
+        "atk": 204,
+        "def": 117,
+        "spa": 108,
+        "spd": 120,
+        "spe": 100
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Extreme Speed",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Scizor",
+      "nature": "Adamant",
+      "ability": "Technician",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 177,
+        "atk": 200,
+        "def": 120,
+        "spa": 67,
+        "spd": 102,
+        "spe": 85
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Bullet Punch",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Wash Rotom",
+      "nature": "Modest",
+      "ability": "Levitate",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 157,
+        "atk": 76,
+        "def": 128,
+        "spa": 172,
+        "spd": 128,
+        "spe": 106
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 1,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Trick",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Glimmora",
+      "nature": "Timid",
+      "ability": "Toxic Debris",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 160,
+        "atk": 67,
+        "def": 110,
+        "spa": 182,
+        "spd": 101,
+        "spe": 151
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Power Gem",
+          "type": "Rock",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Mortal Spin",
+          "type": "Poison",
+          "category": "Physical"
+        }
+      ]
+    }
+  ]
+}

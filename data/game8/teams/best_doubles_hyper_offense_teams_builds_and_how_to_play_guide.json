@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594747",
+  "name": "Best Doubles Hyper Offense Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Hyper Offense Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Hyper Offense team is, how to make the Best Hyper Offense team in this Regulation, what strategies to use with one, and how to counter Hyper Offense teams here!",
+  "members": [
+    {
+      "pokemon": "Mega Floette",
+      "nature": "Modest",
+      "ability": "Fairy Aura",
+      "held_item": "Floettite",
+      "final_stats": {
+        "hp": 150,
+        "atk": 94,
+        "def": 108,
+        "spa": 227,
+        "spd": 168,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Talonflame",
+      "nature": "Adamant",
+      "ability": "Gale Wings",
+      "held_item": "Sharp Beak",
+      "final_stats": {
+        "hp": 154,
+        "atk": 146,
+        "def": 92,
+        "spa": 84,
+        "spd": 89,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Brave Bird",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Basculegion (Male)",
+      "nature": "Adamant",
+      "ability": "Adaptability",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 196,
+        "atk": 180,
+        "def": 86,
+        "spa": 90,
+        "spd": 95,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Last Respects",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Psychic Fangs",
+          "type": "Psychic",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sneasler",
+      "nature": "Adamant",
+      "ability": "Unburden",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 157,
+        "atk": 200,
+        "def": 80,
+        "spa": 54,
+        "spd": 100,
+        "spe": 172
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dire Claw",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Maushold (Family of Four)",
+      "nature": "Jolly",
+      "ability": "Friend Guard",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 181,
+        "atk": 95,
+        "def": 92,
+        "spa": 76,
+        "spd": 95,
+        "spe": 179
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Follow Me",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Super Fang",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garchomp",
+      "nature": "Adamant",
+      "ability": "Rough Skin",
+      "held_item": "Haban Berry",
+      "final_stats": {
+        "hp": 185,
+        "atk": 200,
+        "def": 115,
+        "spa": 90,
+        "spd": 105,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        }
+      ]
+    }
+  ]
+}

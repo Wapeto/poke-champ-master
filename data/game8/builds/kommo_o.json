@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594875",
+  "name": "Kommo-o",
+  "types": [
+    "Fighting",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 110,
+    "def": 125,
+    "spa": 100,
+    "spd": 105,
+    "spe": 85
+  },
+  "builds": [
+    {
+      "pokemon": "Kommo-o",
+      "nature": "Modest",
+      "ability": "Overcoat",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 152,
+        "atk": 117,
+        "def": 145,
+        "spa": 167,
+        "spd": 125,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Clangorous Soul",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Clanging Scales",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Kommo-o",
+      "nature": "Modest",
+      "ability": "Soundproof",
+      "held_item": "Dragon Fang",
+      "final_stats": {
+        "hp": 152,
+        "atk": 117,
+        "def": 145,
+        "spa": 167,
+        "spd": 125,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Clangorous Soul",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Clanging Scales",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Primarina",
+    "Hatterene"
+  ]
+}

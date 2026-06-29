@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595456",
+  "name": "Best Singles Stall Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Singles Stall Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Stall Team is, how to make the Best Singles Stall Team in this Regulation, what strategies to use with one, and how to counter Singles Stall Team here!",
+  "members": [
+    {
+      "pokemon": "Dragonite",
+      "nature": "Careful",
+      "ability": "Multiscale",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 198,
+        "atk": 154,
+        "def": 147,
+        "spa": 108,
+        "spd": 134,
+        "spe": 100
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Extreme Speed",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Garganacl",
+      "nature": "Bold",
+      "ability": "Purifying Salt",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 207,
+        "atk": 108,
+        "def": 167,
+        "spa": 65,
+        "spd": 142,
+        "spe": 55
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Salt Cure",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Recover",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Substitute",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Clefable",
+      "nature": "Bold",
+      "ability": "Unaware",
+      "held_item": "Clefablite",
+      "final_stats": {
+        "hp": 202,
+        "atk": 81,
+        "def": 137,
+        "spa": 115,
+        "spd": 112,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Stored Power",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Moonlight",
+          "type": "Fairy",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Empoleon",
+      "nature": "Bold",
+      "ability": "Competitive",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 191,
+        "atk": 95,
+        "def": 154,
+        "spa": 131,
+        "spd": 123,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Toxapex",
+      "nature": "Bold",
+      "ability": "Regenerator",
+      "held_item": "Mental Herb",
+      "final_stats": {
+        "hp": 157,
+        "atk": 74,
+        "def": 202,
+        "spa": 73,
+        "spd": 184,
+        "spe": 55
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 12,
+        "spa": 0,
+        "spd": 22,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Toxic",
+          "type": "Poison",
+          "category": "Status"
+        },
+        {
+          "name": "Haze",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Recover",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Baneful Bunker",
+          "type": "Poison",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Corviknight",
+      "nature": "Careful",
+      "ability": "Mirror Armor",
+      "held_item": "Quick Claw",
+      "final_stats": {
+        "hp": 205,
+        "atk": 107,
+        "def": 127,
+        "spa": 65,
+        "spd": 150,
+        "spe": 87
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Defog",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    }
+  ]
+}

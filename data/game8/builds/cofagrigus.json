@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598763",
+  "name": "Cofagrigus",
+  "types": [
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 58,
+    "atk": 50,
+    "def": 145,
+    "spa": 95,
+    "spd": 105,
+    "spe": 30
+  },
+  "builds": [
+    {
+      "pokemon": "Cofagrigus",
+      "nature": "Relaxed",
+      "ability": "Mummy",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 133,
+        "atk": 70,
+        "def": 165,
+        "spa": 115,
+        "spd": 125,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Hex",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Toxic Spikes",
+          "type": "Poison",
+          "category": "Status"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Clefable",
+    "Mega Sableye"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594177",
+  "name": "Clefable",
+  "types": [
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 70,
+    "def": 73,
+    "spa": 95,
+    "spd": 90,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Clefable",
+      "nature": "Bold",
+      "ability": "Unaware",
+      "held_item": "Clefablite",
+      "final_stats": {
+        "hp": 202,
+        "atk": 90,
+        "def": 159,
+        "spa": 155,
+        "spd": 132,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Stored Power",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Moonlight",
+          "type": "Fairy",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Clefable",
+    "Skeledirge"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598559",
+  "name": "Zoroark",
+  "types": [
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 105,
+    "def": 60,
+    "spa": 120,
+    "spd": 60,
+    "spe": 105
+  },
+  "builds": [
+    {
+      "pokemon": "Zoroark",
+      "nature": "Modest",
+      "ability": "Illusion",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 135,
+        "atk": 125,
+        "def": 80,
+        "spa": 140,
+        "spd": 80,
+        "spe": 125
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Dark Pulse",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Ariados",
+    "Mega Lopunny",
+    "Incineroar"
+  ]
+}

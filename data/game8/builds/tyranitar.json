@@ -1,0 +1,157 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593895",
+  "name": "Tyranitar",
+  "types": [
+    "Rock",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 134,
+    "def": 110,
+    "spa": 95,
+    "spd": 100,
+    "spe": 61
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Tyranitar",
+      "nature": "Adamant",
+      "ability": "Sand Stream",
+      "held_item": "Tyranitarite",
+      "final_stats": {
+        "hp": 176,
+        "atk": 237,
+        "def": 170,
+        "spa": 103,
+        "spd": 140,
+        "spe": 123
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Tyranitar",
+      "nature": "Adamant",
+      "ability": "Sand Stream",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 207,
+        "atk": 204,
+        "def": 130,
+        "spa": 103,
+        "spd": 120,
+        "spe": 82
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Lash Out",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Tyranitar",
+      "nature": "Adamant",
+      "ability": "Sand Stream",
+      "held_item": "Tyranitarite",
+      "final_stats": {
+        "hp": 176,
+        "atk": 237,
+        "def": 170,
+        "spa": 103,
+        "spd": 140,
+        "spe": 123
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Crunch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Charizard Y",
+    "Politoed",
+    "Pelipper",
+    "Torkoal",
+    "Abomasnow"
+  ]
+}

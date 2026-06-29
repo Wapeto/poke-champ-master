@@ -1,0 +1,3001 @@
+[
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594143",
+    "name": "Best Rain Team Regulation M-B: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Rain Team for Regulation M-B, Season M-3 in Pokemon Champions! Read on to learn what a Rain team is, how to make the Best Rain team in this Regulation, what strategies to use, and how to counter it, and view battle-ready Rain teams!",
+    "members": [
+      {
+        "pokemon": "Archaludon",
+        "nature": "Modest",
+        "ability": "Stamina",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 197,
+          "atk": 112,
+          "def": 161,
+          "spa": 176,
+          "spd": 85,
+          "spe": 113
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 11,
+          "spa": 15,
+          "spd": 0,
+          "spe": 8
+        },
+        "moves": [
+          {
+            "name": "Electro Shot",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Flash Cannon",
+            "type": "Steel",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Aura Sphere",
+            "type": "Fighting",
+            "category": "Special"
+          }
+        ]
+      },
+      {
+        "pokemon": "Pelipper",
+        "nature": "Modest",
+        "ability": "Drizzle",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 137,
+          "atk": 63,
+          "def": 120,
+          "spa": 161,
+          "spd": 90,
+          "spe": 117
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Hurricane",
+            "type": "Flying",
+            "category": "Special"
+          },
+          {
+            "name": "Tailwind",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Weather Ball",
+            "type": "Normal",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Mega Swampert",
+        "nature": "Adamant",
+        "ability": "Swift Swim",
+        "held_item": "Swampertite",
+        "final_stats": {
+          "hp": 190,
+          "atk": 178,
+          "def": 110,
+          "spa": 94,
+          "spd": 110,
+          "spe": 99
+        },
+        "ev_spread": {
+          "hp": 15,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 19
+        },
+        "moves": [
+          {
+            "name": "Wave Crash",
+            "type": "Water",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sinistcha",
+        "nature": "Modest",
+        "ability": "Hospitality",
+        "held_item": "Kasib Berry",
+        "final_stats": {
+          "hp": 178,
+          "atk": 72,
+          "def": 128,
+          "spa": 190,
+          "spd": 100,
+          "spe": 90
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 32,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Rage Powder",
+            "type": "Bug",
+            "category": "Status"
+          },
+          {
+            "name": "Matcha Gotcha",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Life Dew",
+            "type": "Water",
+            "category": "Status"
+          },
+          {
+            "name": "Strength Sap",
+            "type": "Grass",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sableye",
+        "nature": "Careful",
+        "ability": "Prankster",
+        "held_item": "Light Clay",
+        "final_stats": {
+          "hp": 157,
+          "atk": 95,
+          "def": 112,
+          "spa": 76,
+          "spd": 112,
+          "spe": 70
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 17,
+          "spa": 0,
+          "spd": 17,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Quash",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Reflect",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Light Screen",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Rain Dance",
+            "type": "Water",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Mega Raichu X",
+        "nature": "Timid",
+        "ability": "Electric Surge",
+        "held_item": "Raichunite X",
+        "final_stats": {
+          "hp": 137,
+          "atk": 99,
+          "def": 75,
+          "spa": 142,
+          "spd": 100,
+          "spe": 178
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Rising Voltage",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Volt Switch",
+            "type": "Electric",
+            "category": "Special"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/601460",
+    "name": "Regulation M-A: Complete Roster and Schedule",
+    "strategy": "Regulation M-A in Pokemon Champions the current format for ranked battles and will run from April 9 until June 17, 2026. Regulation M-A is the first Regulation available in the game and features 186 Pokemon and 59 of which are capable of Mega Evolution! Read on to learn more about Regulation M-A, the complete roster, and rules.",
+    "members": []
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594181",
+    "name": "All Replica Team Codes",
+    "strategy": "This is a list of Replica Teams that have reached a Rating of at least 2000 in Master Ball Rank during Season M-1 for Regulation M-A in Pokemon Champions. Check out our list of replica teams and rental codes, as well as how to use replica teams.",
+    "members": []
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594157",
+    "name": "Best Sun Team: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Sun Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Sun team is, how to make the Best Sun team in this Regulation, what strategies to use, and how to counter it, and view battle-ready Sun teams!",
+    "members": [
+      {
+        "pokemon": "Mega Charizard Y",
+        "nature": "Timid",
+        "ability": "Solar Power",
+        "held_item": "Charizardite Y",
+        "final_stats": {
+          "hp": 154,
+          "atk": 93,
+          "def": 98,
+          "spa": 161,
+          "spd": 106,
+          "spe": 167
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Heat Wave",
+            "type": "Fire",
+            "category": "Special"
+          },
+          {
+            "name": "Solar Beam",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Weather Ball",
+            "type": "Normal",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Venusaur",
+        "nature": "Modest",
+        "ability": "Chlorophyll",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 156,
+          "atk": 91,
+          "def": 103,
+          "spa": 167,
+          "spd": 121,
+          "spe": 132
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Sleep Powder",
+            "type": "Grass",
+            "category": "Status"
+          },
+          {
+            "name": "Leaf Storm",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Sludge Bomb",
+            "type": "Poison",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "nature": "Adamant",
+        "ability": "Rough Skin",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 184,
+          "atk": 200,
+          "def": 116,
+          "spa": 90,
+          "spd": 105,
+          "spe": 154
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 32,
+          "def": 1,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Claw",
+            "type": "Dragon",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Bulldoze",
+            "type": "Ground",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Wash Rotom",
+        "nature": "Bold",
+        "ability": "Levitate",
+        "held_item": "Leftovers",
+        "final_stats": {
+          "hp": 157,
+          "atk": 76,
+          "def": 151,
+          "spa": 141,
+          "spd": 127,
+          "spe": 113
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 11,
+          "spa": 16,
+          "spd": 0,
+          "spe": 7
+        },
+        "moves": [
+          {
+            "name": "Hydro Pump",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Thunderbolt",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Will-O-Wisp",
+            "type": "Fire",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sneasler",
+        "nature": "Jolly",
+        "ability": "Unburden",
+        "held_item": "White Herb",
+        "final_stats": {
+          "hp": 155,
+          "atk": 182,
+          "def": 80,
+          "spa": 54,
+          "spd": 100,
+          "spe": 189
+        },
+        "ev_spread": {
+          "hp": 0,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Dire Claw",
+            "type": "Poison",
+            "category": "Physical"
+          },
+          {
+            "name": "Close Combat",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Tomb",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Adamant",
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 183,
+          "def": 110,
+          "spa": 90,
+          "spd": 110,
+          "spe": 82
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 2
+        },
+        "moves": [
+          {
+            "name": "Darkest Lariat",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594354",
+    "name": "Best Snow Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Snow Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Snow team is, how to make the Best Snow team in this Regulation, what strategies to use with one, and how to counter Snow teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Froslass",
+        "nature": "Timid",
+        "ability": "Snow Warning",
+        "held_item": "Froslassite",
+        "final_stats": {
+          "hp": 147,
+          "atk": 90,
+          "def": 90,
+          "spa": 192,
+          "spd": 120,
+          "spe": 189
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Blizzard",
+            "type": "Ice",
+            "category": "Special"
+          },
+          {
+            "name": "Shadow Ball",
+            "type": "Ghost",
+            "category": "Special"
+          },
+          {
+            "name": "Aurora Veil",
+            "type": "Ice",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Wash Rotom",
+        "nature": "Modest",
+        "ability": "Levitate",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 127,
+          "atk": 76,
+          "def": 127,
+          "spa": 172,
+          "spd": 127,
+          "spe": 138
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Hydro Pump",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Thunderbolt",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Volt Switch",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Trick",
+            "type": "Psychic",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Aerodactyl",
+        "nature": "Jolly",
+        "ability": "Unnerve",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 155,
+          "atk": 157,
+          "def": 85,
+          "spa": 72,
+          "spd": 95,
+          "spe": 200
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Dual Wingbeat",
+            "type": "Flying",
+            "category": "Physical"
+          },
+          {
+            "name": "Tailwind",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "nature": "Jolly",
+        "ability": "Rough Skin",
+        "held_item": "White Herb",
+        "final_stats": {
+          "hp": 185,
+          "atk": 182,
+          "def": 115,
+          "spa": 90,
+          "spd": 105,
+          "spe": 169
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Claw",
+            "type": "Dragon",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Kingambit",
+        "nature": "Adamant",
+        "ability": "Defiant",
+        "held_item": "Chople Berry",
+        "final_stats": {
+          "hp": 207,
+          "atk": 205,
+          "def": 140,
+          "spa": 72,
+          "spd": 105,
+          "spe": 72
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Kowtow Cleave",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Iron Head",
+            "type": "Steel",
+            "category": "Physical"
+          },
+          {
+            "name": "Sucker Punch",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Adamant",
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 183,
+          "def": 112,
+          "spa": 90,
+          "spd": 110,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Darkest Lariat",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594353",
+    "name": "Best Sand Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Sand Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Sand team is, how to make the Best Sand team in this Regulation, what strategies to use, and how to counter it, and view battle-ready Sand teams!",
+    "members": [
+      {
+        "pokemon": "Mega Tyranitar",
+        "nature": "Adamant",
+        "ability": "Sand Stream",
+        "held_item": "Tyranitarite",
+        "final_stats": {
+          "hp": 176,
+          "atk": 237,
+          "def": 170,
+          "spa": 103,
+          "spd": 140,
+          "spe": 123
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Low Kick",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Dance",
+            "type": "Dragon",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Excadrill",
+        "nature": "Adamant",
+        "ability": "Sand Rush",
+        "held_item": "Lum Berry",
+        "final_stats": {
+          "hp": 186,
+          "atk": 205,
+          "def": 80,
+          "spa": 63,
+          "spd": 85,
+          "spe": 140
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Iron Head",
+            "type": "Steel",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Aerodactyl",
+        "nature": "Jolly",
+        "ability": "Unnerve",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 156,
+          "atk": 157,
+          "def": 85,
+          "spa": 72,
+          "spd": 95,
+          "spe": 200
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Dual Wingbeat",
+            "type": "Flying",
+            "category": "Physical"
+          },
+          {
+            "name": "Tailwind",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Wash Rotom",
+        "nature": "Calm",
+        "ability": "Levitate",
+        "held_item": "Leftovers",
+        "final_stats": {
+          "hp": 157,
+          "atk": 76,
+          "def": 127,
+          "spa": 125,
+          "spd": 174,
+          "spe": 107
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 32,
+          "spe": 2
+        },
+        "moves": [
+          {
+            "name": "Thunderbolt",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Hydro Pump",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Will-O-Wisp",
+            "type": "Fire",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Careful",
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 135,
+          "def": 126,
+          "spa": 90,
+          "spd": 140,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 16,
+          "spa": 0,
+          "spd": 18,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Helping Hand",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sinistcha",
+        "nature": "Calm",
+        "ability": "Hospitality",
+        "held_item": "Mental Herb",
+        "final_stats": {
+          "hp": 178,
+          "atk": 72,
+          "def": 143,
+          "spa": 141,
+          "spd": 128,
+          "spe": 90
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 17,
+          "spa": 0,
+          "spd": 17,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Matcha Gotcha",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Trick Room",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Rage Powder",
+            "type": "Bug",
+            "category": "Status"
+          },
+          {
+            "name": "Imprison",
+            "type": "Psychic",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594747",
+    "name": "Best Doubles Hyper Offense Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Hyper Offense Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Hyper Offense team is, how to make the Best Hyper Offense team in this Regulation, what strategies to use with one, and how to counter Hyper Offense teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Floette",
+        "nature": "Modest",
+        "ability": "Fairy Aura",
+        "held_item": "Floettite",
+        "final_stats": {
+          "hp": 150,
+          "atk": 94,
+          "def": 108,
+          "spa": 227,
+          "spd": 168,
+          "spe": 154
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 0,
+          "def": 1,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Dazzling Gleam",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Moonblast",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Calm Mind",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Talonflame",
+        "nature": "Adamant",
+        "ability": "Gale Wings",
+        "held_item": "Sharp Beak",
+        "final_stats": {
+          "hp": 154,
+          "atk": 146,
+          "def": 92,
+          "spa": 84,
+          "spd": 89,
+          "spe": 178
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 32,
+          "def": 1,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Brave Bird",
+            "type": "Flying",
+            "category": "Physical"
+          },
+          {
+            "name": "Tailwind",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Basculegion (Male)",
+        "nature": "Adamant",
+        "ability": "Adaptability",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 196,
+          "atk": 180,
+          "def": 86,
+          "spa": 90,
+          "spd": 95,
+          "spe": 130
+        },
+        "ev_spread": {
+          "hp": 1,
+          "atk": 32,
+          "def": 1,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Wave Crash",
+            "type": "Water",
+            "category": "Physical"
+          },
+          {
+            "name": "Flip Turn",
+            "type": "Water",
+            "category": "Physical"
+          },
+          {
+            "name": "Last Respects",
+            "type": "Ghost",
+            "category": "Physical"
+          },
+          {
+            "name": "Psychic Fangs",
+            "type": "Psychic",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sneasler",
+        "nature": "Adamant",
+        "ability": "Unburden",
+        "held_item": "White Herb",
+        "final_stats": {
+          "hp": 157,
+          "atk": 200,
+          "def": 80,
+          "spa": 54,
+          "spd": 100,
+          "spe": 172
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Dire Claw",
+            "type": "Poison",
+            "category": "Physical"
+          },
+          {
+            "name": "Close Combat",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Maushold (Family of Four)",
+        "nature": "Jolly",
+        "ability": "Friend Guard",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 181,
+          "atk": 95,
+          "def": 92,
+          "spa": 76,
+          "spd": 95,
+          "spe": 179
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Follow Me",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Super Fang",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Helping Hand",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "nature": "Adamant",
+        "ability": "Rough Skin",
+        "held_item": "Haban Berry",
+        "final_stats": {
+          "hp": 185,
+          "atk": 200,
+          "def": 115,
+          "spa": 90,
+          "spd": 105,
+          "spe": 154
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Dragon Claw",
+            "type": "Dragon",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Stomping Tantrum",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/594400",
+    "name": "Best Trick Room Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Trick Room Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Trick Room team is, how to make the Best Trick Room team in this Regulation, what strategies to use with one, and how to counter Trick Room teams here!",
+    "members": [
+      {
+        "pokemon": "Farigiraf",
+        "nature": "Relaxed",
+        "ability": "Armor Tail",
+        "held_item": "Mental Herb",
+        "final_stats": {
+          "hp": 219,
+          "atk": 132,
+          "def": 99,
+          "spa": 130,
+          "spd": 110,
+          "spe": 72
+        },
+        "ev_spread": {
+          "hp": 24,
+          "atk": 22,
+          "def": 0,
+          "spa": 0,
+          "spd": 20,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Hyper Voice",
+            "type": "Normal",
+            "category": "Special"
+          },
+          {
+            "name": "Twin Beam",
+            "type": "Psychic",
+            "category": "Special"
+          },
+          {
+            "name": "Trick Room",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Helping Hand",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Pelipper",
+        "nature": "Quiet",
+        "ability": "Drizzle",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 167,
+          "atk": 70,
+          "def": 120,
+          "spa": 161,
+          "spd": 92,
+          "spe": 76
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Weather Ball",
+            "type": "Normal",
+            "category": "Special"
+          },
+          {
+            "name": "Hurricane",
+            "type": "Flying",
+            "category": "Special"
+          },
+          {
+            "name": "Wide Guard",
+            "type": "Rock",
+            "category": "Status"
+          },
+          {
+            "name": "Helping Hand",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Mega Blastoise",
+        "nature": "Quiet",
+        "ability": "Mega Launcher",
+        "held_item": "Blastoisinite",
+        "final_stats": {
+          "hp": 186,
+          "atk": 125,
+          "def": 140,
+          "spa": 205,
+          "spd": 135,
+          "spe": 88
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 32,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Water Spout",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Ice Beam",
+            "type": "Ice",
+            "category": "Special"
+          },
+          {
+            "name": "Aura Sphere",
+            "type": "Fighting",
+            "category": "Special"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Brave",
+        "ability": "Intimidate",
+        "held_item": "Chople Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 183,
+          "def": 112,
+          "spa": 100,
+          "spd": 110,
+          "spe": 72
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Throat Chop",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sinistcha",
+        "nature": "Sassy",
+        "ability": "Hospitality",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 178,
+          "atk": 80,
+          "def": 140,
+          "spa": 141,
+          "spd": 132,
+          "spe": 81
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 14,
+          "spa": 0,
+          "spd": 20,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Matcha Gotcha",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Shadow Ball",
+            "type": "Ghost",
+            "category": "Special"
+          },
+          {
+            "name": "Rage Powder",
+            "type": "Bug",
+            "category": "Status"
+          },
+          {
+            "name": "Trick Room",
+            "type": "Psychic",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Basculegion (Male)",
+        "nature": "Jolly",
+        "ability": "Adaptability",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 195,
+          "atk": 164,
+          "def": 87,
+          "spa": 90,
+          "spd": 95,
+          "spe": 143
+        },
+        "ev_spread": {
+          "hp": 0,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Wave Crash",
+            "type": "Water",
+            "category": "Physical"
+          },
+          {
+            "name": "Last Respects",
+            "type": "Ghost",
+            "category": "Physical"
+          },
+          {
+            "name": "Flip Turn",
+            "type": "Water",
+            "category": "Physical"
+          },
+          {
+            "name": "Aqua Jet",
+            "type": "Water",
+            "category": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/595940",
+    "name": "Best Balance Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Balance Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Balance team is, how to make the Best Balance team in this Regulation, what strategies to use with one, and how to counter Balance teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Floette",
+        "nature": "Modest",
+        "ability": "Fairy Aura",
+        "held_item": "Floettite",
+        "final_stats": {
+          "hp": 181,
+          "atk": 94,
+          "def": 108,
+          "spa": 227,
+          "spd": 168,
+          "spe": 122
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 2
+        },
+        "moves": [
+          {
+            "name": "Moonblast",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Dazzling Gleam",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Calm Mind",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Mega Delphox",
+        "nature": "Timid",
+        "ability": "Levitate",
+        "held_item": "Delphoxite",
+        "final_stats": {
+          "hp": 152,
+          "atk": 80,
+          "def": 92,
+          "spa": 211,
+          "spd": 145,
+          "spe": 204
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Heat Wave",
+            "type": "Fire",
+            "category": "Special"
+          },
+          {
+            "name": "Psychic",
+            "type": "Psychic",
+            "category": "Special"
+          },
+          {
+            "name": "Substitute",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "nature": "Jolly",
+        "ability": "Rough Skin",
+        "held_item": "White Herb",
+        "final_stats": {
+          "hp": 184,
+          "atk": 182,
+          "def": 115,
+          "spa": 90,
+          "spd": 105,
+          "spe": 169
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Dragon Claw",
+            "type": "Dragon",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Aerodactyl",
+        "nature": "Jolly",
+        "ability": "Unnerve",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 156,
+          "atk": 157,
+          "def": 85,
+          "spa": 72,
+          "spd": 95,
+          "spe": 200
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Rock Slide",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Dual Wingbeat",
+            "type": "Flying",
+            "category": "Physical"
+          },
+          {
+            "name": "Tailwind",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Maushold (Family of Four)",
+        "nature": "Jolly",
+        "ability": "Friend Guard",
+        "held_item": "Chople Berry",
+        "final_stats": {
+          "hp": 181,
+          "atk": 95,
+          "def": 91,
+          "spa": 76,
+          "spd": 95,
+          "spe": 179
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Super Fang",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Follow Me",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Taunt",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Careful",
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 135,
+          "def": 126,
+          "spa": 90,
+          "spd": 140,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 16,
+          "spa": 0,
+          "spd": 18,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Helping Hand",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/596198",
+    "name": "Best Perish Trap Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Perish Trap Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Perish Trap team is, how to make the Best Perish Trap team in this Regulation, what strategies to use with one, and how to counter Perish Trap teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Gengar",
+        "nature": "Timid",
+        "ability": "Shadow Tag",
+        "held_item": "Gengarite",
+        "final_stats": {
+          "hp": 167,
+          "atk": 85,
+          "def": 101,
+          "spa": 190,
+          "spd": 115,
+          "spe": 182
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Perish Song",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Disable",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Sludge Bomb",
+            "type": "Poison",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "nature": "Careful",
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 202,
+          "atk": 135,
+          "def": 126,
+          "spa": 90,
+          "spd": 140,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 16,
+          "spa": 0,
+          "spd": 18,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Flare Blitz",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Parting Shot",
+            "type": "Dark",
+            "category": "Status"
+          },
+          {
+            "name": "Fake Out",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Sinistcha",
+        "nature": "Calm",
+        "ability": "Hospitality",
+        "held_item": "Coba Berry",
+        "final_stats": {
+          "hp": 178,
+          "atk": 72,
+          "def": 143,
+          "spa": 141,
+          "spd": 128,
+          "spe": 90
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 17,
+          "spa": 0,
+          "spd": 17,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Matcha Gotcha",
+            "type": "Grass",
+            "category": "Special"
+          },
+          {
+            "name": "Life Dew",
+            "type": "Water",
+            "category": "Status"
+          },
+          {
+            "name": "Rage Powder",
+            "type": "Bug",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Kingambit",
+        "nature": "Adamant",
+        "ability": "Defiant",
+        "held_item": "Chople Berry",
+        "final_stats": {
+          "hp": 207,
+          "atk": 205,
+          "def": 142,
+          "spa": 72,
+          "spd": 105,
+          "spe": 70
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Kowtow Cleave",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Low Kick",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Sucker Punch",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Politoed",
+        "nature": "Calm",
+        "ability": "Drizzle",
+        "held_item": "Leftovers",
+        "final_stats": {
+          "hp": 192,
+          "atk": 85,
+          "def": 127,
+          "spa": 110,
+          "spd": 139,
+          "spe": 90
+        },
+        "ev_spread": {
+          "hp": 27,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 7,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Perish Song",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Encore",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Muddy Water",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Kommo-o",
+        "nature": "Modest",
+        "ability": "Soundproof",
+        "held_item": "Dragon Fang",
+        "final_stats": {
+          "hp": 152,
+          "atk": 117,
+          "def": 145,
+          "spa": 167,
+          "spd": 125,
+          "spe": 137
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Clangorous Soul",
+            "type": "Dragon",
+            "category": "Status"
+          },
+          {
+            "name": "Clanging Scales",
+            "type": "Dragon",
+            "category": "Special"
+          },
+          {
+            "name": "Aura Sphere",
+            "type": "Fighting",
+            "category": "Special"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/595456",
+    "name": "Best Singles Stall Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Singles Stall Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Stall Team is, how to make the Best Singles Stall Team in this Regulation, what strategies to use with one, and how to counter Singles Stall Team here!",
+    "members": [
+      {
+        "pokemon": "Dragonite",
+        "nature": "Careful",
+        "ability": "Multiscale",
+        "held_item": "Lum Berry",
+        "final_stats": {
+          "hp": 198,
+          "atk": 154,
+          "def": 147,
+          "spa": 108,
+          "spd": 134,
+          "spe": 100
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Extreme Speed",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Dance",
+            "type": "Dragon",
+            "category": "Status"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garganacl",
+        "nature": "Bold",
+        "ability": "Purifying Salt",
+        "held_item": "Leftovers",
+        "final_stats": {
+          "hp": 207,
+          "atk": 108,
+          "def": 167,
+          "spa": 65,
+          "spd": 142,
+          "spe": 55
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 32,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Salt Cure",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Recover",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Substitute",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Protect",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Clefable",
+        "nature": "Bold",
+        "ability": "Unaware",
+        "held_item": "Clefablite",
+        "final_stats": {
+          "hp": 202,
+          "atk": 81,
+          "def": 137,
+          "spa": 115,
+          "spd": 112,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Moonblast",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Stored Power",
+            "type": "Psychic",
+            "category": "Special"
+          },
+          {
+            "name": "Calm Mind",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Moonlight",
+            "type": "Fairy",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Empoleon",
+        "nature": "Bold",
+        "ability": "Competitive",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 191,
+          "atk": 95,
+          "def": 154,
+          "spa": 131,
+          "spd": 123,
+          "spe": 80
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Stealth Rock",
+            "type": "Rock",
+            "category": "Status"
+          },
+          {
+            "name": "Flash Cannon",
+            "type": "Steel",
+            "category": "Special"
+          },
+          {
+            "name": "Yawn",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Toxapex",
+        "nature": "Bold",
+        "ability": "Regenerator",
+        "held_item": "Mental Herb",
+        "final_stats": {
+          "hp": 157,
+          "atk": 74,
+          "def": 202,
+          "spa": 73,
+          "spd": 184,
+          "spe": 55
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 12,
+          "spa": 0,
+          "spd": 22,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Toxic",
+            "type": "Poison",
+            "category": "Status"
+          },
+          {
+            "name": "Haze",
+            "type": "Ice",
+            "category": "Status"
+          },
+          {
+            "name": "Recover",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Baneful Bunker",
+            "type": "Poison",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Corviknight",
+        "nature": "Careful",
+        "ability": "Mirror Armor",
+        "held_item": "Quick Claw",
+        "final_stats": {
+          "hp": 205,
+          "atk": 107,
+          "def": 127,
+          "spa": 65,
+          "spd": 150,
+          "spe": 87
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 32,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Iron Defense",
+            "type": "Steel",
+            "category": "Status"
+          },
+          {
+            "name": "Body Press",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          },
+          {
+            "name": "Defog",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/596263",
+    "name": "Best Singles Hyper Offense Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Singles Hyper Offense Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Hyper Offense team is, how to make the Best Singles Hyper Offense team in this Regulation, what strategies to use with one, and how to counter Singles Hyper Offense teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Gengar",
+        "nature": "Timid",
+        "ability": "Shadow Tag",
+        "held_item": "Gengarite",
+        "final_stats": {
+          "hp": 137,
+          "atk": 76,
+          "def": 100,
+          "spa": 222,
+          "spd": 115,
+          "spe": 200
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Shadow Ball",
+            "type": "Ghost",
+            "category": "Special"
+          },
+          {
+            "name": "Sludge Wave",
+            "type": "Poison",
+            "category": "Special"
+          },
+          {
+            "name": "Substitute",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Nasty Plot",
+            "type": "Dark",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Mega Greninja",
+        "nature": "Timid",
+        "ability": "Protean",
+        "held_item": "Greninjite",
+        "final_stats": {
+          "hp": 149,
+          "atk": 130,
+          "def": 97,
+          "spa": 185,
+          "spd": 101,
+          "spe": 213
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Surf",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Dark Pulse",
+            "type": "Dark",
+            "category": "Special"
+          },
+          {
+            "name": "Ice Beam",
+            "type": "Ice",
+            "category": "Special"
+          },
+          {
+            "name": "Sludge Wave",
+            "type": "Poison",
+            "category": "Special"
+          }
+        ]
+      },
+      {
+        "pokemon": "Meowscarada",
+        "nature": "Jolly",
+        "ability": "Protean",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 153,
+          "atk": 162,
+          "def": 90,
+          "spa": 90,
+          "spd": 90,
+          "spe": 192
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Flower Trick",
+            "type": "Grass",
+            "category": "Physical"
+          },
+          {
+            "name": "Knock Off",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Triple Axel",
+            "type": "Ice",
+            "category": "Physical"
+          },
+          {
+            "name": "U-turn",
+            "type": "Bug",
+            "category": "Physical"
+          }
+        ]
+      },
+      {
+        "pokemon": "Ceruledge",
+        "nature": "Adamant",
+        "ability": "Weak Armor",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 155,
+          "atk": 194,
+          "def": 100,
+          "spa": 72,
+          "spd": 120,
+          "spe": 134
+        },
+        "ev_spread": {
+          "hp": 5,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 29
+        },
+        "moves": [
+          {
+            "name": "Poltergeist",
+            "type": "Ghost",
+            "category": "Physical"
+          },
+          {
+            "name": "Bitter Blade",
+            "type": "Fire",
+            "category": "Physical"
+          },
+          {
+            "name": "Shadow Sneak",
+            "type": "Ghost",
+            "category": "Physical"
+          },
+          {
+            "name": "Swords Dance",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "nature": "Impish",
+        "ability": "Rough Skin",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 213,
+          "atk": 150,
+          "def": 155,
+          "spa": 90,
+          "spd": 106,
+          "spe": 131
+        },
+        "ev_spread": {
+          "hp": 30,
+          "atk": 0,
+          "def": 26,
+          "spa": 0,
+          "spd": 1,
+          "spe": 9
+        },
+        "moves": [
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Rock Tomb",
+            "type": "Rock",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Tail",
+            "type": "Dragon",
+            "category": "Physical"
+          },
+          {
+            "name": "Stealth Rock",
+            "type": "Rock",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Corviknight",
+        "nature": "Impish",
+        "ability": "Mirror Armor",
+        "held_item": "Leftovers",
+        "final_stats": {
+          "hp": 205,
+          "atk": 107,
+          "def": 172,
+          "spa": 65,
+          "spd": 107,
+          "spe": 87
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Heavy Slam",
+            "type": "Steel",
+            "category": "Physical"
+          },
+          {
+            "name": "Body Press",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Iron Defense",
+            "type": "Steel",
+            "category": "Status"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/596629",
+    "name": "Best Singles Balance Teams: Builds and How to Play Guide",
+    "strategy": "This is a complete guide on how to build the Best Singles Balance Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Singles Balance team is, how to make the Best Singles Balance team in this Regulation, what strategies to use with one, and how to counter Singles Balance teams here!",
+    "members": [
+      {
+        "pokemon": "Mega Skarmory",
+        "nature": "Impish",
+        "ability": "Stalwart",
+        "held_item": "Skarmorite",
+        "final_stats": {
+          "hp": 172,
+          "atk": 160,
+          "def": 145,
+          "spa": 54,
+          "spd": 152,
+          "spe": 130
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 32,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Iron Head",
+            "type": "Steel",
+            "category": "Physical"
+          },
+          {
+            "name": "Dual Wingbeat",
+            "type": "Flying",
+            "category": "Physical"
+          },
+          {
+            "name": "Swords Dance",
+            "type": "Normal",
+            "category": "Status"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Clefable",
+        "nature": "Bold",
+        "ability": "Magic Bounce",
+        "held_item": "Clefablite",
+        "final_stats": {
+          "hp": 202,
+          "atk": 90,
+          "def": 159,
+          "spa": 155,
+          "spd": 132,
+          "spe": 90
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Stored Power",
+            "type": "Psychic",
+            "category": "Special"
+          },
+          {
+            "name": "Moonblast",
+            "type": "Fairy",
+            "category": "Special"
+          },
+          {
+            "name": "Calm Mind",
+            "type": "Psychic",
+            "category": "Status"
+          },
+          {
+            "name": "Moonlight",
+            "type": "Fairy",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Dragonite",
+        "nature": "Adamant",
+        "ability": "Multiscale",
+        "held_item": "Lum Berry",
+        "final_stats": {
+          "hp": 198,
+          "atk": 204,
+          "def": 117,
+          "spa": 108,
+          "spd": 120,
+          "spe": 100
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 2,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Extreme Speed",
+            "type": "Normal",
+            "category": "Physical"
+          },
+          {
+            "name": "Earthquake",
+            "type": "Ground",
+            "category": "Physical"
+          },
+          {
+            "name": "Dragon Dance",
+            "type": "Dragon",
+            "category": "Status"
+          },
+          {
+            "name": "Roost",
+            "type": "Flying",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Scizor",
+        "nature": "Adamant",
+        "ability": "Technician",
+        "held_item": "Sitrus Berry",
+        "final_stats": {
+          "hp": 177,
+          "atk": 200,
+          "def": 120,
+          "spa": 67,
+          "spd": 102,
+          "spe": 85
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Bullet Punch",
+            "type": "Steel",
+            "category": "Physical"
+          },
+          {
+            "name": "Close Combat",
+            "type": "Fighting",
+            "category": "Physical"
+          },
+          {
+            "name": "Knock Off",
+            "type": "Dark",
+            "category": "Physical"
+          },
+          {
+            "name": "Swords Dance",
+            "type": "Normal",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Wash Rotom",
+        "nature": "Modest",
+        "ability": "Levitate",
+        "held_item": "Choice Scarf",
+        "final_stats": {
+          "hp": 157,
+          "atk": 76,
+          "def": 128,
+          "spa": 172,
+          "spd": 128,
+          "spe": 106
+        },
+        "ev_spread": {
+          "hp": 32,
+          "atk": 0,
+          "def": 1,
+          "spa": 32,
+          "spd": 1,
+          "spe": 0
+        },
+        "moves": [
+          {
+            "name": "Hydro Pump",
+            "type": "Water",
+            "category": "Special"
+          },
+          {
+            "name": "Volt Switch",
+            "type": "Electric",
+            "category": "Special"
+          },
+          {
+            "name": "Will-O-Wisp",
+            "type": "Fire",
+            "category": "Status"
+          },
+          {
+            "name": "Trick",
+            "type": "Psychic",
+            "category": "Status"
+          }
+        ]
+      },
+      {
+        "pokemon": "Glimmora",
+        "nature": "Timid",
+        "ability": "Toxic Debris",
+        "held_item": "Focus Sash",
+        "final_stats": {
+          "hp": 160,
+          "atk": 67,
+          "def": 110,
+          "spa": 182,
+          "spd": 101,
+          "spe": 151
+        },
+        "ev_spread": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          {
+            "name": "Stealth Rock",
+            "type": "Rock",
+            "category": "Status"
+          },
+          {
+            "name": "Power Gem",
+            "type": "Rock",
+            "category": "Special"
+          },
+          {
+            "name": "Earth Power",
+            "type": "Ground",
+            "category": "Special"
+          },
+          {
+            "name": "Mortal Spin",
+            "type": "Poison",
+            "category": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source_url": "https://game8.co/games/Pokemon-Champions/archives/588876",
+    "name": "Beginner's Guide to Pokemon Champions: Tips and Tricks",
+    "strategy": "Here is a beginner's guide to Pokemon Champions! Check out gameplay tips and tricks as well as guides that can help you as you play the game.",
+    "members": []
+  }
+]

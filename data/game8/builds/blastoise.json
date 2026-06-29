@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594487",
+  "name": "Blastoise",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 79,
+    "atk": 83,
+    "def": 100,
+    "spa": 85,
+    "spd": 105,
+    "spe": 78
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Blastoise",
+      "nature": "Modest",
+      "ability": "Mega Launcher",
+      "held_item": "Blastoisinite",
+      "final_stats": {
+        "hp": 155,
+        "atk": 110,
+        "def": 140,
+        "spa": 205,
+        "spd": 136,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Water Pulse",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Shell Smash",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Blastoise",
+      "nature": "Modest",
+      "ability": "Mega Launcher",
+      "held_item": "Blastoisinite",
+      "final_stats": {
+        "hp": 155,
+        "atk": 110,
+        "def": 140,
+        "spa": 205,
+        "spd": 136,
+        "spe": 130
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Water Spout",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Dark Pulse",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Shell Smash",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Venusaur",
+    "Mega Meganium",
+    "Wash Rotom"
+  ]
+}

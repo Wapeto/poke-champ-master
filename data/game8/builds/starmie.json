@@ -1,0 +1,155 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593819",
+  "name": "Starmie",
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 75,
+    "def": 85,
+    "spa": 100,
+    "spd": 85,
+    "spe": 115
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Starmie",
+      "nature": "Adamant",
+      "ability": "Huge Power",
+      "held_item": "Starminite",
+      "final_stats": {
+        "hp": 136,
+        "atk": 167,
+        "def": 125,
+        "spa": 135,
+        "spd": 126,
+        "spe": 172
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Zen Headbutt",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Starmie",
+      "nature": "Jolly",
+      "ability": "Huge Power",
+      "held_item": "Starminite",
+      "final_stats": {
+        "hp": 136,
+        "atk": 152,
+        "def": 125,
+        "spa": 135,
+        "spd": 125,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Zen Headbutt",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Starmie",
+      "nature": "Adamant",
+      "ability": "Huge Power",
+      "held_item": "Starminite",
+      "final_stats": {
+        "hp": 167,
+        "atk": 167,
+        "def": 125,
+        "spa": 135,
+        "spd": 125,
+        "spe": 142
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Zen Headbutt",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status"
+        },
+        {
+          "name": "Recover",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Politoed",
+    "Pelipper",
+    "Archaludon"
+  ]
+}

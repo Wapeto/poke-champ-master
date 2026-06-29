@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605800",
+  "name": "Annihilape",
+  "types": [
+    "Fighting",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 110,
+    "atk": 115,
+    "def": 80,
+    "spa": 50,
+    "spd": 90,
+    "spe": 90
+  },
+  "builds": [
+    {
+      "pokemon": "Annihilape",
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 217,
+        "atk": 156,
+        "def": 118,
+        "spa": 63,
+        "spd": 118,
+        "spe": 111
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 7,
+        "def": 18,
+        "spa": 0,
+        "spd": 8,
+        "spe": 1
+      },
+      "moves": [
+        {
+          "name": "Rage Fist",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Scovillain"
+  ]
+}

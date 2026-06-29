@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596310",
+  "name": "Tsareena",
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 72,
+    "atk": 120,
+    "def": 98,
+    "spa": 50,
+    "spd": 98,
+    "spe": 72
+  },
+  "builds": [
+    {
+      "pokemon": "Tsareena",
+      "nature": "Adamant",
+      "ability": "Queenly Majesty",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 72,
+        "atk": 120,
+        "def": 98,
+        "spa": 50,
+        "spd": 98,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Trop Kick",
+          "type": "Grass",
+          "category": "Physical"
+        },
+        {
+          "name": "Triple Axel",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Arcanine",
+    "Mega Manectric",
+    "Incineroar"
+  ]
+}

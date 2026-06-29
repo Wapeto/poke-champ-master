@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593969",
+  "name": "Dragonite",
+  "types": [
+    "Flying",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 91,
+    "atk": 134,
+    "def": 95,
+    "spa": 100,
+    "spd": 100,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Dragonite",
+      "nature": "Modest",
+      "ability": "Multiscale",
+      "held_item": "Dragoninite",
+      "final_stats": {
+        "hp": 198,
+        "atk": 129,
+        "def": 135,
+        "spa": 216,
+        "spd": 145,
+        "spe": 121
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Hurricane",
+          "type": "Flying",
+          "category": "Special"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Dragonite",
+      "nature": "Adamant",
+      "ability": "Multiscale",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 198,
+        "atk": 204,
+        "def": 115,
+        "spa": 108,
+        "spd": 120,
+        "spe": 101
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Scale Shot",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Extreme Speed",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Haze",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mamoswine",
+    "Mega Crabominable",
+    "Meowscarada"
+  ]
+}

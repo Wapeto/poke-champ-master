@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598874",
+  "name": "Aurorus",
+  "types": [
+    "Ice",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 123,
+    "atk": 77,
+    "def": 72,
+    "spa": 99,
+    "spd": 92,
+    "spe": 58
+  },
+  "builds": [
+    {
+      "pokemon": "Aurorus",
+      "nature": "Sassy",
+      "ability": "Snow Warning",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 198,
+        "atk": 97,
+        "def": 92,
+        "spa": 119,
+        "spd": 112,
+        "spe": 78
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 2,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Aurora Veil",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Light Screen",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Ninetales",
+    "Tyranitar",
+    "Pelipper"
+  ]
+}

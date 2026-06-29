@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593932",
+  "name": "Meganium",
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 82,
+    "def": 100,
+    "spa": 83,
+    "spd": 100,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Meganium",
+      "nature": "Modest",
+      "ability": "Mega Sol",
+      "held_item": "Meganiumite",
+      "final_stats": {
+        "hp": 181,
+        "atk": 100,
+        "def": 135,
+        "spa": 214,
+        "spd": 135,
+        "spe": 107
+      },
+      "ev_spread": {
+        "hp": 28,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 6
+      },
+      "moves": [
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Meganium",
+      "nature": "Modest",
+      "ability": "Mega Sol",
+      "held_item": "Meganiumite",
+      "final_stats": {
+        "hp": 181,
+        "atk": 100,
+        "def": 135,
+        "spa": 214,
+        "spd": 135,
+        "spe": 107
+      },
+      "ev_spread": {
+        "hp": 28,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 6
+      },
+      "moves": [
+        {
+          "name": "Giga Drain",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Leech Seed",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "name": "Synthesis",
+          "type": "Grass",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Floette",
+    "Florges",
+    "Hisuian Goodra"
+  ]
+}

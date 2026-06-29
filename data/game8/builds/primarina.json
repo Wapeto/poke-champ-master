@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594011",
+  "name": "Primarina",
+  "types": [
+    "Water",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 74,
+    "def": 74,
+    "spa": 126,
+    "spd": 116,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Primarina",
+      "nature": "Modest",
+      "ability": "Torrent",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 155,
+        "atk": 90,
+        "def": 94,
+        "spa": 146,
+        "spd": 136,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Sparkling Aria",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Sneasler",
+    "Palafin (Hero Form)"
+  ]
+}

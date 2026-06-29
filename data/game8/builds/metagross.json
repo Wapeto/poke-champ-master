@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605395",
+  "name": "Metagross",
+  "types": [
+    "Psychic",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 135,
+    "def": 130,
+    "spa": 95,
+    "spd": 90,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Metagross",
+      "nature": "Adamant",
+      "ability": "Tough Claws",
+      "held_item": "Metagrossite",
+      "final_stats": {
+        "hp": 165,
+        "atk": 205,
+        "def": 150,
+        "spa": 103,
+        "spd": 110,
+        "spe": 114
+      },
+      "ev_spread": {
+        "hp": 10,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 24
+      },
+      "moves": [
+        {
+          "name": "Psychic Fangs",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Bullet Punch",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Stomping Tantrum",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Sableye",
+    "Mega Scovillain"
+  ]
+}

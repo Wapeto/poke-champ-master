@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605398",
+  "name": "Sceptile",
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 85,
+    "def": 65,
+    "spa": 105,
+    "spd": 85,
+    "spe": 120
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Sceptile",
+      "nature": "Timid",
+      "ability": "Lightning Rod",
+      "held_item": "Sceptilite",
+      "final_stats": {
+        "hp": 147,
+        "atk": 117,
+        "def": 95,
+        "spa": 197,
+        "spd": 105,
+        "spe": 216
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Dragon Pulse",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Mawile",
+    "Mega Floette",
+    "Sylveon"
+  ]
+}

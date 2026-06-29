@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594926",
+  "name": "Victreebel",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 100,
+    "spd": 70,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Victreebel",
+      "nature": "Modest",
+      "ability": "Innards Out",
+      "held_item": "Victreebelite",
+      "final_stats": {
+        "hp": 187,
+        "atk": 130,
+        "def": 105,
+        "spa": 205,
+        "spd": 115,
+        "spe": 92
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Leaf Storm",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Strength Sap",
+          "type": "Grass",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Victreebel",
+      "nature": "Calm",
+      "ability": "Innards Out",
+      "held_item": "Victreebelite",
+      "final_stats": {
+        "hp": 187,
+        "atk": 130,
+        "def": 107,
+        "spa": 155,
+        "spd": 161,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Giga Drain",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Acid Spray",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Stockpile",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Strength Sap",
+          "type": "Grass",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Dragonite",
+    "Volcarona",
+    "Mega Greninja"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593811",
+  "name": "Gengar",
+  "types": [
+    "Poison",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 75,
+    "spe": 110
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Gengar",
+      "nature": "Timid",
+      "ability": "Shadow Tag",
+      "held_item": "Gengarite",
+      "final_stats": {
+        "hp": 167,
+        "atk": 85,
+        "def": 101,
+        "spa": 190,
+        "spd": 115,
+        "spe": 182
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Perish Song",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Disable",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Gengar",
+      "nature": "Timid",
+      "ability": "Shadow Tag",
+      "held_item": "Gengarite",
+      "final_stats": {
+        "hp": 136,
+        "atk": 85,
+        "def": 100,
+        "spa": 222,
+        "spd": 115,
+        "spe": 182
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Dragapult"
+  ]
+}

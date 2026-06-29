@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597137",
+  "name": "Banette",
+  "types": [
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 64,
+    "atk": 115,
+    "def": 65,
+    "spa": 83,
+    "spd": 63,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Banette",
+      "nature": "Adamant",
+      "ability": "Prankster",
+      "held_item": "Banettite",
+      "final_stats": {
+        "hp": 139,
+        "atk": 185,
+        "def": 95,
+        "spa": 113,
+        "spd": 103,
+        "spe": 95
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Destiny Bond",
+          "type": "Ghost",
+          "category": "Status"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Poltergeist",
+          "type": "Ghost",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Vivillon",
+    "Toxapex",
+    "Glimmora"
+  ]
+}

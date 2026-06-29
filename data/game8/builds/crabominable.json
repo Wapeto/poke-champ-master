@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594779",
+  "name": "Crabominable",
+  "types": [
+    "Ice",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 97,
+    "atk": 132,
+    "def": 77,
+    "spa": 62,
+    "spd": 67,
+    "spe": 43
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Crabominable",
+      "nature": "Brave",
+      "ability": "Iron Fist",
+      "held_item": "Crabominite",
+      "final_stats": {
+        "hp": 203,
+        "atk": 229,
+        "def": 144,
+        "spa": 82,
+        "spd": 128,
+        "spe": 47
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 1,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Ice Hammer",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Venusaur",
+    "Snorlax",
+    "Mega Dragonite"
+  ]
+}

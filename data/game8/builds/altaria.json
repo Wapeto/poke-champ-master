@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/599070",
+  "name": "Altaria",
+  "types": [
+    "Flying",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 70,
+    "def": 90,
+    "spa": 70,
+    "spd": 105,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Altaria",
+      "nature": "Impish",
+      "ability": "Pixilate",
+      "held_item": "Altarianite",
+      "final_stats": {
+        "hp": 182,
+        "atk": 130,
+        "def": 151,
+        "spa": 117,
+        "spd": 151,
+        "spe": 100
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 8,
+        "spa": 0,
+        "spd": 26,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Defog",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Roar",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Altaria",
+      "nature": "Adamant",
+      "ability": "Pixilate",
+      "held_item": "Altarianite",
+      "final_stats": {
+        "hp": 152,
+        "atk": 178,
+        "def": 130,
+        "spa": 117,
+        "spd": 125,
+        "spe": 132
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Whimsicott",
+    "Mega Delphox",
+    "Corviknight"
+  ]
+}

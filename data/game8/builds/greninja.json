@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593885",
+  "name": "Greninja",
+  "types": [
+    "Water",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 72,
+    "atk": 95,
+    "def": 67,
+    "spa": 103,
+    "spd": 71,
+    "spe": 122
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Greninja",
+      "nature": "Timid",
+      "ability": "Protean",
+      "held_item": "Greninjite",
+      "final_stats": {
+        "hp": 149,
+        "atk": 130,
+        "def": 97,
+        "spa": 185,
+        "spd": 101,
+        "spe": 213
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Water Shuriken",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Dark Pulse",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Grass Knot",
+          "type": "Grass",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Greninja",
+      "nature": "Hasty",
+      "ability": "Protean",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 149,
+        "atk": 130,
+        "def": 97,
+        "spa": 185,
+        "spd": 101,
+        "spe": 213
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Wash Rotom",
+    "Hydreigon",
+    "Greninja"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598634",
+  "name": "Emboar",
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 110,
+    "atk": 123,
+    "def": 65,
+    "spa": 100,
+    "spd": 65,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Emboar",
+      "nature": "Adamant",
+      "ability": "Mold Breaker",
+      "held_item": "Emboarite",
+      "final_stats": {
+        "hp": 191,
+        "atk": 220,
+        "def": 109,
+        "spa": 117,
+        "spd": 144,
+        "spe": 95
+      },
+      "ev_spread": {
+        "hp": 6,
+        "atk": 32,
+        "def": 14,
+        "spa": 0,
+        "spd": 14,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Starmie",
+    "Mega Greninja",
+    "Basculegion (Male)"
+  ]
+}

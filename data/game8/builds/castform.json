@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598528",
+  "name": "Castform",
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 70,
+    "def": 70,
+    "spa": 70,
+    "spd": 70,
+    "spe": 70
+  },
+  "builds": [
+    {
+      "pokemon": "Castform",
+      "nature": "Modest",
+      "ability": "Forecast",
+      "held_item": "Bright Powder",
+      "final_stats": {
+        "hp": 145,
+        "atk": 90,
+        "def": 90,
+        "spa": 90,
+        "spd": 90,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Thunder",
+          "type": "Electric",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Pelipper",
+    "Chesnaught",
+    "Toxapex"
+  ]
+}

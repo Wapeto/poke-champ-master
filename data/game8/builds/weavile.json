@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594142",
+  "name": "Weavile",
+  "types": [
+    "Ice",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 120,
+    "def": 65,
+    "spa": 45,
+    "spd": 85,
+    "spe": 125
+  },
+  "builds": [
+    {
+      "pokemon": "Weavile",
+      "nature": "Jolly",
+      "ability": "Pressure",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 146,
+        "atk": 140,
+        "def": 85,
+        "spa": 87,
+        "spd": 105,
+        "spe": 194
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Triple Axel",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Scizor",
+    "Skarmory",
+    "Toxapex"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593896",
+  "name": "Froslass",
+  "types": [
+    "Ice",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 80,
+    "def": 70,
+    "spa": 80,
+    "spd": 70,
+    "spe": 110
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Froslass",
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "held_item": "Froslassite",
+      "final_stats": {
+        "hp": 146,
+        "atk": 90,
+        "def": 90,
+        "spa": 192,
+        "spd": 120,
+        "spe": 189
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Froslass",
+      "nature": "Modest",
+      "ability": "Snow Warning",
+      "held_item": "Froslassite",
+      "final_stats": {
+        "hp": 177,
+        "atk": 90,
+        "def": 91,
+        "spa": 211,
+        "spd": 120,
+        "spe": 140
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Aurora Veil",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Pelipper",
+    "Gallade",
+    "Armarouge"
+  ]
+}

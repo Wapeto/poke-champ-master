@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605396",
+  "name": "Staraptor",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 120,
+    "def": 70,
+    "spa": 50,
+    "spd": 60,
+    "spe": 100
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Staraptor",
+      "nature": "Jolly",
+      "ability": "Contrary",
+      "held_item": "Staraptite",
+      "final_stats": {
+        "hp": 188,
+        "atk": 162,
+        "def": 122,
+        "spa": 72,
+        "spd": 112,
+        "spe": 178
+      },
+      "ev_spread": {
+        "hp": 28,
+        "atk": 2,
+        "def": 2,
+        "spa": 0,
+        "spd": 2,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Brave Bird",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Alolan Ninetales",
+    "Mega Froslass"
+  ]
+}

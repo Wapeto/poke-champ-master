@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Champions Advisor</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+  <h1>⚔️ Pokémon Champions Advisor</h1>
+  <nav>
+    <button class="tab-btn active" data-tab="tier-list">Tier List</button>
+    <button class="tab-btn" data-tab="team-builder">Team Builder</button>
+    <button class="tab-btn" data-tab="matchup">Matchup Advisor</button>
+    <button class="tab-btn" data-tab="meta-teams">Meta Teams</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ── TIER LIST ── -->
+<section id="tier-list" class="tab-content active">
+  <h2>Singles Tier List</h2>
+  <div id="tier-list-container">Loading…</div>
+</section>
+
+<!-- ── TEAM BUILDER ── -->
+<section id="team-builder" class="tab-content">
+  <h2>Team Builder</h2>
+  <p class="subtitle">Add the Pokémon you own, then generate the best team of 6.</p>
+
+  <div class="search-row">
+    <input id="tb-search" type="text" placeholder="Search Pokémon…" autocomplete="off">
+    <div id="tb-suggestions" class="suggestions"></div>
+  </div>
+
+  <div id="tb-pool" class="chip-list"></div>
+
+  <button id="tb-build-btn" class="primary-btn" disabled>Build Best Team</button>
+
+  <div id="tb-result" class="hidden">
+    <h3>Recommended Team</h3>
+    <div id="tb-team-cards" class="card-grid"></div>
+    <div id="tb-analysis" class="analysis-box"></div>
+  </div>
+</section>
+
+<!-- ── MATCHUP ADVISOR ── -->
+<section id="matchup" class="tab-content">
+  <h2>Matchup Advisor</h2>
+  <p class="subtitle">Enter your team and the opponent's team to find out which 3 to bring and who to lead.</p>
+
+  <div class="two-col">
+    <div class="col">
+      <h3>My Team</h3>
+      <div class="search-row">
+        <input id="my-search" type="text" placeholder="Add my Pokémon…" autocomplete="off">
+        <div id="my-suggestions" class="suggestions"></div>
+      </div>
+      <div id="my-pool" class="chip-list"></div>
+    </div>
+    <div class="col">
+      <h3>Opponent's Team</h3>
+      <div class="search-row">
+        <input id="opp-search" type="text" placeholder="Add opponent's Pokémon…" autocomplete="off">
+        <div id="opp-suggestions" class="suggestions"></div>
+      </div>
+      <div id="opp-pool" class="chip-list"></div>
+    </div>
+  </div>
+
+  <button id="matchup-btn" class="primary-btn">Analyse Matchup</button>
+
+  <div id="matchup-result" class="hidden">
+    <div class="matchup-grid">
+      <div class="matchup-bring">
+        <h3>Bring These 3</h3>
+        <div id="bring-cards" class="card-grid small"></div>
+      </div>
+      <div class="matchup-lead">
+        <h3>Lead With</h3>
+        <div id="lead-card"></div>
+        <p id="lead-reason" class="muted"></p>
+      </div>
+    </div>
+    <h3>Full Scores</h3>
+    <div id="score-table"></div>
+  </div>
+</section>
+
+<!-- ── META TEAMS ── -->
+<section id="meta-teams" class="tab-content">
+  <h2>Meta Team Compositions</h2>
+  <div id="meta-teams-container">Loading…</div>
+</section>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

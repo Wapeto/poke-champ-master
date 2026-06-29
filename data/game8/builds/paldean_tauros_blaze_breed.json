@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598655",
+  "name": "Paldean Tauros (Blaze Breed)",
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 110,
+    "def": 105,
+    "spa": 30,
+    "spd": 70,
+    "spe": 100
+  },
+  "builds": [
+    {
+      "pokemon": "Paldean Tauros (Blaze Breed)",
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 152,
+        "atk": 162,
+        "def": 125,
+        "spa": 45,
+        "spd": 90,
+        "spe": 167
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Chandelure",
+    "Golurk",
+    "Ceruledge"
+  ]
+}

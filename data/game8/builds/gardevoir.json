@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594287",
+  "name": "Gardevoir",
+  "types": [
+    "Psychic",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 68,
+    "atk": 65,
+    "def": 65,
+    "spa": 125,
+    "spd": 115,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Gardevoir",
+      "nature": "Modest",
+      "ability": "Pixilate",
+      "held_item": "Gardevoirite",
+      "final_stats": {
+        "hp": 175,
+        "atk": 94,
+        "def": 85,
+        "spa": 238,
+        "spd": 156,
+        "spe": 121
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 1,
+        "spe": 1
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Psyshock",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Mystical Fire",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Aegislash (Shield Forme)",
+    "Corviknight"
+  ]
+}

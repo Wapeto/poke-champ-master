@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596148",
+  "name": "Garganacl",
+  "types": [
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 100,
+    "def": 130,
+    "spa": 45,
+    "spd": 90,
+    "spe": 35
+  },
+  "builds": [
+    {
+      "pokemon": "Garganacl",
+      "nature": "Calm",
+      "ability": "Purifying Salt",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 175,
+        "atk": 120,
+        "def": 150,
+        "spa": 65,
+        "spd": 110,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Recover",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Salt Cure",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Venusaur",
+    "Mega Meganium",
+    "Serperior"
+  ]
+}

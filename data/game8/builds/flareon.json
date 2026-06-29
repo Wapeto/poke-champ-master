@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596323",
+  "name": "Flareon",
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 130,
+    "def": 60,
+    "spa": 95,
+    "spd": 110,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Flareon",
+      "nature": "Brave",
+      "ability": "Guts",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 171,
+        "atk": 200,
+        "def": 80,
+        "spa": 118,
+        "spd": 130,
+        "spe": 76
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 32,
+        "def": 0,
+        "spa": 3,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Overheat",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Quick Attack",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Superpower",
+          "type": "Fighting",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Flareon",
+      "nature": "Calm",
+      "ability": "Flash Fire",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 171,
+        "atk": 135,
+        "def": 80,
+        "spa": 118,
+        "spd": 178,
+        "spe": 85
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 0,
+        "spa": 3,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Fire Spin",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Baton Pass",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Feraligatr",
+    "Azumarill",
+    "Mega Greninja"
+  ]
+}

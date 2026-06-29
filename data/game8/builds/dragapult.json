@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594062",
+  "name": "Dragapult",
+  "types": [
+    "Ghost",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 88,
+    "atk": 120,
+    "def": 75,
+    "spa": 100,
+    "spd": 75,
+    "spe": 142
+  },
+  "builds": [
+    {
+      "pokemon": "Dragapult",
+      "nature": "Timid",
+      "ability": "Infiltrator",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 165,
+        "atk": 126,
+        "def": 95,
+        "spa": 152,
+        "spd": 95,
+        "spe": 213
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Hex",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Thunder Wave",
+          "type": "Electric",
+          "category": "Status"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Dragapult",
+      "nature": "Modest",
+      "ability": "Infiltrator",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 165,
+        "atk": 126,
+        "def": 95,
+        "spa": 167,
+        "spd": 95,
+        "spe": 194
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "category": "Special"
+        },
+        {
+          "name": "Fire Blast",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Greninja",
+    "Dragapult"
+  ]
+}

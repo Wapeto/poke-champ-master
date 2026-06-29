@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597359",
+  "name": "Araquanid",
+  "types": [
+    "Water",
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 68,
+    "atk": 70,
+    "def": 92,
+    "spa": 50,
+    "spd": 132,
+    "spe": 42
+  },
+  "builds": [
+    {
+      "pokemon": "Araquanid",
+      "nature": "Sassy",
+      "ability": "Water Bubble",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 143,
+        "atk": 90,
+        "def": 112,
+        "spa": 70,
+        "spd": 152,
+        "spe": 62
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Sticky Web",
+          "type": "Bug",
+          "category": "Status"
+        },
+        {
+          "name": "Reflect",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Ring",
+          "type": "Water",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Clefable",
+    "Hatterene"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598846",
+  "name": "Mudsdale",
+  "types": [
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 125,
+    "def": 100,
+    "spa": 55,
+    "spd": 85,
+    "spe": 35
+  },
+  "builds": [
+    {
+      "pokemon": "Mudsdale",
+      "nature": "Impish",
+      "ability": "Stamina",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 177,
+        "atk": 145,
+        "def": 167,
+        "spa": 67,
+        "spd": 137,
+        "spe": 55
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Roar",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Whimsicott",
+    "Corviknight",
+    "Maushold (Family of Four)"
+  ]
+}

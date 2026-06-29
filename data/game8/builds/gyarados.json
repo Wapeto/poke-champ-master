@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594357",
+  "name": "Gyarados",
+  "types": [
+    "Water",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 125,
+    "def": 79,
+    "spa": 60,
+    "spd": 100,
+    "spe": 81
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Gyarados",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Gyaradosite",
+      "final_stats": {
+        "hp": 171,
+        "atk": 207,
+        "def": 129,
+        "spa": 81,
+        "spd": 151,
+        "spe": 146
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Waterfall",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Ice Fang",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Kangaskhan",
+    "Azumarill",
+    "Sylveon"
+  ]
+}

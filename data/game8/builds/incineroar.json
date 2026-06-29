@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/592493",
+  "name": "Incineroar",
+  "types": [
+    "Fire",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 115,
+    "def": 90,
+    "spa": 80,
+    "spd": 90,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Incineroar",
+      "nature": "Careful",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 202,
+        "atk": 135,
+        "def": 126,
+        "spa": 90,
+        "spd": 140,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 16,
+        "spa": 0,
+        "spd": 18,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Parting Shot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Dragapult",
+    "Sneasler"
+  ]
+}

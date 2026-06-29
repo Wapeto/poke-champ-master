@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598967",
+  "name": "Audino",
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 103,
+    "atk": 60,
+    "def": 86,
+    "spa": 60,
+    "spd": 86,
+    "spe": 50
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Audino",
+      "nature": "Sassy",
+      "ability": "Healer",
+      "held_item": "Audinite",
+      "final_stats": {
+        "hp": 178,
+        "atk": 80,
+        "def": 106,
+        "spa": 80,
+        "spd": 106,
+        "spe": 70
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Ally Switch",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Life Dew",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Venusaur",
+    "Mega Victreebel",
+    "Toxapex"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594166",
+  "name": "Farigiraf",
+  "types": [
+    "Normal",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 120,
+    "atk": 90,
+    "def": 70,
+    "spa": 110,
+    "spd": 70,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Farigiraf",
+      "nature": "Modest",
+      "ability": "Armor Tail",
+      "held_item": "Colbur Berry",
+      "final_stats": {
+        "hp": 226,
+        "atk": 99,
+        "def": 96,
+        "spa": 154,
+        "spd": 108,
+        "spe": 81
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 6,
+        "spa": 10,
+        "spd": 2,
+        "spe": 1
+      },
+      "moves": [
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Farigiraf",
+      "nature": "Relaxed",
+      "ability": "Armor Tail",
+      "held_item": "Mental Herb",
+      "final_stats": {
+        "hp": 227,
+        "atk": 110,
+        "def": 134,
+        "spa": 130,
+        "spd": 92,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Helping Hand",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Psychic Terrain",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Venusaur",
+    "Incineroar"
+  ]
+}

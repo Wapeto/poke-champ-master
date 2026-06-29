@@ -1,0 +1,109 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596145",
+  "name": "Manectric",
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 75,
+    "def": 60,
+    "spa": 105,
+    "spd": 60,
+    "spe": 105
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Manectric",
+      "nature": "Timid",
+      "ability": "Intimidate",
+      "held_item": "Manectite",
+      "final_stats": {
+        "hp": 145,
+        "atk": 85,
+        "def": 101,
+        "spa": 187,
+        "spd": 101,
+        "spe": 205
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Overheat",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Manectric",
+      "nature": "Timid",
+      "ability": "Intimidate",
+      "held_item": "Manectite",
+      "final_stats": {
+        "hp": 145,
+        "atk": 85,
+        "def": 101,
+        "spa": 187,
+        "spd": 101,
+        "spe": 205
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 0,
+        "def": 1,
+        "spa": 32,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Snarl",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Hippowdon"
+  ]
+}

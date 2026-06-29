@@ -1,0 +1,154 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596318",
+  "name": "Snorlax",
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 160,
+    "atk": 110,
+    "def": 65,
+    "spa": 65,
+    "spd": 110,
+    "spe": 30
+  },
+  "builds": [
+    {
+      "pokemon": "Snorlax",
+      "nature": "Impish",
+      "ability": "Immunity",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 267,
+        "atk": 130,
+        "def": 128,
+        "spa": 76,
+        "spd": 132,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Crunch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Thunder Punch",
+          "type": "Electric",
+          "category": "Physical"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Snorlax",
+      "nature": "Impish",
+      "ability": "Thick Fat",
+      "held_item": "Chesto Berry",
+      "final_stats": {
+        "hp": 267,
+        "atk": 130,
+        "def": 128,
+        "spa": 76,
+        "spd": 130,
+        "spe": 52
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Fire Punch",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Curse",
+          "type": "Ghost",
+          "category": "Status"
+        },
+        {
+          "name": "Rest",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Snorlax",
+      "nature": "Impish",
+      "ability": "Thick Fat",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 267,
+        "atk": 130,
+        "def": 112,
+        "spa": 76,
+        "spd": 147,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 17,
+        "spa": 0,
+        "spd": 17,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Stockpile",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Fissure",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Emboar",
+    "Kommo-o",
+    "Sneasler"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595001",
+  "name": "Scovillain",
+  "types": [
+    "Fire",
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 108,
+    "def": 65,
+    "spa": 108,
+    "spd": 65,
+    "spe": 75
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Scovillain",
+      "nature": "Bold",
+      "ability": "Spicy Spray",
+      "held_item": "Scovillainite",
+      "final_stats": {
+        "hp": 172,
+        "atk": 142,
+        "def": 150,
+        "spa": 158,
+        "spd": 107,
+        "spe": 95
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Leech Seed",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "name": "Giga Drain",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Scovillain",
+      "nature": "Naughty",
+      "ability": "Spicy Spray",
+      "held_item": "Scovillainite",
+      "final_stats": {
+        "hp": 141,
+        "atk": 159,
+        "def": 105,
+        "spa": 209,
+        "spd": 94,
+        "spe": 127
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 1,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Leaf Storm",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Charizard Y",
+    "Mega Delphox",
+    "Skeledirge"
+  ]
+}

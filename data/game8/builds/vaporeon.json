@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596720",
+  "name": "Vaporeon",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 130,
+    "atk": 65,
+    "def": 60,
+    "spa": 110,
+    "spd": 95,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Vaporeon",
+      "nature": "Bold",
+      "ability": "Water Absorb",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 205,
+        "atk": 85,
+        "def": 80,
+        "spa": 130,
+        "spd": 115,
+        "spe": 85
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Aqua Ring",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "name": "Acid Armor",
+          "type": "Poison",
+          "category": "Status"
+        },
+        {
+          "name": "Baton Pass",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Scald",
+          "type": "Water",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Politoed",
+    "Araquanid"
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594206",
+  "name": "Aerodactyl",
+  "types": [
+    "Flying",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 60,
+    "spd": 75,
+    "spe": 130
+  },
+  "builds": [
+    {
+      "pokemon": "Aerodactyl",
+      "nature": "Jolly",
+      "ability": "Unnerve",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 156,
+        "atk": 157,
+        "def": 85,
+        "spa": 72,
+        "spd": 95,
+        "spe": 200
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Aerodactyl",
+      "nature": "Jolly",
+      "ability": "Unnerve",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 156,
+        "atk": 157,
+        "def": 85,
+        "spa": 72,
+        "spd": 95,
+        "spe": 200
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Aerodactyl",
+      "nature": "Jolly",
+      "ability": "Tough Claws",
+      "held_item": "Aerodactylite",
+      "final_stats": {
+        "hp": 171,
+        "atk": 157,
+        "def": 85,
+        "spa": 72,
+        "spd": 95,
+        "spe": 184
+      },
+      "ev_spread": {
+        "hp": 16,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 18
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Aerodactyl",
+      "nature": "Adamant",
+      "ability": "Tough Claws",
+      "held_item": "Aerodactylite",
+      "final_stats": {
+        "hp": 156,
+        "atk": 205,
+        "def": 105,
+        "spa": 81,
+        "spd": 115,
+        "spe": 202
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Stone Edge",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Aerodactyl",
+      "nature": "Jolly",
+      "ability": "Tough Claws",
+      "held_item": "Aerodactylite",
+      "final_stats": {
+        "hp": 187,
+        "atk": 155,
+        "def": 105,
+        "spa": 81,
+        "spd": 117,
+        "spe": 222
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 2,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Dual Wingbeat",
+          "type": "Flying",
+          "category": "Physical"
+        },
+        {
+          "name": "Tailwind",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": []
+}

@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605647",
+  "name": "Swampert",
+  "types": [
+    "Water",
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 110,
+    "def": 90,
+    "spa": 85,
+    "spd": 90,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Swampert",
+      "nature": "Adamant",
+      "ability": "Swift Swim",
+      "held_item": "Swampertite",
+      "final_stats": {
+        "hp": 177,
+        "atk": 222,
+        "def": 130,
+        "spa": 103,
+        "spd": 130,
+        "spe": 122
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "High Horsepower",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Sableye",
+    "Mega Scovillain"
+  ]
+}

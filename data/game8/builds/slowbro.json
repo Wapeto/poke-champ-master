@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598416",
+  "name": "Slowbro",
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 75,
+    "def": 110,
+    "spa": 100,
+    "spd": 80,
+    "spe": 30
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Slowbro",
+      "nature": "Relaxed",
+      "ability": "Shell Armor",
+      "held_item": "Slowbronite",
+      "final_stats": {
+        "hp": 170,
+        "atk": 95,
+        "def": 200,
+        "spa": 150,
+        "spd": 100,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Slack Off",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Amnesia",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Stored Power",
+          "type": "Psychic",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Venusaur",
+    "Mega Victreebel",
+    "Toxapex"
+  ]
+}

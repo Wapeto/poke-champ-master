@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598727",
+  "name": "Liepard",
+  "types": [
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 64,
+    "atk": 88,
+    "def": 50,
+    "spa": 88,
+    "spd": 50,
+    "spe": 106
+  },
+  "builds": [
+    {
+      "pokemon": "Liepard",
+      "nature": "Jolly",
+      "ability": "Prankster",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 139,
+        "atk": 108,
+        "def": 70,
+        "spa": 108,
+        "spd": 70,
+        "spe": 126
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Thunder Wave",
+          "type": "Electric",
+          "category": "Status"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Sableye",
+    "Spiritomb",
+    "Incineroar"
+  ]
+}

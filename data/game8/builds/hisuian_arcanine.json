@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597656",
+  "name": "Hisuian Arcanine",
+  "types": [
+    "Fire",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 115,
+    "def": 80,
+    "spa": 95,
+    "spd": 80,
+    "spe": 90
+  },
+  "builds": [
+    {
+      "pokemon": "Hisuian Arcanine",
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 172,
+        "atk": 167,
+        "def": 100,
+        "spa": 103,
+        "spd": 100,
+        "spe": 156
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Extreme Speed",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Paldean Tauros (Aqua Breed)",
+    "Gyarados",
+    "Incineroar"
+  ]
+}

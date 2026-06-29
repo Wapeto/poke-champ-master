@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/606531",
+  "name": "Barbaracle",
+  "types": [
+    "Water",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 72,
+    "atk": 105,
+    "def": 115,
+    "spa": 54,
+    "spd": 86,
+    "spe": 68
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Barbaracle",
+      "nature": "Jolly",
+      "ability": "Tough Claws",
+      "held_item": "Barbaracite",
+      "final_stats": {
+        "hp": 149,
+        "atk": 192,
+        "def": 150,
+        "spa": 75,
+        "spd": 126,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Raichu Y",
+    "Mega Sceptile",
+    "Mega Floette"
+  ]
+}

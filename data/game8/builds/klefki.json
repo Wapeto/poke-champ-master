@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598389",
+  "name": "Klefki",
+  "types": [
+    "Steel",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 57,
+    "atk": 80,
+    "def": 91,
+    "spa": 80,
+    "spd": 87,
+    "spe": 75
+  },
+  "builds": [
+    {
+      "pokemon": "Klefki",
+      "nature": "Bold",
+      "ability": "Prankster",
+      "held_item": "Mental Herb",
+      "final_stats": {
+        "hp": 164,
+        "atk": 90,
+        "def": 132,
+        "spa": 100,
+        "spd": 132,
+        "spe": 95
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 9,
+        "spa": 0,
+        "spd": 25,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Reflect",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Light Screen",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Thunder Wave",
+          "type": "Electric",
+          "category": "Status"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Wash Rotom",
+    "Whimsicott",
+    "Maushold (Family of Four)"
+  ]
+}

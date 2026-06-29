@@ -1,0 +1,1564 @@
+[
+  {
+    "name": "Garchomp",
+    "tier": "S",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "base_stats": {
+      "hp": 108,
+      "atk": 130,
+      "def": 95,
+      "spa": 80,
+      "spd": 85,
+      "spe": 102
+    },
+    "abilities": [
+      "Sand Veil",
+      "Rough Skin"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592265"
+  },
+  {
+    "name": "Hippowdon",
+    "tier": "S",
+    "types": [
+      "Ground"
+    ],
+    "base_stats": {
+      "hp": 108,
+      "atk": 112,
+      "def": 118,
+      "spa": 68,
+      "spd": 72,
+      "spe": 47
+    },
+    "abilities": [
+      "Sand Stream",
+      "Sand Force"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592267"
+  },
+  {
+    "name": "Archaludon",
+    "tier": "S",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "base_stats": {
+      "hp": 90,
+      "atk": 105,
+      "def": 130,
+      "spa": 125,
+      "spd": 65,
+      "spe": 85
+    },
+    "abilities": [
+      "Stamina",
+      "Sturdy",
+      "Stalwart"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592377"
+  },
+  {
+    "name": "Hisuian Samurott",
+    "tier": "A+",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "base_stats": {
+      "hp": 90,
+      "atk": 108,
+      "def": 80,
+      "spa": 100,
+      "spd": 65,
+      "spe": 85
+    },
+    "abilities": [
+      "Torrent",
+      "Sharpness"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592281"
+  },
+  {
+    "name": "Meowscarada",
+    "tier": "A+",
+    "types": [
+      "Grass",
+      "Dark"
+    ],
+    "base_stats": {
+      "hp": 76,
+      "atk": 110,
+      "def": 70,
+      "spa": 81,
+      "spd": 70,
+      "spe": 123
+    },
+    "abilities": [
+      "Overgrow",
+      "Protean"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592361"
+  },
+  {
+    "name": "Corviknight",
+    "tier": "A+",
+    "types": [
+      "Flying",
+      "Steel"
+    ],
+    "base_stats": {
+      "hp": 98,
+      "atk": 87,
+      "def": 105,
+      "spa": 53,
+      "spd": 85,
+      "spe": 67
+    },
+    "abilities": [
+      "Pressure",
+      "Unnerve",
+      "Mirror Armor"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592348"
+  },
+  {
+    "name": "Alolan Ninetales",
+    "tier": "A+",
+    "types": [
+      "Ice",
+      "Fairy"
+    ],
+    "base_stats": {
+      "hp": 73,
+      "atk": 67,
+      "def": 75,
+      "spa": 81,
+      "spd": 100,
+      "spe": 109
+    },
+    "abilities": [
+      "Snow Cloak",
+      "Snow Warning"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592200"
+  },
+  {
+    "name": "Basculegion (Male)",
+    "tier": "A+",
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "base_stats": {
+      "hp": 120,
+      "atk": 112,
+      "def": 65,
+      "spa": 80,
+      "spd": 75,
+      "spe": 78
+    },
+    "abilities": [
+      "Swift Swim",
+      "Adaptability",
+      "Mold Breaker"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592457"
+  },
+  {
+    "name": "Mimikyu",
+    "tier": "A+",
+    "types": [
+      "Ghost",
+      "Fairy"
+    ],
+    "base_stats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
+    "abilities": [
+      "Disguise"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592345"
+  },
+  {
+    "name": "Aegislash (Shield Forme)",
+    "tier": "A+",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 140,
+      "spa": 50,
+      "spd": 140,
+      "spe": 60
+    },
+    "abilities": [
+      "Stance Change"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592460"
+  },
+  {
+    "name": "Grimmsnarl",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605610"
+  },
+  {
+    "name": "Glimmora",
+    "tier": "A+",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "base_stats": {
+      "hp": 83,
+      "atk": 55,
+      "def": 90,
+      "spa": 130,
+      "spd": 81,
+      "spe": 86
+    },
+    "abilities": [
+      "Toxic Debris",
+      "Corrosion"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592373"
+  },
+  {
+    "name": "Gholdengo",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605605"
+  },
+  {
+    "name": "Swampert",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605622"
+  },
+  {
+    "name": "Gyarados",
+    "tier": "A",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "base_stats": {
+      "hp": 95,
+      "atk": 125,
+      "def": 79,
+      "spa": 60,
+      "spd": 100,
+      "spe": 81
+    },
+    "abilities": [
+      "Intimidate",
+      "Moxie"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592213"
+  },
+  {
+    "name": "Pelipper",
+    "tier": "A",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 100,
+      "spa": 95,
+      "spd": 70,
+      "spe": 65
+    },
+    "abilities": [
+      "Keen Eye",
+      "Drizzle",
+      "Rain Dish"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592240"
+  },
+  {
+    "name": "Ceruledge",
+    "tier": "A",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "base_stats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 80,
+      "spa": 60,
+      "spd": 100,
+      "spe": 85
+    },
+    "abilities": [
+      "Flash Fire",
+      "Weak Armor"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592367"
+  },
+  {
+    "name": "Whimsicott",
+    "tier": "A",
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "atk": 67,
+      "def": 85,
+      "spa": 77,
+      "spd": 75,
+      "spe": 116
+    },
+    "abilities": [
+      "Prankster",
+      "Infiltrator",
+      "Chlorophyll"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592290"
+  },
+  {
+    "name": "Scizor",
+    "tier": "A",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "base_stats": {
+      "hp": 70,
+      "atk": 130,
+      "def": 100,
+      "spa": 55,
+      "spd": 80,
+      "spe": 65
+    },
+    "abilities": [
+      "Swarm",
+      "Technician",
+      "Light Metal"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592235"
+  },
+  {
+    "name": "Umbreon",
+    "tier": "A",
+    "types": [
+      "Dark"
+    ],
+    "base_stats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 110,
+      "spa": 60,
+      "spd": 130,
+      "spe": 65
+    },
+    "abilities": [
+      "Synchronize",
+      "Inner Focus"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592230"
+  },
+  {
+    "name": "Wash Rotom",
+    "tier": "A",
+    "types": [
+      "Electric",
+      "Water"
+    ],
+    "base_stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
+    "abilities": [
+      "Levitate"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592386"
+  },
+  {
+    "name": "Skeledirge",
+    "tier": "A",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "base_stats": {
+      "hp": 104,
+      "atk": 75,
+      "def": 100,
+      "spa": 110,
+      "spd": 75,
+      "spe": 66
+    },
+    "abilities": [
+      "Blaze",
+      "Unaware"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592362"
+  },
+  {
+    "name": "Hydreigon",
+    "tier": "A",
+    "types": [
+      "Dark",
+      "Dragon"
+    ],
+    "base_stats": {
+      "hp": 92,
+      "atk": 105,
+      "def": 90,
+      "spa": 125,
+      "spd": 90,
+      "spe": 98
+    },
+    "abilities": [
+      "Levitate"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592304"
+  },
+  {
+    "name": "Primarina",
+    "tier": "A",
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "base_stats": {
+      "hp": 80,
+      "atk": 74,
+      "def": 74,
+      "spa": 126,
+      "spd": 116,
+      "spe": 60
+    },
+    "abilities": [
+      "Torrent",
+      "Liquid Voice"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592335"
+  },
+  {
+    "name": "Kingambit",
+    "tier": "A",
+    "types": [
+      "Dark",
+      "Steel"
+    ],
+    "base_stats": {
+      "hp": 100,
+      "atk": 135,
+      "def": 120,
+      "spa": 60,
+      "spd": 85,
+      "spe": 50
+    },
+    "abilities": [
+      "Defiant",
+      "Supreme Overlord",
+      "Pressure"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592375"
+  },
+  {
+    "name": "Dragapult",
+    "tier": "A",
+    "types": [
+      "Dragon",
+      "Ghost"
+    ],
+    "base_stats": {
+      "hp": 88,
+      "atk": 120,
+      "def": 75,
+      "spa": 100,
+      "spd": 75,
+      "spe": 142
+    },
+    "abilities": [
+      "Clear Body",
+      "Infiltrator",
+      "Cursed Body"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592357"
+  },
+  {
+    "name": "Volcarona",
+    "tier": "A",
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "base_stats": {
+      "hp": 85,
+      "atk": 60,
+      "def": 65,
+      "spa": 135,
+      "spd": 105,
+      "spe": 100
+    },
+    "abilities": [
+      "Flame Body",
+      "Swarm"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592305"
+  },
+  {
+    "name": "Greninja",
+    "tier": "A",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "base_stats": {
+      "hp": 72,
+      "atk": 95,
+      "def": 67,
+      "spa": 103,
+      "spd": 71,
+      "spe": 122
+    },
+    "abilities": [
+      "Torrent",
+      "Protean"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592308"
+  },
+  {
+    "name": "Mamoswine",
+    "tier": "A",
+    "types": [
+      "Ice",
+      "Ground"
+    ],
+    "base_stats": {
+      "hp": 110,
+      "atk": 130,
+      "def": 80,
+      "spa": 70,
+      "spd": 60,
+      "spe": 80
+    },
+    "abilities": [
+      "Oblivious",
+      "Snow Cloak",
+      "Thick Fat"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592275"
+  },
+  {
+    "name": "Vanilluxe",
+    "tier": "A",
+    "types": [
+      "Ice"
+    ],
+    "base_stats": {
+      "hp": 71,
+      "atk": 95,
+      "def": 85,
+      "spa": 110,
+      "spd": 95,
+      "spe": 79
+    },
+    "abilities": [
+      "Ice Body",
+      "Snow Warning",
+      "Weak Armor"
+    ],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592297"
+  },
+  {
+    "name": "Annihilape",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605606"
+  },
+  {
+    "name": "Blaziken",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605623"
+  },
+  {
+    "name": "Empoleon",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592258"
+  },
+  {
+    "name": "Milotic",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592250"
+  },
+  {
+    "name": "Azumarill",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592227"
+  },
+  {
+    "name": "Gallade",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592276"
+  },
+  {
+    "name": "Vivillon",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592311"
+  },
+  {
+    "name": "Vaporeon",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592215"
+  },
+  {
+    "name": "Gengar",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592208"
+  },
+  {
+    "name": "Espathra",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592370"
+  },
+  {
+    "name": "Sylveon",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592322"
+  },
+  {
+    "name": "Sneasler",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592360"
+  },
+  {
+    "name": "Heat Rotom",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592385"
+  },
+  {
+    "name": "Excadrill",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592287"
+  },
+  {
+    "name": "Toxapex",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592338"
+  },
+  {
+    "name": "Bellibolt",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592368"
+  },
+  {
+    "name": "Araquanid",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592340"
+  },
+  {
+    "name": "Abomasnow",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592269"
+  },
+  {
+    "name": "Sinistcha",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592376"
+  },
+  {
+    "name": "Mow Rotom",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592389"
+  },
+  {
+    "name": "Ditto",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592214"
+  },
+  {
+    "name": "Incineroar",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592334"
+  },
+  {
+    "name": "Serperior",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592278"
+  },
+  {
+    "name": "Snorlax",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592219"
+  },
+  {
+    "name": "Tyranitar",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592239"
+  },
+  {
+    "name": "Skarmory",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592237"
+  },
+  {
+    "name": "Dragonite",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592220"
+  },
+  {
+    "name": "Kleavor",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592359"
+  },
+  {
+    "name": "Hatterene",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592353"
+  },
+  {
+    "name": "Hisuian Zoroark",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592295"
+  },
+  {
+    "name": "Conkeldurr",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592289"
+  },
+  {
+    "name": "Armarouge",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592366"
+  },
+  {
+    "name": "Overqwil",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605608"
+  },
+  {
+    "name": "Vileplume",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605615"
+  },
+  {
+    "name": "Clefable",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592198"
+  },
+  {
+    "name": "Scolipede",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605617"
+  },
+  {
+    "name": "Eternal Flower Floette",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592312"
+  },
+  {
+    "name": "Garganacl",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592365"
+  },
+  {
+    "name": "Espeon",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592229"
+  },
+  {
+    "name": "Rhyperior",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592271"
+  },
+  {
+    "name": "Hisuian Goodra",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592326"
+  },
+  {
+    "name": "Hisuian Arcanine",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592202"
+  },
+  {
+    "name": "Mudsdale",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592339"
+  },
+  {
+    "name": "Metagross",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605620"
+  },
+  {
+    "name": "Scovillain",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592369"
+  },
+  {
+    "name": "Basculegion (Female)",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592478"
+  },
+  {
+    "name": "Tsareena",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592342"
+  },
+  {
+    "name": "Mega Metagross",
+    "tier": "S",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605632"
+  },
+  {
+    "name": "Mega Mawile",
+    "tier": "S",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605631"
+  },
+  {
+    "name": "Mega Gengar",
+    "tier": "S",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592436"
+  },
+  {
+    "name": "Mega Blaziken",
+    "tier": "S",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605629"
+  },
+  {
+    "name": "Mega Raichu Y",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605627"
+  },
+  {
+    "name": "Mega Floette",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592419"
+  },
+  {
+    "name": "Mega Lopunny",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592405"
+  },
+  {
+    "name": "Mega Starmie",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592438"
+  },
+  {
+    "name": "Mega Delphox",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592417"
+  },
+  {
+    "name": "Mega Charizard Y",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592428"
+  },
+  {
+    "name": "Mega Dragonite",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592442"
+  },
+  {
+    "name": "Mega Gyarados",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592440"
+  },
+  {
+    "name": "Mega Swampert",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605630"
+  },
+  {
+    "name": "Mega Staraptor",
+    "tier": "A+",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605633"
+  },
+  {
+    "name": "Mega Glimmora",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592425"
+  },
+  {
+    "name": "Mega Scizor",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592447"
+  },
+  {
+    "name": "Mega Lucario",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592407"
+  },
+  {
+    "name": "Mega Meganium",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592443"
+  },
+  {
+    "name": "Mega Venusaur",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592441"
+  },
+  {
+    "name": "Mega Blastoise",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592429"
+  },
+  {
+    "name": "Mega Charizard X",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592427"
+  },
+  {
+    "name": "Mega Dragalge",
+    "tier": "A",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605640"
+  },
+  {
+    "name": "Mega Clefable",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592432"
+  },
+  {
+    "name": "Mega Skarmory",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592449"
+  },
+  {
+    "name": "Mega Heracross",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592448"
+  },
+  {
+    "name": "Mega Greninja",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592418"
+  },
+  {
+    "name": "Mega Froslass",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592410"
+  },
+  {
+    "name": "Mega Kangaskhan",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592437"
+  },
+  {
+    "name": "Mega Barbaracle",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605639"
+  },
+  {
+    "name": "Mega Scrafty",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605635"
+  },
+  {
+    "name": "Mega Pyroar",
+    "tier": "B",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605637"
+  },
+  {
+    "name": "Mega Raichu X",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605626"
+  },
+  {
+    "name": "Mega Victreebel",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592434"
+  },
+  {
+    "name": "Mega Excadrill",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592396"
+  },
+  {
+    "name": "Mega Pidgeot",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592431"
+  },
+  {
+    "name": "Mega Pinsir",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592439"
+  },
+  {
+    "name": "Mega Chimecho",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592402"
+  },
+  {
+    "name": "Mega Sableye",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592453"
+  },
+  {
+    "name": "Mega Banette",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592401"
+  },
+  {
+    "name": "Mega Scovillain",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592424"
+  },
+  {
+    "name": "Mega Alakazam",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592433"
+  },
+  {
+    "name": "Mega Medicham",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592455"
+  },
+  {
+    "name": "Mega Slowbro",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592435"
+  },
+  {
+    "name": "Mega Tyranitar",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592451"
+  },
+  {
+    "name": "Mega Feraligatr",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592444"
+  },
+  {
+    "name": "Mega Chesnaught",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592416"
+  },
+  {
+    "name": "Mega Abomasnow",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592408"
+  },
+  {
+    "name": "Mega Garchomp",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592406"
+  },
+  {
+    "name": "Mega Gardevoir",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592452"
+  },
+  {
+    "name": "Mega Eelektross",
+    "tier": "C",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605636"
+  },
+  {
+    "name": "Mega Sharpedo",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592398"
+  },
+  {
+    "name": "Mega Hawlucha",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592421"
+  },
+  {
+    "name": "Mega Chandelure",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592414"
+  },
+  {
+    "name": "Mega Crabominable",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592422"
+  },
+  {
+    "name": "Mega Drampa",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592423"
+  },
+  {
+    "name": "Mega Aerodactyl",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592426"
+  },
+  {
+    "name": "Mega Golurk",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592415"
+  },
+  {
+    "name": "Mega Meowstic (Male)",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592420"
+  },
+  {
+    "name": "Mega Camerupt",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592399"
+  },
+  {
+    "name": "Mega Ampharos",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592445"
+  },
+  {
+    "name": "Mega Steelix",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592446"
+  },
+  {
+    "name": "Mega Houndoom",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592450"
+  },
+  {
+    "name": "Mega Altaria",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592400"
+  },
+  {
+    "name": "Mega Aggron",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592454"
+  },
+  {
+    "name": "Mega Manectric",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592412"
+  },
+  {
+    "name": "Mega Absol",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592403"
+  },
+  {
+    "name": "Mega Audino",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592413"
+  },
+  {
+    "name": "Mega Gallade",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592409"
+  },
+  {
+    "name": "Mega Beedrill",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592430"
+  },
+  {
+    "name": "Mega Emboar",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/592411"
+  },
+  {
+    "name": "Mega Sceptile",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605628"
+  },
+  {
+    "name": "Mega Falinks",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605641"
+  },
+  {
+    "name": "Mega Malamar",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605638"
+  },
+  {
+    "name": "Mega Scolipede",
+    "tier": "D",
+    "types": [],
+    "base_stats": {},
+    "abilities": [],
+    "build_url": "https://game8.co/games/Pokemon-Champions/archives/605634"
+  }
+]

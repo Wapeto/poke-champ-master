@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594725",
+  "name": "Feraligatr",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 105,
+    "def": 100,
+    "spa": 79,
+    "spd": 83,
+    "spe": 78
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Feraligatr",
+      "nature": "Adamant",
+      "ability": "Dragonize",
+      "held_item": "Feraligite",
+      "final_stats": {
+        "hp": 191,
+        "atk": 233,
+        "def": 146,
+        "spa": 146,
+        "spd": 98,
+        "spe": 99
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 1
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Feraligatr",
+      "nature": "Jolly",
+      "ability": "Dragonize",
+      "held_item": "Feraligite",
+      "final_stats": {
+        "hp": 162,
+        "atk": 157,
+        "def": 120,
+        "spa": 89,
+        "spd": 103,
+        "spe": 143
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Meganium",
+    "Primarina",
+    "Corviknight",
+    "Archaludon"
+  ]
+}

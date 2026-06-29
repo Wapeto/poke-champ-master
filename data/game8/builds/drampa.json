@@ -1,0 +1,154 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596172",
+  "name": "Drampa",
+  "types": [
+    "Normal",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 60,
+    "def": 85,
+    "spa": 135,
+    "spd": 91,
+    "spe": 36
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Drampa",
+      "nature": "Quiet",
+      "ability": "Berserk",
+      "held_item": "Drampanite",
+      "final_stats": {
+        "hp": 185,
+        "atk": 105,
+        "def": 138,
+        "spa": 225,
+        "spd": 137,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 8,
+        "spa": 25,
+        "spd": 1,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Drampa",
+      "nature": "Quiet",
+      "ability": "Berserk",
+      "held_item": "Drampanite",
+      "final_stats": {
+        "hp": 185,
+        "atk": 105,
+        "def": 132,
+        "spa": 233,
+        "spd": 136,
+        "spe": 50
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Earth Power",
+          "type": "Ground",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Drampa",
+      "nature": "Modest",
+      "ability": "Berserk",
+      "held_item": "Drampanite",
+      "final_stats": {
+        "hp": 185,
+        "atk": 94,
+        "def": 132,
+        "spa": 233,
+        "spd": 136,
+        "spe": 56
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        },
+        {
+          "name": "Dragon Pulse",
+          "type": "Dragon",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Abomasnow",
+    "Hatterene"
+  ]
+}

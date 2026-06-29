@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598826",
+  "name": "Paldean Tauros (Aqua Breed)",
+  "types": [
+    "Water",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 110,
+    "def": 105,
+    "spa": 30,
+    "spd": 70,
+    "spe": 100
+  },
+  "builds": [
+    {
+      "pokemon": "Paldean Tauros (Aqua Breed)",
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "held_item": "White Herb",
+      "final_stats": {
+        "hp": 152,
+        "atk": 162,
+        "def": 125,
+        "spa": 45,
+        "spd": 90,
+        "spe": 167
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Venusaur",
+    "Talonflame",
+    "Mega Floette"
+  ]
+}

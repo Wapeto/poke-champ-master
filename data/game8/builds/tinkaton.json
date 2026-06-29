@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595998",
+  "name": "Tinkaton",
+  "types": [
+    "Steel",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 75,
+    "def": 77,
+    "spa": 70,
+    "spd": 105,
+    "spe": 94
+  },
+  "builds": [
+    {
+      "pokemon": "Tinkaton",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 161,
+        "atk": 127,
+        "def": 97,
+        "spa": 81,
+        "spd": 125,
+        "spe": 160
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Gigaton Hammer",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Tinkaton",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Shuca Berry",
+      "final_stats": {
+        "hp": 161,
+        "atk": 127,
+        "def": 97,
+        "spa": 81,
+        "spd": 125,
+        "spe": 160
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Gigaton Hammer",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Charizard X",
+    "Mega Emboar"
+  ]
+}

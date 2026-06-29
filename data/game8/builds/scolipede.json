@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/606097",
+  "name": "Scolipede",
+  "types": [
+    "Poison",
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 100,
+    "def": 89,
+    "spa": 55,
+    "spd": 69,
+    "spe": 112
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Scolipede",
+      "nature": "Jolly",
+      "ability": "Shell Armor",
+      "held_item": "Scolipite",
+      "final_stats": {
+        "hp": 137,
+        "atk": 192,
+        "def": 169,
+        "spa": 85,
+        "spd": 119,
+        "spe": 125
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Poison Jab",
+          "type": "Poison",
+          "category": "Physical"
+        },
+        {
+          "name": "Leech Life",
+          "type": "Bug",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Charizard Y",
+    "Mega Chandelure",
+    "Mega Delphox"
+  ]
+}

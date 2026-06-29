@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594132",
+  "name": "Palafin",
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 70,
+    "def": 72,
+    "spa": 53,
+    "spd": 62,
+    "spe": 100
+  },
+  "builds": [
+    {
+      "pokemon": "Palafin (Hero Form)",
+      "nature": "Jolly",
+      "ability": "Zero To Hero",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 176,
+        "atk": 212,
+        "def": 117,
+        "spa": 113,
+        "spd": 107,
+        "spe": 167
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Wave Crash",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Ice Punch",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Palafin (Hero Form)",
+      "nature": "Adamant",
+      "ability": "Zero To Hero",
+      "held_item": "Mystic Water",
+      "final_stats": {
+        "hp": 207,
+        "atk": 233,
+        "def": 117,
+        "spa": 113,
+        "spd": 107,
+        "spe": 121
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status"
+        },
+        {
+          "name": "Jet Punch",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Taunt",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Charizard Y",
+    "Torkoal",
+    "Whimsicott"
+  ]
+}

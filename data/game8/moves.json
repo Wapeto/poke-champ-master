@@ -1,0 +1,1634 @@
+[
+  {
+    "name": "Accelerock",
+    "type": "Rock",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Acrobatics",
+    "type": "Flying",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "This move's power is doubled if the user isn't holding an item."
+  },
+  {
+    "name": "Aerial Ace",
+    "type": "Flying",
+    "category": "",
+    "power": "-",
+    "accuracy": "20",
+    "effect": "This move never misses."
+  },
+  {
+    "name": "Aqua Cutter",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Aqua Jet",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Aqua Step",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Aqua Tail",
+    "type": "Water",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "—"
+  },
+  {
+    "name": "Assurance",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is doubled if the target has already taken damage during the turn this move is used."
+  },
+  {
+    "name": "Aura Wheel",
+    "type": "Electric",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Boosts the user's Speed stat by 1 stage. This move's type depends on Morpeko's form."
+  },
+  {
+    "name": "Avalanche",
+    "type": "Ice",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is doubled if the target has already dealt damage to the user with a move in the same turn."
+  },
+  {
+    "name": "Axe Kick",
+    "type": "Fighting",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 30% chance of confusing the target. If this move misses or fails, the user takes damage equal to 1/2 of its max HP."
+  },
+  {
+    "name": "Barb Barrage",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Has a 50% chance of poisoning the target. This move's power is doubled if the target is poisoned or badly poisoned."
+  },
+  {
+    "name": "Beak Blast",
+    "type": "Flying",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "If the user is hit by a contact move before it uses this move, the attacker will be burned."
+  },
+  {
+    "name": "Beat Up",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The target is attacked as many times as the number of Pokémon in the user's party. Pokémon that have fainted or have a status condition are not counted. This move's power is calculated based on the Attack stats of the party Pokémon."
+  },
+  {
+    "name": "Bind",
+    "type": "Normal",
+    "category": "",
+    "power": "85",
+    "accuracy": "20",
+    "effect": "Gives the target the Bound status, where the Pokémon takes 1/8 damage of its max HP at the end of every turn and it cannot switch out."
+  },
+  {
+    "name": "Bite",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "name": "Bitter Blade",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user's HP is restored by 1/20f the damage dealt by this move."
+  },
+  {
+    "name": "Blaze Kick",
+    "type": "Fire",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 10% chance of burning the target. This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Body Press",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The damage dealt by this move is calculated using the user's Defense stat instead of its Attack stat."
+  },
+  {
+    "name": "Body Slam",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 30% chance of paralyzing the target. If the target has the Minimized status, this move’s power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "Bone Rush",
+    "type": "Ground",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Bounce",
+    "type": "Flying",
+    "category": "",
+    "power": "85",
+    "accuracy": "8",
+    "effect": "The user gains the Sky-High status on the turn this move is used, where the Pokémon cannot be hit my most moves and is unaffected by terrain, then attacks on the following turn. This move has a 30% chance of paralyzing the target."
+  },
+  {
+    "name": "Brave Bird",
+    "type": "Flying",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Breaking Swipe",
+    "type": "Dragon",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Lowers targets' Attack stats by 1 stage."
+  },
+  {
+    "name": "Brick Break",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Removes the Light Screen, Reflect, and Aurora Veil statuses on the target’s side."
+  },
+  {
+    "name": "Brutal Swing",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Bug Bite",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "If the target is holding a Berry, the user eats that Berry and gains its effect."
+  },
+  {
+    "name": "Bulldoze",
+    "type": "Ground",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Lowers targets’ Speed stats by 1 stage. When Grassy Terrain is active, this move’s power is halved."
+  },
+  {
+    "name": "Bullet Punch",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Bullet Seed",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Ceaseless Edge",
+    "type": "Dark",
+    "category": "",
+    "power": "90",
+    "accuracy": "16",
+    "effect": "Gives the opponent's side the Spikes status, where Pokémon that are not Flying-types or have the Levitate ability that switch into battle will take damage equal to 1/8 of their max HP and will increase with each instance up to three times."
+  },
+  {
+    "name": "Circle Throw",
+    "type": "Fighting",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "If there are other Pokémon in the target's party that can switch into battle, the target is forced to switch out of battle and is replaced by one of those Pokémon at random."
+  },
+  {
+    "name": "Close Combat",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "Lowers the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "name": "Comeuppance",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user retaliates to deal 150% of the damage it took from an opponent's move during the turn this move is used."
+  },
+  {
+    "name": "Counter",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "The user retaliates to deal double the damage it took from an opponent’s physical move during the turn this move is used."
+  },
+  {
+    "name": "Covet",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "f the user is not already holding an item, it steals the target's held item."
+  },
+  {
+    "name": "Crabhammer",
+    "type": "Water",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Cross Chop",
+    "type": "Fighting",
+    "category": "",
+    "power": "80",
+    "accuracy": "8",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Cross Poison",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Has a 10% chance of poisoning the target. This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Crunch",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 20% chance of lowering the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Crush Claw",
+    "type": "Normal",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "Has a 50% chance of lowering the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Darkest Lariat",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move ignores the target's stat changes when dealing damage."
+  },
+  {
+    "name": "Dig",
+    "type": "Ground",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Underground status on the turn this move is used, then attacks on the following turn."
+  },
+  {
+    "name": "Dire Claw",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 30% chance of leaving the target poisoned, paralyzed, or asleep."
+  },
+  {
+    "name": "Dive",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Submerged status on the turn this move is used, where the Pokémon cannot be hit by most moves and is unaffected by terrain, then attacks on the following turn."
+  },
+  {
+    "name": "Double Hit",
+    "type": "Normal",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks twice in a row."
+  },
+  {
+    "name": "Double-Edge",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Dragon Claw",
+    "type": "Dragon",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "—"
+  },
+  {
+    "name": "Dragon Darts",
+    "type": "Dragon",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user attacks twice in a row. Ifthere are 2 opposing Pokémon, each of them is attacked once."
+  },
+  {
+    "name": "Dragon Rush",
+    "type": "Dragon",
+    "category": "",
+    "power": "75",
+    "accuracy": "12",
+    "effect": "Has a 20% chance of making the target flinch. If the target has the Minimized status, this move's power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "Dragon Tail",
+    "type": "Dragon",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "If there are other Pokémon in the target's party that can switch into battle, the target is forced to switch out of battle and is replaced by one of those Pokémon at random."
+  },
+  {
+    "name": "Drain Punch",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user's HP is restored by 1/20f the damage dealt by this move."
+  },
+  {
+    "name": "Drill Peck",
+    "type": "Flying",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Drill Run",
+    "type": "Ground",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Dual Wingbeat",
+    "type": "Flying",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks twice in a row."
+  },
+  {
+    "name": "Dynamic Punch",
+    "type": "Fighting",
+    "category": "",
+    "power": "50",
+    "accuracy": "8",
+    "effect": "Confuses the target."
+  },
+  {
+    "name": "Earthquake",
+    "type": "Ground",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move’s power is doubled against targets that have the Underground status. When Grassy Terrain is active, this move’s power is halved."
+  },
+  {
+    "name": "Endeavor",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "Deals damage to the target equal to its remaining HP minus the user's remaining HP. This move fails if the target's HP is the same as or lower than the user's."
+  },
+  {
+    "name": "Explosion",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "The user faints upon using this move."
+  },
+  {
+    "name": "Extreme Speed",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "—"
+  },
+  {
+    "name": "Facade",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move’s power is doubled if the user is poisoned, badly poisoned, burned, or paralyzed. Although this move is a physical move, the damage it deals is not halved when the user is burned."
+  },
+  {
+    "name": "Fake Out",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Makes the target flinch. This move fails unless it is the first move used by the user after it enters a battle."
+  },
+  {
+    "name": "Feint",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move can hit a target using a move such as Protect or Detect and removes the effects of those moves."
+  },
+  {
+    "name": "Fell Stinger",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Boosts the user's Attack stat by 3 stages if this move knocks out the target."
+  },
+  {
+    "name": "Fire Fang",
+    "type": "Fire",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of burning the target and a 10% chance of making the target flinch."
+  },
+  {
+    "name": "Fire Lash",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Lowers the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Fire Punch",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of burning the target."
+  },
+  {
+    "name": "First Impression",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move fails unless it is the first move used by the user after it enters a battle."
+  },
+  {
+    "name": "Fissure",
+    "type": "Ground",
+    "category": "",
+    "power": "-",
+    "accuracy": "8",
+    "effect": "Knocks out the target. The accuracy of this move is fixed at 30%."
+  },
+  {
+    "name": "Flail",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The less HP the user has left, the greater this move's power (ranging between 20 and 200)."
+  },
+  {
+    "name": "Flame Charge",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Flare Blitz",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of burning the target. Cures the user of being frozen. The user also takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Fling",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power and effects depend on the user's held item. The held item is lost after this move is used."
+  },
+  {
+    "name": "Flip Turn",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "After attacking, the user switches out of battle to be replaced by another party Pokémon."
+  },
+  {
+    "name": "Flower Trick",
+    "type": "Grass",
+    "category": "",
+    "power": "-",
+    "accuracy": "12",
+    "effect": "This move never misses and is always a critical hit."
+  },
+  {
+    "name": "Fly",
+    "type": "Flying",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "The user gains the Sky-High status on the turn this move is used, where the Pokémon cannot be hit my most moves and is unaffected by terrain, then attacks on the following turn."
+  },
+  {
+    "name": "Flying Press",
+    "type": "Fighting",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "The damage dealt by this move is calculated by combining the effectiveness of the move's own type with that of the Flying type. If the target has the Minimized status, this move's power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "Focus Punch",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move fails if the user has already taken damage from a move in the same turn."
+  },
+  {
+    "name": "Foul Play",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The damage dealt by this move is calculated using the target's Attack stat instead of the user's Attack stat."
+  },
+  {
+    "name": "Giga Impact",
+    "type": "Normal",
+    "category": "",
+    "power": "90",
+    "accuracy": "8",
+    "effect": "The user gains the Recharging status on the turn after this move is used, where the user cannot take any actions for 1 turn."
+  },
+  {
+    "name": "Gigaton Hammer",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "This move can't be used twice in a row."
+  },
+  {
+    "name": "Grassy Glide",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "If the user is under the effect of Grassy Terrain, this move’s priority becomes +1."
+  },
+  {
+    "name": "Grav Apple",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Lowers the target's Defense stat by 1 stage. This move's power is boosted by 50% when the Gravity status is active."
+  },
+  {
+    "name": "Guillotine",
+    "type": "Normal",
+    "category": "",
+    "power": "-",
+    "accuracy": "8",
+    "effect": "Knocks out the target. The accuracy of this move is fixed at 30%."
+  },
+  {
+    "name": "Gunk Shot",
+    "type": "Poison",
+    "category": "",
+    "power": "80",
+    "accuracy": "8",
+    "effect": "Has a 30% chance of poisoning the target."
+  },
+  {
+    "name": "Gyro Ball",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "The lower the user's Speed stat compared to the target's, the greater this move's power (ranging between 1 and 150)."
+  },
+  {
+    "name": "Hammer Arm",
+    "type": "Fighting",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Lowers the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Hard Press",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The more HP the target has left, the greater this move's power (ranging between 1 and 100)."
+  },
+  {
+    "name": "Head Smash",
+    "type": "Rock",
+    "category": "",
+    "power": "80",
+    "accuracy": "8",
+    "effect": "The user takes 1/2 of the damage dealt by this move."
+  },
+  {
+    "name": "Headlong Rush",
+    "type": "Ground",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "Lowers the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "name": "Heat Crash",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The more the user outweighs the target, the greater this move’s power (ranging between 40 and 120). If the target has the Minimized status, this move’s power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "Heavy Slam",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The more the user outweighs the target, the greater this move's power (ranging between 40 and 120). If the target has the Minimized status, this move's power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "High Horsepower",
+    "type": "Ground",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "—"
+  },
+  {
+    "name": "High Jump Kick",
+    "type": "Fighting",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "If this move misses or fails, the user takes damage equal to 1/2 of its max HP."
+  },
+  {
+    "name": "Horn Drill",
+    "type": "Normal",
+    "category": "",
+    "power": "30",
+    "accuracy": "8",
+    "effect": "Knocks out the target. The accuracy of this move is fixed at 30%."
+  },
+  {
+    "name": "Horn Leech",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user's HP is restored by 1/2 of the damage dealt by this move."
+  },
+  {
+    "name": "Ice Fang",
+    "type": "Ice",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of freezing the target and a 10% chance of making the target flinch."
+  },
+  {
+    "name": "Ice Hammer",
+    "type": "Ice",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Lowers the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Ice Punch",
+    "type": "Ice",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of freezing the target."
+  },
+  {
+    "name": "Ice Shard",
+    "type": "Ice",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Ice Spinner",
+    "type": "Ice",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Removes any terrain."
+  },
+  {
+    "name": "Icicle Crash",
+    "type": "Ice",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "name": "Icicle Spear",
+    "type": "Ice",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Iron Head",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "name": "Iron Tail",
+    "type": "Steel",
+    "category": "",
+    "power": "75",
+    "accuracy": "16",
+    "effect": "Has a 30% chance of lowering the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Jet Punch",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "—"
+  },
+  {
+    "name": "Knock Off",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move’s power is boosted by 50% if the target is holding an item. Causes the target to lose its held item."
+  },
+  {
+    "name": "Kowtow Cleave",
+    "type": "Dark",
+    "category": "",
+    "power": "-",
+    "accuracy": "12",
+    "effect": "This move never misses."
+  },
+  {
+    "name": "Lash Out",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "This move's power is doubled if the user's stats were lowered during the turn this move is used."
+  },
+  {
+    "name": "Last Resort",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "This move fails unless the user has already used all the other moves it knows."
+  },
+  {
+    "name": "Last Respects",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is increased by 50 for each time that a Pokémon in the user's party has fainted."
+  },
+  {
+    "name": "Leaf Blade",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Leech Life",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user's HP is restored by 1/2 of the damage dealt by this move."
+  },
+  {
+    "name": "Liquidation",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Has a 20% chance of lowering the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Low Kick",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "The heavier the target, the greater this move's power (ranging between 20 and 120)."
+  },
+  {
+    "name": "Low Sweep",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "name": "Lunge",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "name": "Mach Punch",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Mega Kick",
+    "type": "Normal",
+    "category": "",
+    "power": "75",
+    "accuracy": "8",
+    "effect": "—"
+  },
+  {
+    "name": "Megahorn",
+    "type": "Bug",
+    "category": "",
+    "power": "85",
+    "accuracy": "12",
+    "effect": "—"
+  },
+  {
+    "name": "Metal Burst",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user retaliates to deal 150% of the damage it took from an opponent's move during the turn this move is used."
+  },
+  {
+    "name": "Meteor Mash",
+    "type": "Steel",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 20% chance of boosting the user's Attack stat by 1 stage."
+  },
+  {
+    "name": "Mortal Spin",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Removes the Bound and Leech Seeded statuses from the user and removes the Sticky Web, Stealth Rock, Spikes, and Toxic Spikes statuses from the user's side. Poisons targets."
+  },
+  {
+    "name": "Mountain Gale",
+    "type": "Ice",
+    "category": "",
+    "power": "85",
+    "accuracy": "12",
+    "effect": "Has a 30% chance of makingthe target flinch."
+  },
+  {
+    "name": "Night Slash",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move has a 1 stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Nuzzle",
+    "type": "Electric",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Paralyzes the target."
+  },
+  {
+    "name": "Outrage",
+    "type": "Dragon",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Rampaging status, where for 2-3 turns the Pokémon continues its attack and is unable to take any other actions. After that, it becomes confused."
+  },
+  {
+    "name": "Payback",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is double if the user attacks after the target."
+  },
+  {
+    "name": "Petal Blizzard",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "—"
+  },
+  {
+    "name": "Phantom Force",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Concealed status, where the Pokémon cannot be hit by moves and is unaffected by terrain, on the turn this move is used, then attacks on the following turn. This move can hit a target using a move such as Protect or Detect and removes the effects of those moves."
+  },
+  {
+    "name": "Pin Missile",
+    "type": "Bug",
+    "category": "",
+    "power": "95",
+    "accuracy": "20",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Play Rough",
+    "type": "Fairy",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 10% chance of lowering the target's Attack stat by 1 stage."
+  },
+  {
+    "name": "Pluck",
+    "type": "Flying",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "If the target is holding a Berry, the user eats that Berry and gains its effect."
+  },
+  {
+    "name": "Poison Fang",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 50% chance of badly poisoning the target."
+  },
+  {
+    "name": "Poison Jab",
+    "type": "Poison",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Has a 30% chance of poisoning the target."
+  },
+  {
+    "name": "Poltergeist",
+    "type": "Ghost",
+    "category": "",
+    "power": "90",
+    "accuracy": "8",
+    "effect": "This move fails if the target isn't holding an item"
+  },
+  {
+    "name": "Population Bomb",
+    "type": "Normal",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks 1 to 10 times in a row. The attack ends if the user misses."
+  },
+  {
+    "name": "Pounce",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "name": "Pound",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Power Trip",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is increased by 20 for each stage that the user's stats have been boosted."
+  },
+  {
+    "name": "Power Whip",
+    "type": "Grass",
+    "category": "",
+    "power": "85",
+    "accuracy": "12",
+    "effect": "—"
+  },
+  {
+    "name": "Psychic Fangs",
+    "type": "Psychic",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Removes the Light Screen, Reflect, and Aurora Veil statuses on the target's side."
+  },
+  {
+    "name": "Psycho Cut",
+    "type": "Psychic",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Psyshield Bash",
+    "type": "Psychic",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Boosts the user's Defense stat by 1 stage."
+  },
+  {
+    "name": "Quick Attack",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Rage Fist",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move's power is increased by 50 each time the user takes damage from a move, up to a maximum power of 350. If the user switches out of battle, the move's power returns to its usual value."
+  },
+  {
+    "name": "Raging Bull",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Removes the Light Screen, Reflect, and Aurora Veil statuses on the target's side. This move's type depends on the user's form."
+  },
+  {
+    "name": "Raging Fury",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Rampaging status, where for 2-3 turns the Pokémon continues its attack and is unable to take any other actions. After that, it becomes confused."
+  },
+  {
+    "name": "Rapid Spin",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Removes the Bound and Leech Seeded statuses from the user and removes the Sticky Web, Stealth Rock, Spikes, and Toxic Spikes statuses from the user's side. Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Razor Shell",
+    "type": "Water",
+    "category": "",
+    "power": "95",
+    "accuracy": "12",
+    "effect": "Has a 50% chance of lowering the target's Defense stat by 1 stage."
+  },
+  {
+    "name": "Reversal",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The less HP the user has left, the greater this move's power (ranging between 20 and 200)."
+  },
+  {
+    "name": "Rock Blast",
+    "type": "Rock",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Rock Slide",
+    "type": "Rock",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Has a 30% chance of making targets flinch."
+  },
+  {
+    "name": "Rock Tomb",
+    "type": "Rock",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "name": "Rock Wrecker",
+    "type": "Rock",
+    "category": "",
+    "power": "90",
+    "accuracy": "16",
+    "effect": "The user gains the Recharging status on the turn after this move is used, where the user cannot take any actions for 1 turn."
+  },
+  {
+    "name": "Sacred Sword",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "This move ignores the target's stat changes when dealing damage."
+  },
+  {
+    "name": "Salt Cure",
+    "type": "Rock",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Gives the target the Salt Cured status, where the Pokémon takes damage equal to 1/16 of its max HP at the end of every turn. If the Pokémon is a Steel type or Water type, it takes damage equal to 1/8 of its max HP instead."
+  },
+  {
+    "name": "Sand Tomb",
+    "type": "Ground",
+    "category": "",
+    "power": "85",
+    "accuracy": "16",
+    "effect": "Gives the target the Bound status, where the Pokémon takes 1/8 damage of its max HP at the end of every turn and it cannot switch out."
+  },
+  {
+    "name": "Scale Shot",
+    "type": "Dragon",
+    "category": "",
+    "power": "90",
+    "accuracy": "20",
+    "effect": "The user attacks 2 to 5 times in a row. This move lowers the user's Defense stat by 1 stage and boosts its Speed stat by 1 stage."
+  },
+  {
+    "name": "Seed Bomb",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "—"
+  },
+  {
+    "name": "Seismic Toss",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Deals 50 HP of damage."
+  },
+  {
+    "name": "Self-Destruct",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "The user faints upon using this move."
+  },
+  {
+    "name": "Shadow Claw",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Shadow Punch",
+    "type": "Ghost",
+    "category": "",
+    "power": "-",
+    "accuracy": "20",
+    "effect": "This move never misses."
+  },
+  {
+    "name": "Shadow Sneak",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "—"
+  },
+  {
+    "name": "Skitter Smack",
+    "type": "Bug",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Lowers the target's Sp. Atk stat by 1 stage."
+  },
+  {
+    "name": "Sky Attack",
+    "type": "Flying",
+    "category": "",
+    "power": "90",
+    "accuracy": "8",
+    "effect": "The user gains the Charging status, where the Pokémon spends 1 turn charging before using a move on the turn this move is used, then attacks on the following turn. This move has a 30% chance of making the target flinch, and it has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Smack Down",
+    "type": "Rock",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "If the target is off the ground, it gains the Landed status, where the Pokémon is now grounded and can be affected by Ground-type moves. This move can hit a target that has the Sky-High status."
+  },
+  {
+    "name": "Smart Strike",
+    "type": "Steel",
+    "category": "",
+    "power": "-",
+    "accuracy": "12",
+    "effect": "This move never misses."
+  },
+  {
+    "name": "Snap Trap",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Gives the target the Bound status, where the Pokémon takes 1/8 damage of its max HP at the end of every turn and it cannot switch out."
+  },
+  {
+    "name": "Solar Blade",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Charging status, where the Pokémon spends 1 turn charging before using a move, on the turn this move is used, on the turn this move is used, then attacks on the following turn. In harsh sunlight, the user does not gain the Charging status and can attack immediately. This move's power is halved in any other weather condition."
+  },
+  {
+    "name": "Spirit Break",
+    "type": "Fairy",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Lowers the target's Sp. Atk stat by 1 stage."
+  },
+  {
+    "name": "Spirit Shackle",
+    "type": "Ghost",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Gives the target the Can't Escape status, where the Pokémon cannot be switched out."
+  },
+  {
+    "name": "Steel Roller",
+    "type": "Steel",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "Removes any terrain. This move fails if there is no terrain on the field."
+  },
+  {
+    "name": "Steel Wing",
+    "type": "Steel",
+    "category": "",
+    "power": "90",
+    "accuracy": "20",
+    "effect": "Has a 10% chance of boosting the user's Defense stat by 1 stage."
+  },
+  {
+    "name": "Stomping Tantrum",
+    "type": "Ground",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move’s power is doubled if the user couldn’t act or its move missed or failed on the previous turn."
+  },
+  {
+    "name": "Stone Axe",
+    "type": "Rock",
+    "category": "",
+    "power": "90",
+    "accuracy": "16",
+    "effect": "Gives the opponent's side the Stealth Rock status, where Pokémon that switch into battle will take damage equal to 1/8 of their max HP. This damage differs depending on the Pokémon's type matchup with the Rock type."
+  },
+  {
+    "name": "Stone Edge",
+    "type": "Rock",
+    "category": "",
+    "power": "80",
+    "accuracy": "8",
+    "effect": "This move has a 1-stage Critical-Hit Ratio Boost:"
+  },
+  {
+    "name": "Storm Throw",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "Always a critical hit."
+  },
+  {
+    "name": "Sucker Punch",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "This move fails unless the target has chosen an attack and has not yet attacked during the turn this move is used."
+  },
+  {
+    "name": "Super Fang",
+    "type": "Normal",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "Deals damage to the target equal to 1/2 of its remaining HP. Deals 1 HP of damage to a target that has only 1 HP left."
+  },
+  {
+    "name": "Supercell Slam",
+    "type": "Electric",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "If this move misses or fails, the user takes damage equal to 1/2 of its max HP. If the target has the Minimized status, this move's power is doubled and it will be sure to hit."
+  },
+  {
+    "name": "Superpower",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "8",
+    "effect": "Lowers the user's Attack and Defense stats by 1 stage."
+  },
+  {
+    "name": "Tail Slap",
+    "type": "Normal",
+    "category": "",
+    "power": "85",
+    "accuracy": "12",
+    "effect": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "name": "Temper Flare",
+    "type": "Fire",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "This move’s power is doubled if the user couldn’t act or its move missed or failed on the previous turn."
+  },
+  {
+    "name": "Thief",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "If the user is not already holding an item, it steals the target's held item."
+  },
+  {
+    "name": "Thrash",
+    "type": "Normal",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user gains the Rampaging status, where for 2-3 turns the Pokémon continues its attack and is unable to take any other actions. After that, it becomes confused."
+  },
+  {
+    "name": "Throat Chop",
+    "type": "Dark",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Gives the target the Throat Chopped status, where the Pokémon cannot use any sound-based moves for 2 turns."
+  },
+  {
+    "name": "Thunder Fang",
+    "type": "Electric",
+    "category": "",
+    "power": "95",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of paralyzing the target and a 10% chance of making the target flinch."
+  },
+  {
+    "name": "Thunder Punch",
+    "type": "Electric",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of paralyzing the target."
+  },
+  {
+    "name": "Trailblaze",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "name": "Triple Arrows",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "Has a 50% chance of lowering the target's Defense stat by 1 stage and has a 30% chance of making the target flinch. This move has a I-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "name": "Triple Axel",
+    "type": "Ice",
+    "category": "",
+    "power": "90",
+    "accuracy": "12",
+    "effect": "The user attacks 3 times in a row-first with a power of 20, then with a power of 40, then with a power of 60. The attack ends if the user misses."
+  },
+  {
+    "name": "Trop Kick",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "name": "U-turn",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "20",
+    "effect": "After attacking, the user switchesout of battle to be replaced by another party Pokémon."
+  },
+  {
+    "name": "Upper Hand",
+    "type": "Fighting",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Makes the target flinch. This move fails if the target isn't about to use a priority move."
+  },
+  {
+    "name": "Volt Tackle",
+    "type": "Electric",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 10% chance of paralyzing the target. The user also takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Waterfall",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "name": "Wave Crash",
+    "type": "Water",
+    "category": "",
+    "power": "100",
+    "accuracy": "12",
+    "effect": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Wild Charge",
+    "type": "Electric",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The user takes 1/4 of the damage dealt by this move."
+  },
+  {
+    "name": "Wood Hammer",
+    "type": "Grass",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "name": "Wrap",
+    "type": "Normal",
+    "category": "",
+    "power": "90",
+    "accuracy": "20",
+    "effect": "Gives the target the Bound status, where the Pokémon takes 1/8 damage of its max HP at the end of every turn and it cannot switch out."
+  },
+  {
+    "name": "X-Scissor",
+    "type": "Bug",
+    "category": "",
+    "power": "100",
+    "accuracy": "16",
+    "effect": "—"
+  },
+  {
+    "name": "Zen Headbutt",
+    "type": "Psychic",
+    "category": "",
+    "power": "90",
+    "accuracy": "16",
+    "effect": "Has a 20% chance of making the target flinch."
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605990",
+  "name": "Malamar",
+  "types": [
+    "Psychic",
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 86,
+    "atk": 92,
+    "def": 88,
+    "spa": 68,
+    "spd": 75,
+    "spe": 73
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Malamar",
+      "nature": "Adamant",
+      "ability": "Contrary",
+      "held_item": "Malamarite",
+      "final_stats": {
+        "hp": 193,
+        "atk": 169,
+        "def": 108,
+        "spa": 106,
+        "spd": 140,
+        "spe": 110
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 2
+      },
+      "moves": [
+        {
+          "name": "Superpower",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Zen Headbutt",
+          "type": "Psychic",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Mawile",
+    "Mega Floette",
+    "Sylveon"
+  ]
+}

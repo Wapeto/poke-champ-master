@@ -1,0 +1,198 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594060",
+  "name": "Excadrill",
+  "types": [
+    "Ground",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 110,
+    "atk": 135,
+    "def": 60,
+    "spa": 50,
+    "spd": 65,
+    "spe": 88
+  },
+  "builds": [
+    {
+      "pokemon": "Excadrill",
+      "nature": "Adamant",
+      "ability": "Sand Rush",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 186,
+        "atk": 205,
+        "def": 80,
+        "spa": 63,
+        "spd": 85,
+        "spe": 140
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Excadrill",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 186,
+        "atk": 187,
+        "def": 80,
+        "spa": 63,
+        "spd": 85,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Horn Drill",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Fissure",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Excadrill",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Excadrite",
+      "final_stats": {
+        "hp": 186,
+        "atk": 217,
+        "def": 120,
+        "spa": 76,
+        "spd": 85,
+        "spe": 170
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Excadrill",
+      "nature": "Jolly",
+      "ability": "Mold Breaker",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 186,
+        "atk": 187,
+        "def": 80,
+        "spa": 63,
+        "spd": 85,
+        "spe": 154
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Head",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        },
+        {
+          "name": "Rapid Spin",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Azumarill",
+    "Conkeldurr"
+  ]
+}

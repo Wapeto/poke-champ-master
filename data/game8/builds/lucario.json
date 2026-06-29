@@ -1,0 +1,113 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/595886",
+  "name": "Lucario",
+  "types": [
+    "Fighting",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 110,
+    "def": 70,
+    "spa": 115,
+    "spd": 70,
+    "spe": 90
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Lucario",
+      "nature": "Jolly",
+      "ability": "Adaptability",
+      "held_item": "Lucarionite",
+      "final_stats": {
+        "hp": 147,
+        "atk": 197,
+        "def": 108,
+        "spa": 144,
+        "spd": 90,
+        "spe": 180
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Bullet Punch",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Lucario",
+      "nature": "Timid",
+      "ability": "Adaptability",
+      "held_item": "Lucarionite",
+      "final_stats": {
+        "hp": 147,
+        "atk": 148,
+        "def": 108,
+        "spa": 192,
+        "spd": 90,
+        "spe": 180
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Focus Blast",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "category": "Special"
+        },
+        {
+          "name": "Vacuum Wave",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Nasty Plot",
+          "type": "Dark",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Venusaur",
+    "Mega Charizard Y",
+    "Hippowdon",
+    "Aegislash (Shield Forme)",
+    "Skeledirge"
+  ]
+}

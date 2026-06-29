@@ -1,0 +1,109 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593899",
+  "name": "Hatterene",
+  "types": [
+    "Psychic",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 57,
+    "atk": 90,
+    "def": 95,
+    "spa": 136,
+    "spd": 103,
+    "spe": 29
+  },
+  "builds": [
+    {
+      "pokemon": "Hatterene",
+      "nature": "Relaxed",
+      "ability": "Magic Bounce",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 57,
+        "atk": 90,
+        "def": 95,
+        "spa": 136,
+        "spd": 103,
+        "spe": 29
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Healing Wish",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Nuzzle",
+          "type": "Electric",
+          "category": "Physical"
+        },
+        {
+          "name": "Reflect",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Light Screen",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Hatterene",
+      "nature": "Quiet",
+      "ability": "Magic Bounce",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 57,
+        "atk": 90,
+        "def": 95,
+        "spa": 136,
+        "spd": 103,
+        "spe": 29
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special"
+        },
+        {
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status"
+        },
+        {
+          "name": "Psychic",
+          "type": "Psychic",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Incineroar"
+  ]
+}

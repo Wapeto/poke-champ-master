@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598715",
+  "name": "Bellibolt",
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 109,
+    "atk": 64,
+    "def": 91,
+    "spa": 103,
+    "spd": 83,
+    "spe": 45
+  },
+  "builds": [
+    {
+      "pokemon": "Bellibolt",
+      "nature": "Relaxed",
+      "ability": "Electromorphosis",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 185,
+        "atk": 62,
+        "def": 157,
+        "spa": 155,
+        "spd": 103,
+        "spe": 65
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 32,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Parabolic Charge",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Soak",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Excadrill",
+    "Krookodile"
+  ]
+}

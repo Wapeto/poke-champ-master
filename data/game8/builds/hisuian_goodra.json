@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598494",
+  "name": "Hisuian Goodra",
+  "types": [
+    "Dragon",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 100,
+    "def": 100,
+    "spa": 110,
+    "spd": 150,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Hisuian Goodra",
+      "nature": "Bold",
+      "ability": "Shell Armor",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 187,
+        "atk": 108,
+        "def": 167,
+        "spa": 130,
+        "spd": 172,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Heavy Slam",
+          "type": "Steel",
+          "category": "Physical"
+        },
+        {
+          "name": "Shelter",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Hisuian Goodra",
+      "nature": "Modest",
+      "ability": "Shell Armor",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 187,
+        "atk": 108,
+        "def": 122,
+        "spa": 178,
+        "spd": 170,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 32,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Life Dew",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Excadrill",
+    "Sneasler"
+  ]
+}

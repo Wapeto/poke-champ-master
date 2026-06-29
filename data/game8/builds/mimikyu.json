@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594732",
+  "name": "Mimikyu",
+  "types": [
+    "Ghost",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 55,
+    "atk": 90,
+    "def": 80,
+    "spa": 50,
+    "spd": 105,
+    "spe": 96
+  },
+  "builds": [
+    {
+      "pokemon": "Mimikyu",
+      "nature": "Adamant",
+      "ability": "Disguise",
+      "held_item": "Spell Tag",
+      "final_stats": {
+        "hp": 131,
+        "atk": 156,
+        "def": 101,
+        "spa": 63,
+        "spd": 125,
+        "spe": 148
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Claw",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mimikyu",
+      "nature": "Adamant",
+      "ability": "Disguise",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 159,
+        "atk": 156,
+        "def": 105,
+        "spa": 63,
+        "spd": 125,
+        "spe": 116
+      },
+      "ev_spread": {
+        "hp": 29,
+        "atk": 32,
+        "def": 5,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Claw",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Curse",
+          "type": "Ghost",
+          "category": "Status"
+        },
+        {
+          "name": "Trick Room",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Scizor",
+    "Primarina",
+    "Corviknight"
+  ]
+}

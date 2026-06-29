@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/599125",
+  "name": "Mow Rotom",
+  "types": [
+    "Grass",
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86
+  },
+  "builds": [
+    {
+      "pokemon": "Mow Rotom",
+      "nature": "Modest",
+      "ability": "Levitate",
+      "held_item": "Choice Scarf",
+      "final_stats": {
+        "hp": 127,
+        "atk": 76,
+        "def": 127,
+        "spa": 172,
+        "spd": 127,
+        "spe": 138
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "name": "Leaf Storm",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "category": "Status"
+        },
+        {
+          "name": "Volt Switch",
+          "type": "Electric",
+          "category": "Special"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Clefable",
+    "Skeledirge"
+  ]
+}

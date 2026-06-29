@@ -1,0 +1,271 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596198",
+  "name": "Best Perish Trap Teams: Builds and How to Play Guide",
+  "strategy": "This is a complete guide on how to build the Best Perish Trap Team for Regulation M-A, Season M-2 in Pokemon Champions! Read on to learn what a Perish Trap team is, how to make the Best Perish Trap team in this Regulation, what strategies to use with one, and how to counter Perish Trap teams here!",
+  "members": [
+    {
+      "pokemon": "Mega Gengar",
+      "nature": "Timid",
+      "ability": "Shadow Tag",
+      "held_item": "Gengarite",
+      "final_stats": {
+        "hp": 167,
+        "atk": 85,
+        "def": 101,
+        "spa": 190,
+        "spd": 115,
+        "spe": 182
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Perish Song",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Disable",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Incineroar",
+      "nature": "Careful",
+      "ability": "Intimidate",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 202,
+        "atk": 135,
+        "def": 126,
+        "spa": 90,
+        "spd": 140,
+        "spe": 80
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 16,
+        "spa": 0,
+        "spd": 18,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Parting Shot",
+          "type": "Dark",
+          "category": "Status"
+        },
+        {
+          "name": "Fake Out",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Sinistcha",
+      "nature": "Calm",
+      "ability": "Hospitality",
+      "held_item": "Coba Berry",
+      "final_stats": {
+        "hp": 178,
+        "atk": 72,
+        "def": 143,
+        "spa": 141,
+        "spd": 128,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 17,
+        "spa": 0,
+        "spd": 17,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Matcha Gotcha",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Life Dew",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "name": "Rage Powder",
+          "type": "Bug",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Kingambit",
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "held_item": "Chople Berry",
+      "final_stats": {
+        "hp": 207,
+        "atk": 205,
+        "def": 142,
+        "spa": 72,
+        "spd": 105,
+        "spe": 70
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Kowtow Cleave",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Low Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Sucker Punch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Politoed",
+      "nature": "Calm",
+      "ability": "Drizzle",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 192,
+        "atk": 85,
+        "def": 127,
+        "spa": 110,
+        "spd": 139,
+        "spe": 90
+      },
+      "ev_spread": {
+        "hp": 27,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 7,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Perish Song",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Muddy Water",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Kommo-o",
+      "nature": "Modest",
+      "ability": "Soundproof",
+      "held_item": "Dragon Fang",
+      "final_stats": {
+        "hp": 152,
+        "atk": 117,
+        "def": 145,
+        "spa": 167,
+        "spd": 125,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Clangorous Soul",
+          "type": "Dragon",
+          "category": "Status"
+        },
+        {
+          "name": "Clanging Scales",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Aura Sphere",
+          "type": "Fighting",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ]
+}

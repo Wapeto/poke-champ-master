@@ -1,0 +1,19 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593395",
+  "name": "Eternal Flower Floette",
+  "types": [
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 74,
+    "atk": 65,
+    "def": 67,
+    "spa": 125,
+    "spd": 128,
+    "spe": 92
+  },
+  "builds": [],
+  "counters": [
+    "Sneasler"
+  ]
+}

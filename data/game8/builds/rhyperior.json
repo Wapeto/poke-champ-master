@@ -1,0 +1,110 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597038",
+  "name": "Rhyperior",
+  "types": [
+    "Ground",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 115,
+    "atk": 140,
+    "def": 130,
+    "spa": 55,
+    "spd": 55,
+    "spe": 40
+  },
+  "builds": [
+    {
+      "pokemon": "Rhyperior",
+      "nature": "Impish",
+      "ability": "Solid Rock",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 222,
+        "atk": 162,
+        "def": 200,
+        "spa": 67,
+        "spd": 75,
+        "spe": 60
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 2,
+        "def": 32,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "High Horsepower",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Rhyperior",
+      "nature": "Impish",
+      "ability": "Solid Rock",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 222,
+        "atk": 160,
+        "def": 200,
+        "spa": 67,
+        "spd": 77,
+        "spe": 60
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Body Press",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "High Horsepower",
+          "type": "Ground",
+          "category": "Physical"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Meganium",
+    "Mega Greninja"
+  ]
+}

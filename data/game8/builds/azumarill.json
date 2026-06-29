@@ -1,0 +1,112 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596004",
+  "name": "Azumarill",
+  "types": [
+    "Water",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 50,
+    "def": 80,
+    "spa": 60,
+    "spd": 80,
+    "spe": 50
+  },
+  "builds": [
+    {
+      "pokemon": "Azumarill",
+      "nature": "Brave",
+      "ability": "Huge Power",
+      "held_item": "Sitrus Berry",
+      "final_stats": {
+        "hp": 175,
+        "atk": 70,
+        "def": 100,
+        "spa": 80,
+        "spd": 100,
+        "spe": 70
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Belly Drum",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        }
+      ]
+    },
+    {
+      "pokemon": "Azumarill",
+      "nature": "Brave",
+      "ability": "Huge Power",
+      "held_item": "Mystic Water",
+      "final_stats": {
+        "hp": 175,
+        "atk": 70,
+        "def": 100,
+        "spa": 80,
+        "spd": 100,
+        "spe": 70
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Liquidation",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Aqua Jet",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Play Rough",
+          "type": "Fairy",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Victreebel",
+    "Mega Gengar",
+    "Trevenant",
+    "Toxapex"
+  ]
+}

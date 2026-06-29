@@ -1,0 +1,111 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596170",
+  "name": "Ceruledge",
+  "types": [
+    "Fire",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 125,
+    "def": 80,
+    "spa": 60,
+    "spd": 100,
+    "spe": 85
+  },
+  "builds": [
+    {
+      "pokemon": "Ceruledge",
+      "nature": "Adamant",
+      "ability": "Flash Fire",
+      "held_item": "Life Orb",
+      "final_stats": {
+        "hp": 155,
+        "atk": 194,
+        "def": 100,
+        "spa": 72,
+        "spd": 120,
+        "spe": 134
+      },
+      "ev_spread": {
+        "hp": 5,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 29
+      },
+      "moves": [
+        {
+          "name": "Bitter Blade",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Ceruledge",
+      "nature": "Adamant",
+      "ability": "Weak Armor",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 151,
+        "atk": 194,
+        "def": 100,
+        "spa": 72,
+        "spd": 121,
+        "spe": 137
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Bitter Blade",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Claw",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Shadow Sneak",
+          "type": "Ghost",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Hippowdon",
+    "Archaludon"
+  ]
+}

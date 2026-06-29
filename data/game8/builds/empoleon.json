@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596187",
+  "name": "Empoleon",
+  "types": [
+    "Water",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 84,
+    "atk": 86,
+    "def": 88,
+    "spa": 111,
+    "spd": 101,
+    "spe": 60
+  },
+  "builds": [
+    {
+      "pokemon": "Empoleon",
+      "nature": "Naughty",
+      "ability": "Competitive",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 191,
+        "atk": 106,
+        "def": 110,
+        "spa": 131,
+        "spd": 168,
+        "spe": 72
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 2,
+        "spa": 0,
+        "spd": 32,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Surf",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Flip Turn",
+          "type": "Water",
+          "category": "Physical"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Garchomp",
+    "Mega Lucario",
+    "Wash Rotom"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605991",
+  "name": "Dragalge",
+  "types": [
+    "Poison",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 75,
+    "def": 90,
+    "spa": 97,
+    "spd": 123,
+    "spe": 44
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Dragalge",
+      "nature": "Calm",
+      "ability": "Regenerator",
+      "held_item": "Dragalgite",
+      "final_stats": {
+        "hp": 172,
+        "atk": 94,
+        "def": 157,
+        "spa": 152,
+        "spd": 203,
+        "spe": 64
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 32,
+        "spa": 0,
+        "spd": 2,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "category": "Special"
+        },
+        {
+          "name": "Draco Meteor",
+          "type": "Dragon",
+          "category": "Special"
+        },
+        {
+          "name": "Scald",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Swampert",
+    "Mega Metagross",
+    "Garchomp"
+  ]
+}

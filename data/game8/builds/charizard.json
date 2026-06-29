@@ -1,0 +1,198 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/593744",
+  "name": "Charizard",
+  "types": [
+    "Fire",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 84,
+    "def": 78,
+    "spa": 109,
+    "spd": 85,
+    "spe": 100
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Charizard Y",
+      "nature": "Modest",
+      "ability": "Drought",
+      "held_item": "Charizardite Y",
+      "final_stats": {
+        "hp": 185,
+        "atk": 111,
+        "def": 99,
+        "spa": 221,
+        "spd": 135,
+        "spe": 131
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 1,
+        "spa": 22,
+        "spd": 0,
+        "spe": 11
+      },
+      "moves": [
+        {
+          "name": "Heat Wave",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Overheat",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Charizard Y",
+      "nature": "Modest",
+      "ability": "Drought",
+      "held_item": "Charizardite Y",
+      "final_stats": {
+        "hp": 154,
+        "atk": 124,
+        "def": 98,
+        "spa": 211,
+        "spd": 135,
+        "spe": 152
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 0,
+        "def": 0,
+        "spa": 32,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Scorching Sands",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Charizard X",
+      "nature": "Jolly",
+      "ability": "Tough Claws",
+      "held_item": "Charizardite X",
+      "final_stats": {
+        "hp": 153,
+        "atk": 182,
+        "def": 131,
+        "spa": 135,
+        "spd": 106,
+        "spe": 167
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 4,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "category": "Physical"
+        },
+        {
+          "name": "Dragon Dance",
+          "type": "Dragon",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Mega Charizard Y",
+      "nature": "Modest",
+      "ability": "Drought",
+      "held_item": "Charizardite Y",
+      "final_stats": {
+        "hp": 167,
+        "atk": 93,
+        "def": 126,
+        "spa": 154,
+        "spd": 105,
+        "spe": 133
+      },
+      "ev_spread": {
+        "hp": 14,
+        "atk": 0,
+        "def": 28,
+        "spa": 11,
+        "spd": 0,
+        "spe": 13
+      },
+      "moves": [
+        {
+          "name": "Heat Wave",
+          "type": "Fire",
+          "category": "Special"
+        },
+        {
+          "name": "Solar Beam",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "name": "Weather Ball",
+          "type": "Normal",
+          "category": "Special"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Tyranitar",
+    "Garganacl"
+  ]
+}

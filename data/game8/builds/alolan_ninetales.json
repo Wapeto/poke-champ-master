@@ -1,0 +1,155 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596002",
+  "name": "Alolan Ninetales",
+  "types": [
+    "Ice",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 73,
+    "atk": 67,
+    "def": 75,
+    "spa": 81,
+    "spd": 100,
+    "spe": 109
+  },
+  "builds": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "held_item": "Light Clay",
+      "final_stats": {
+        "hp": 179,
+        "atk": 78,
+        "def": 104,
+        "spa": 101,
+        "spd": 120,
+        "spe": 170
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 9,
+        "spa": 0,
+        "spd": 0,
+        "spe": 26
+      },
+      "moves": [
+        {
+          "name": "Aurora Veil",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Moonblast",
+          "type": "Fairy",
+          "category": "Special"
+        }
+      ]
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 179,
+        "atk": 78,
+        "def": 104,
+        "spa": 101,
+        "spd": 120,
+        "spe": 170
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 9,
+        "spa": 0,
+        "spd": 0,
+        "spe": 26
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Disable",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Encore",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "held_item": "Never-Melt Ice",
+      "final_stats": {
+        "hp": 179,
+        "atk": 78,
+        "def": 104,
+        "spa": 101,
+        "spd": 120,
+        "spe": 170
+      },
+      "ev_spread": {
+        "hp": 31,
+        "atk": 0,
+        "def": 9,
+        "spa": 0,
+        "spd": 0,
+        "spe": 26
+      },
+      "moves": [
+        {
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Freeze-Dry",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "name": "Disable",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Chandelure",
+    "Dragapult",
+    "Sneasler"
+  ]
+}

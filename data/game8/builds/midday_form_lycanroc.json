@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/598687",
+  "name": "Midday Form Lycanroc",
+  "types": [
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 115,
+    "def": 65,
+    "spa": 55,
+    "spd": 65,
+    "spe": 112
+  },
+  "builds": [
+    {
+      "pokemon": "Midday Form Lycanroc",
+      "nature": "Adamant",
+      "ability": "Sand Rush",
+      "held_item": "Focus Sash",
+      "final_stats": {
+        "hp": 150,
+        "atk": 183,
+        "def": 86,
+        "spa": 67,
+        "spd": 86,
+        "spe": 164
+      },
+      "ev_spread": {
+        "hp": 0,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 1,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Accelerock",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Dragonite",
+    "Sneasler",
+    "Farigiraf"
+  ]
+}

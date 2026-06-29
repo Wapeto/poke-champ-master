@@ -1,0 +1,65 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/597159",
+  "name": "Umbreon",
+  "types": [
+    "Dark"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 65,
+    "def": 110,
+    "spa": 60,
+    "spd": 130,
+    "spe": 65
+  },
+  "builds": [
+    {
+      "pokemon": "Umbreon",
+      "nature": "Bold",
+      "ability": "Inner Focus",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 202,
+        "atk": 76,
+        "def": 161,
+        "spa": 80,
+        "spd": 167,
+        "spe": 85
+      },
+      "ev_spread": {
+        "hp": 32,
+        "atk": 0,
+        "def": 17,
+        "spa": 0,
+        "spd": 17,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Foul Play",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "Snarl",
+          "type": "Dark",
+          "category": "Special"
+        },
+        {
+          "name": "Yawn",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "name": "Moonlight",
+          "type": "Fairy",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Sableye",
+    "Incineroar"
+  ]
+}

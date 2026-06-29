@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/605653",
+  "name": "Blaziken",
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 120,
+    "def": 70,
+    "spa": 110,
+    "spd": 70,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mega Blaziken",
+      "nature": "Adamant",
+      "ability": "Speed Boost",
+      "held_item": "Blazikenite",
+      "final_stats": {
+        "hp": 157,
+        "atk": 233,
+        "def": 100,
+        "spa": 135,
+        "spd": 100,
+        "spe": 152
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "type": "Fire",
+          "category": "Physical"
+        },
+        {
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "name": "Rock Slide",
+          "type": "Rock",
+          "category": "Physical"
+        },
+        {
+          "name": "Protect",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Farigiraf",
+    "Sinistcha"
+  ]
+}

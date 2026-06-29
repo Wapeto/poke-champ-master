@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/596494",
+  "name": "Leafeon",
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 110,
+    "def": 130,
+    "spa": 60,
+    "spd": 65,
+    "spe": 95
+  },
+  "builds": [
+    {
+      "pokemon": "Leafeon",
+      "nature": "Jolly",
+      "ability": "Chlorophyll",
+      "held_item": "Lum Berry",
+      "final_stats": {
+        "hp": 141,
+        "atk": 162,
+        "def": 151,
+        "spa": 72,
+        "spd": 85,
+        "spe": 161
+      },
+      "ev_spread": {
+        "hp": 1,
+        "atk": 32,
+        "def": 1,
+        "spa": 0,
+        "spd": 0,
+        "spe": 32
+      },
+      "moves": [
+        {
+          "name": "Leaf Blade",
+          "type": "Grass",
+          "category": "Physical"
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "name": "X-Scissor",
+          "type": "Bug",
+          "category": "Physical"
+        },
+        {
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Scizor",
+    "Corviknight",
+    "Archaludon"
+  ]
+}

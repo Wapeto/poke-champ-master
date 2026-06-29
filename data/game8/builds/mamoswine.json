@@ -1,0 +1,66 @@
+{
+  "source_url": "https://game8.co/games/Pokemon-Champions/archives/594350",
+  "name": "Mamoswine",
+  "types": [
+    "Ice",
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 110,
+    "atk": 130,
+    "def": 80,
+    "spa": 70,
+    "spd": 60,
+    "spe": 80
+  },
+  "builds": [
+    {
+      "pokemon": "Mamoswine",
+      "nature": "Adamant",
+      "ability": "Thick Fat",
+      "held_item": "Leftovers",
+      "final_stats": {
+        "hp": 187,
+        "atk": 200,
+        "def": 132,
+        "spa": 81,
+        "spd": 80,
+        "spe": 100
+      },
+      "ev_spread": {
+        "hp": 2,
+        "atk": 32,
+        "def": 32,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "moves": [
+        {
+          "name": "Earthquake",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "name": "Ice Shard",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Icicle Crash",
+          "type": "Ice",
+          "category": "Physical"
+        },
+        {
+          "name": "Stealth Rock",
+          "type": "Rock",
+          "category": "Status"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    "Mega Slowbro",
+    "Mega Scovillain"
+  ]
+}
