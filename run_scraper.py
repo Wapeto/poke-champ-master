@@ -70,6 +70,19 @@ def main() -> None:
             print("  Install with: pip install playwright && playwright install chromium")
             sys.exit(1)
 
+    # Enrich types + official artwork from PokeAPI (always — fixes typeless megas).
+    print("\n" + "=" * 60)
+    print("POKEAPI — types & official artwork enrichment")
+    print("=" * 60)
+    try:
+        sys.path.insert(0, str(Path(__file__).parent))
+        from app.data_loader import load_roster
+        from scrapers.pokeapi_enrich import run as run_enrich
+        names = sorted({p["name"] for p in load_roster().values()})
+        run_enrich(args.data_dir, names)
+    except Exception as e:
+        print(f"  ERROR: {e}")
+
     print(f"\nAll done. Data saved to: {args.data_dir.resolve()}")
     print("\nOutput structure:")
     for path in sorted(args.data_dir.rglob("*.json")):

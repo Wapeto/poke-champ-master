@@ -15,6 +15,7 @@
     <button class="tab-btn" data-tab="team-builder">Team Builder</button>
     <button class="tab-btn" data-tab="matchup">Matchup Advisor</button>
     <button class="tab-btn" data-tab="meta-teams">Meta Teams</button>
+    <button class="tab-btn" data-tab="my-box">My Box</button>
   </nav>
 </header>
 
@@ -23,6 +24,10 @@
 <!-- ── TIER LIST ── -->
 <section id="tier-list" class="tab-content active">
   <h2>Singles Tier List</h2>
+  <div class="search-row wide has-clear">
+    <input id="tier-search" type="text" placeholder="Filter the tier list…" autocomplete="off">
+    <button id="tier-search-clear" class="clear-btn hidden" aria-label="Clear filter">✕</button>
+  </div>
   <div id="tier-list-container">Loading…</div>
 </section>
 
@@ -39,6 +44,8 @@
   <div id="tb-pool" class="chip-list"></div>
 
   <button id="tb-build-btn" class="primary-btn" disabled>Build Best Team</button>
+
+  <div id="tb-suggest" class="suggest-panel hidden"></div>
 
   <div id="tb-result" class="hidden">
     <h3>Recommended Team</h3>
@@ -96,7 +103,40 @@
   <div id="meta-teams-container">Loading…</div>
 </section>
 
+<!-- ── MY BOX ── -->
+<section id="my-box" class="tab-content">
+  <h2>My Box</h2>
+  <p class="subtitle">Track the Pokémon you've recruited. Mark <strong>Permanent</strong> keeps,
+    or <strong>Trial</strong> rentals with the days left on the 7-day clock — and promote a trial
+    to permanent before it expires.</p>
+
+  <div class="search-row has-clear">
+    <input id="box-search" type="text" placeholder="Add a Pokémon to your box…" autocomplete="off">
+    <div id="box-suggestions" class="suggestions"></div>
+  </div>
+
+  <div class="box-toolbar">
+    <div class="box-filters">
+      <button class="box-filter active" data-filter="all">All</button>
+      <button class="box-filter" data-filter="permanent">Permanent</button>
+      <button class="box-filter" data-filter="trial">Trial</button>
+    </div>
+    <span id="box-count" class="muted"></span>
+  </div>
+
+  <div id="box-grid" class="card-grid"></div>
+  <p id="box-empty" class="muted">Your box is empty. Search above to add Pokémon.</p>
+</section>
+
 </main>
+
+<!-- ── POKÉMON DETAIL MODAL ── -->
+<div id="poke-modal" class="modal-overlay hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
 
 <script src="/static/app.js"></script>
 </body>

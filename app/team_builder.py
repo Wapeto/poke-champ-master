@@ -133,6 +133,84 @@ def build_best_team(pool: list[dict], team_size: int = 6) -> list[dict]:
     return team
 
 
+def suggest_additions(
+    current: list[dict], roster: list[dict], limit: int = 6
+) -> dict[str, Any]:
+    """
+    Given the currently selected Pokemon, recommend which Pokemon to add next
+    and which types would most help, based on marginal team-score gain.
+    """
+    chosen = {p["name"].lower() for p in current}
+    base = score_team(current)
+
+    scored: list[tuple[float, dict]] = []
+    for cand in roster:
+        if cand["name"].lower() in chosen:
+            continue
+        gain = score_team(current + [cand]) - base
+        scored.append((gain, cand))
+    scored.sort(key=lambda gc: -gc[0])
+
+    suggestions = [
+        {
+            "name": c["name"],
+            "tier": c.get("tier", ""),
+            "types": c.get("types", []),
+            "image_url": c.get("image_url"),
+            "role": _role(c),
+            "gain": round(gain, 1),
+        }
+        for gain, c in scored[:limit]
+    ]
+
+    # Type guidance: offensive coverage gaps + stacked defensive weaknesses.
+    covered = _covered_types(current)
+    attack_types_needed = [t for t in TYPES if t not in covered]
+
+    weakness_counts: dict[str, int] = {t: 0 for t in TYPES}
+    for poke in current:
+        for atk_type, _ in weaknesses(poke.get("types", [])):
+            weakness_counts[atk_type] += 1
+    weak_spots = sorted(
+        (t for t, c in weakness_counts.items() if c >= 2),
+        key=lambda t: -weakness_counts[t],
+    )
+    # Defensive types worth adding: rank by how many of the team's weak spots
+    # each candidate type resists.
+    resist_scores = {
+        d: sum(1 for spot in weak_spots if effectiveness(spot, [d]) < 1)
+        for d in TYPES
+    }
+    resist_needed = [
+        d for d, n in sorted(resist_scores.items(), key=lambda kv: -kv[1])
+        if n > 0
+    ][:6]
+
+    return {
+        "suggestions": suggestions,
+        "attack_types_needed": attack_types_needed,
+        "weak_spots": weak_spots,
+        "defensive_types_needed": resist_needed,
+    }
+
+
+def _covered_types(team: list[dict]) -> set[str]:
+    covered: set[str] = set()
+    for poke in team:
+        move_types = {
+            m.get("type", "")
+            for b in poke.get("builds", [])
+            for m in b.get("moves", [])
+            if m.get("type")
+        }
+        move_types |= set(poke.get("types", []))
+        for mtype in move_types:
+            for dt in TYPES:
+                if effectiveness(mtype, [dt]) >= 2:
+                    covered.add(dt)
+    return covered
+
+
 def explain_team(team: list[dict]) -> dict[str, Any]:
     """Return a human-readable breakdown of the team's strengths/weaknesses."""
     # Types the team is weak to
