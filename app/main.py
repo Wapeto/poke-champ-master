@@ -4,6 +4,8 @@ from flask import Flask, jsonify, render_template, request
 from .data_loader import load_roster, load_teams, load_moves, load_abilities, load_items
 from .team_builder import build_best_team, explain_team
 from .matchup import recommend
+from .pokemon_card import build_card
+from .meta_teams import build_meta_teams
 
 app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
@@ -41,7 +43,7 @@ def index():
 def api_pokemon_list():
     """All Pokemon names + tier for autocomplete."""
     return jsonify([
-        {"name": p["name"], "tier": p["tier"], "types": p["types"]}
+        {"name": p["name"], "tier": p["tier"], "types": p["types"], "image_url": p.get("image_url")}
         for p in POKEMON_LIST
     ])
 
@@ -51,7 +53,7 @@ def api_pokemon_detail(name: str):
     p = _find(name)
     if not p:
         return jsonify({"error": "Not found"}), 404
-    return jsonify(p)
+    return jsonify(build_card(p, TEAMS))
 
 
 @app.get("/api/tier-list")
@@ -66,6 +68,7 @@ def api_tier_list():
                 "types": p["types"],
                 "base_stats": p["base_stats"],
                 "build_url": p.get("build_url", ""),
+                "image_url": p.get("image_url"),
             })
     return jsonify(tiers)
 
@@ -92,6 +95,7 @@ def api_team_build():
                 "name": p["name"],
                 "tier": p["tier"],
                 "types": p["types"],
+                "image_url": p.get("image_url"),
                 "role": explanation["roles"].get(p["name"], ""),
                 "best_build": p["builds"][0] if p.get("builds") else None,
                 "build_url": p.get("build_url", ""),
@@ -131,6 +135,7 @@ def api_matchup():
                 "name": p["name"],
                 "tier": p["tier"],
                 "types": p["types"],
+                "image_url": p.get("image_url"),
                 "best_build": p["builds"][0] if p.get("builds") else None,
             }
             for p in result["bring"]
@@ -154,21 +159,5 @@ def api_matchup():
 
 @app.get("/api/teams")
 def api_teams():
-    """Pre-built teams from Game8."""
-    return jsonify([
-        {
-            "name": t["name"],
-            "members": [
-                {
-                    "pokemon": m["pokemon"],
-                    "nature": m.get("nature"),
-                    "ability": m.get("ability"),
-                    "held_item": m.get("held_item"),
-                    "moves": [mv["name"] for mv in m.get("moves", [])],
-                    "ev_spread": m.get("ev_spread"),
-                }
-                for m in t.get("members", [])
-            ],
-        }
-        for t in TEAMS
-    ])
+    """Cleaned, enriched meta teams from Game8."""
+    return jsonify(build_meta_teams(TEAMS, ROSTER))

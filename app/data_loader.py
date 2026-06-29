@@ -8,11 +8,32 @@ DATA_DIR = Path(__file__).parent.parent / "data" / "game8"
 
 TIER_ORDER = {"S": 6, "A+": 5, "A": 4, "B": 3, "C": 2, "D": 1}
 
+_REGION_PREFIXES = ("alolan ", "galarian ", "hisuian ", "paldean ")
+
+
+def _base_form_key(name: str) -> str | None:
+    """Roster key of a form's base Pokemon, e.g. 'Mega Charizard Y' -> 'charizard'."""
+    low = name.lower().strip()
+    if low.startswith("mega "):
+        rest = low[5:]
+        if rest.endswith((" x", " y")):
+            rest = rest[:-2]
+        return rest.strip() or None
+    for prefix in _REGION_PREFIXES:
+        if low.startswith(prefix):
+            return low[len(prefix):].strip() or None
+    return None
+
 
 def _load(path: Path) -> Any:
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
     return None
+
+
+def _load_enrichment() -> dict[str, dict]:
+    """PokeAPI enrichment: {name_lower: {types, image_url, pokeapi_slug}}."""
+    return _load(DATA_DIR.parent / "pokeapi" / "enrichment.json") or {}
 
 
 def load_roster() -> dict[str, dict]:
@@ -35,6 +56,7 @@ def load_roster() -> dict[str, dict]:
             "abilities": entry.get("abilities", []),
             "build_url": entry.get("build_url", ""),
             "builds": [],
+            "counters": [],
         }
 
     # ── Build pages: add detailed build info ──
@@ -57,6 +79,7 @@ def load_roster() -> dict[str, dict]:
                     "abilities": [],
                     "build_url": data.get("source_url", ""),
                     "builds": [],
+                    "counters": [],
                 }
 
             poke = roster[key]
@@ -66,10 +89,38 @@ def load_roster() -> dict[str, dict]:
                 poke["base_stats"] = data["base_stats"]
             if data.get("builds"):
                 poke["builds"] = data["builds"]
+            if data.get("counters"):
+                poke["counters"] = data["counters"]
             if not poke["build_url"] and data.get("source_url"):
                 poke["build_url"] = data["source_url"]
 
-    return roster
+    # ── Form fallback: megas/regionals inherit the base form's builds ──
+    # Game8 hosts builds under the base name, so forms have no build of their own.
+    for key, poke in roster.items():
+        if poke["builds"]:
+            continue
+        base_key = _base_form_key(poke["name"])
+        base = roster.get(base_key) if base_key else None
+        if base and base.get("builds"):
+            poke["builds"] = base["builds"]
+            if not poke["counters"]:
+                poke["counters"] = base["counters"]
+            if not poke["base_stats"]:
+                poke["base_stats"] = base["base_stats"]
+
+    # ── PokeAPI enrichment: fill missing types, attach official artwork ──
+    enrichment = _load_enrichment()
+    for key, poke in roster.items():
+        extra = enrichment.get(key)
+        if not extra:
+            poke.setdefault("image_url", None)
+            continue
+        if not poke["types"] and extra.get("types"):
+            poke["types"] = extra["types"]
+        poke["image_url"] = extra.get("image_url")
+
+    # Drop scrape artifacts that never resolved to a real Pokemon (no types).
+    return {k: p for k, p in roster.items() if p["types"]}
 
 
 def load_teams() -> list[dict]:

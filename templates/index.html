@@ -23,6 +23,9 @@
 <!-- ── TIER LIST ── -->
 <section id="tier-list" class="tab-content active">
   <h2>Singles Tier List</h2>
+  <div class="search-row wide">
+    <input id="tier-search" type="text" placeholder="Filter the tier list…" autocomplete="off">
+  </div>
   <div id="tier-list-container">Loading…</div>
 </section>
 
@@ -97,6 +100,14 @@
 </section>
 
 </main>
+
+<!-- ── POKÉMON DETAIL MODAL ── -->
+<div id="poke-modal" class="modal-overlay hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
 
 <script src="/static/app.js"></script>
 </body>
