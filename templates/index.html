@@ -9,52 +9,53 @@
 <body>
 
 <header>
-  <h1>⚔️ Pokémon Champions Advisor</h1>
+  <h1 data-i18n="app.heading">⚔️ Pokémon Champions Advisor</h1>
   <nav>
-    <button class="tab-btn active" data-tab="tier-list">Tier List</button>
-    <button class="tab-btn" data-tab="team-builder">Team Builder</button>
-    <button class="tab-btn" data-tab="matchup">Matchup Advisor</button>
-    <button class="tab-btn" data-tab="meta-teams">Meta Teams</button>
-    <button class="tab-btn" data-tab="my-box">My Box</button>
+    <button class="tab-btn active" data-tab="tier-list" data-i18n="tab.tier-list">Tier List</button>
+    <button class="tab-btn" data-tab="team-builder" data-i18n="tab.team-builder">Team Builder</button>
+    <button class="tab-btn" data-tab="matchup" data-i18n="tab.matchup">Matchup Advisor</button>
+    <button class="tab-btn" data-tab="meta-teams" data-i18n="tab.meta-teams">Meta Teams</button>
+    <button class="tab-btn" data-tab="my-box" data-i18n="tab.my-box">My Box</button>
   </nav>
+  <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Language">FR</button>
 </header>
 
 <main>
 
 <!-- ── TIER LIST ── -->
 <section id="tier-list" class="tab-content active">
-  <h2>Singles Tier List</h2>
+  <h2 data-i18n="tier.title">Singles Tier List</h2>
   <div class="search-row wide has-clear">
-    <input id="tier-search" type="text" placeholder="Filter the tier list…" autocomplete="off">
-    <button id="tier-search-clear" class="clear-btn hidden" aria-label="Clear filter">✕</button>
+    <input id="tier-search" type="text" data-i18n-ph="tier.filter.ph" placeholder="Filter the tier list…" autocomplete="off">
+    <button id="tier-search-clear" class="clear-btn hidden" data-i18n-aria="tier.clear.aria" aria-label="Clear filter">✕</button>
   </div>
-  <div id="tier-list-container">Loading…</div>
+  <div id="tier-list-container" data-i18n="common.loading">Loading…</div>
 </section>
 
 <!-- ── TEAM BUILDER ── -->
 <section id="team-builder" class="tab-content">
-  <h2>Team Builder</h2>
-  <p class="subtitle">Pull in the Pokémon from My Box (or add more below), then generate the best
+  <h2 data-i18n="tb.title">Team Builder</h2>
+  <p class="subtitle" data-i18n="tb.subtitle">Pull in the Pokémon from My Box (or add more below), then generate the best
     team of 6. Megas are picked automatically when they're the strongest form of a Pokémon you own.</p>
 
   <div class="search-row">
-    <input id="tb-search" type="text" placeholder="Search Pokémon…" autocomplete="off">
+    <input id="tb-search" type="text" data-i18n-ph="tb.search.ph" placeholder="Search Pokémon…" autocomplete="off">
     <div id="tb-suggestions" class="suggestions"></div>
   </div>
 
   <div class="tb-actions">
-    <button id="tb-load-box" class="ghost-btn" type="button">Load My Box</button>
-    <button id="tb-clear" class="ghost-btn" type="button">Clear</button>
+    <button id="tb-load-box" class="ghost-btn" type="button" data-i18n="tb.loadbox">Load My Box</button>
+    <button id="tb-clear" class="ghost-btn" type="button" data-i18n="tb.clear">Clear</button>
   </div>
 
   <div id="tb-pool" class="chip-list"></div>
 
-  <button id="tb-build-btn" class="primary-btn" disabled>Build Best Team</button>
+  <button id="tb-build-btn" class="primary-btn" data-i18n="tb.build" disabled>Build Best Team</button>
 
   <div id="tb-suggest" class="suggest-panel hidden"></div>
 
   <div id="tb-result" class="hidden">
-    <h3>Recommended Team</h3>
+    <h3 data-i18n="tb.result.title">Recommended Team</h3>
     <div id="tb-team-cards" class="card-grid"></div>
     <div id="tb-analysis" class="analysis-box"></div>
   </div>
@@ -62,76 +63,74 @@
 
 <!-- ── MATCHUP ADVISOR ── -->
 <section id="matchup" class="tab-content">
-  <h2>Matchup Advisor</h2>
-  <p class="subtitle">Enter your team and the opponent's team to find out which 3 to bring and who to lead.</p>
+  <h2 data-i18n="mu.title">Matchup Advisor</h2>
+  <p class="subtitle" data-i18n="mu.subtitle">Enter your team and the opponent's team to find out which 3 to bring and who to lead.</p>
 
   <div class="two-col">
     <div class="col">
-      <h3>My Team</h3>
+      <h3 data-i18n="mu.myteam">My Team</h3>
       <div class="search-row">
-        <input id="my-search" type="text" placeholder="Add my Pokémon…" autocomplete="off">
+        <input id="my-search" type="text" data-i18n-ph="mu.my.ph" placeholder="Add my Pokémon…" autocomplete="off">
         <div id="my-suggestions" class="suggestions"></div>
       </div>
       <div id="my-pool" class="chip-list"></div>
     </div>
     <div class="col">
-      <h3>Opponent's Team</h3>
+      <h3 data-i18n="mu.oppteam">Opponent's Team</h3>
       <div class="search-row">
-        <input id="opp-search" type="text" placeholder="Add opponent's Pokémon…" autocomplete="off">
+        <input id="opp-search" type="text" data-i18n-ph="mu.opp.ph" placeholder="Add opponent's Pokémon…" autocomplete="off">
         <div id="opp-suggestions" class="suggestions"></div>
       </div>
       <div id="opp-pool" class="chip-list"></div>
     </div>
   </div>
 
-  <button id="matchup-btn" class="primary-btn">Analyse Matchup</button>
+  <button id="matchup-btn" class="primary-btn" data-i18n="mu.analyse">Analyse Matchup</button>
 
   <div id="matchup-result" class="hidden">
     <div class="matchup-grid">
       <div class="matchup-bring">
-        <h3>Bring These 3</h3>
+        <h3 data-i18n="mu.bring">Bring These 3</h3>
         <div id="bring-cards" class="card-grid small"></div>
       </div>
       <div class="matchup-lead">
-        <h3>Lead With</h3>
+        <h3 data-i18n="mu.lead">Lead With</h3>
         <div id="lead-card"></div>
         <p id="lead-reason" class="muted"></p>
       </div>
     </div>
-    <h3>Full Scores</h3>
+    <h3 data-i18n="mu.scores">Full Scores</h3>
     <div id="score-table"></div>
   </div>
 </section>
 
 <!-- ── META TEAMS ── -->
 <section id="meta-teams" class="tab-content">
-  <h2>Meta Team Compositions</h2>
-  <div id="meta-teams-container">Loading…</div>
+  <h2 data-i18n="meta.title">Meta Team Compositions</h2>
+  <div id="meta-teams-container" data-i18n="common.loading">Loading…</div>
 </section>
 
 <!-- ── MY BOX ── -->
 <section id="my-box" class="tab-content">
-  <h2>My Box</h2>
-  <p class="subtitle">Track the Pokémon you've recruited. Mark <strong>Permanent</strong> keeps,
-    or <strong>Trial</strong> rentals with the days left on the 7-day clock — and promote a trial
-    to permanent before it expires.</p>
+  <h2 data-i18n="box.title">My Box</h2>
+  <p class="subtitle" data-i18n="box.subtitle">Track the Pokémon you've recruited.</p>
 
   <div class="search-row has-clear">
-    <input id="box-search" type="text" placeholder="Add a Pokémon to your box…" autocomplete="off">
+    <input id="box-search" type="text" data-i18n-ph="box.search.ph" placeholder="Add a Pokémon to your box…" autocomplete="off">
     <div id="box-suggestions" class="suggestions"></div>
   </div>
 
   <div class="box-toolbar">
     <div class="box-filters">
-      <button class="box-filter active" data-filter="all">All</button>
-      <button class="box-filter" data-filter="permanent">Permanent</button>
-      <button class="box-filter" data-filter="trial">Trial</button>
+      <button class="box-filter active" data-filter="all" data-i18n="box.filter.all">All</button>
+      <button class="box-filter" data-filter="permanent" data-i18n="box.filter.permanent">Permanent</button>
+      <button class="box-filter" data-filter="trial" data-i18n="box.filter.trial">Trial</button>
     </div>
     <span id="box-count" class="muted"></span>
   </div>
 
   <div id="box-grid" class="card-grid"></div>
-  <p id="box-empty" class="muted">Your box is empty. Search above to add Pokémon.</p>
+  <p id="box-empty" class="muted" data-i18n="box.empty">Your box is empty. Search above to add Pokémon.</p>
 </section>
 
 </main>
@@ -139,11 +138,12 @@
 <!-- ── POKÉMON DETAIL MODAL ── -->
 <div id="poke-modal" class="modal-overlay hidden">
   <div class="modal" role="dialog" aria-modal="true">
-    <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+    <button id="modal-close" class="modal-close" data-i18n-aria="modal.close" aria-label="Close">✕</button>
     <div id="modal-body"></div>
   </div>
 </div>
 
+<script src="/static/i18n.js"></script>
 <script src="/static/app.js"></script>
 </body>
 </html>

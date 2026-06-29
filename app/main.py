@@ -1,7 +1,9 @@
 """Flask web app for Pokemon Champions advisor."""
 
 from flask import Flask, jsonify, render_template, request
-from .data_loader import load_roster, load_teams, load_moves, load_abilities, load_items
+from .data_loader import (
+    load_roster, load_teams, load_moves, load_abilities, load_items, load_i18n,
+)
 from .team_builder import (
     build_best_team_from_groups,
     expand_forms,
@@ -22,6 +24,7 @@ MOVES  = load_moves()
 ABILITIES = load_abilities()
 ITEMS  = load_items()
 ITEM_IMAGES = load_item_images()
+I18N = {"fr": load_i18n("fr")}   # data-label translations, loaded once at startup
 
 POKEMON_LIST = sorted(ROSTER.values(), key=lambda p: (-p["tier_score"], p["name"]))
 
@@ -44,6 +47,12 @@ def _resolve_names(names: list[str]) -> list[dict]:
 @app.get("/")
 def index():
     return render_template("index.html")
+
+
+@app.get("/api/i18n/<lang>")
+def api_i18n(lang: str):
+    """Data-label translation dictionaries (names, moves, items, etc.) for a language."""
+    return jsonify(I18N.get(lang) or load_i18n(lang))
 
 
 @app.get("/api/pokemon")
@@ -170,6 +179,7 @@ def api_matchup():
             "name": result["lead"]["name"],
             "types": result["lead"].get("types", []),
         } if result["lead"] else None,
+        "lead_target": result.get("lead_target", ""),
         "lead_reasoning": result.get("lead_reasoning", ""),
         "full_scores": [
             {

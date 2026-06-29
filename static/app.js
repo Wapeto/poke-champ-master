@@ -1,18 +1,28 @@
 "use strict";
 
 // ── State ─────────────────────────────────────────────────────────────────────
-let ALL_POKEMON = [];   // [{name, tier, types, image_url}]
+let ALL_POKEMON = [];   // [{name, tier, types, image_url}] — names are canonical English
 let TIER_DATA   = {};   // grouped tier list, cached for filtering
+let META_TEAMS  = [];   // cached meta teams for re-render on language switch
 const tbPool   = [];    // team-builder pool
 const myPool   = [];    // matchup my team
 const oppPool  = [];    // matchup opponent team
+
+// Last computed responses, kept so a language switch can re-render in place.
+let lastSuggest = null;
+let lastBuild   = null;
+let lastMatchup = null;
+let tierQuery   = "";
+let currentModalName = null;
+
+const CHIP_RENDERERS = [];  // renderChips for each search pool
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
 function typeBadge(type) {
-  return `<span class="type-badge type-${type}">${type}</span>`;
+  return `<span class="type-badge type-${type}">${tType(type)}</span>`;
 }
 
 function tierBadge(tier) {
@@ -22,17 +32,15 @@ function tierBadge(tier) {
 
 function sprite(p, cls = 'sprite') {
   if (!p || !p.image_url) return '';
-  return `<img class="${cls}" src="${p.image_url}" alt="${p.name}" loading="lazy">`;
+  return `<img class="${cls}" src="${p.image_url}" alt="${tName(p.name)}" loading="lazy">`;
 }
 
-const CAT_ABBR = { Physical: 'PHY', Special: 'SPE', Status: 'STA' };
-
 function movePill(m) {
-  const t = m.type || '';
-  const bg = t ? `style="background:var(--${t})"` : '';
+  const ty = m.type || '';
+  const bg = ty ? `style="background:var(--${ty})"` : '';
   const cat = m.category
-    ? `<span class="move-cat cat-${m.category}">${CAT_ABBR[m.category] || ''}</span>` : '';
-  return `<span class="move-pill type-text-${t}" ${bg} data-type="${t}">${m.name}${cat}</span>`;
+    ? `<span class="move-cat cat-${m.category}">${catAbbr(m.category)}</span>` : '';
+  return `<span class="move-pill type-text-${ty}" ${bg} data-type="${ty}">${tMove(m.name)}${cat}</span>`;
 }
 
 function moveList(build) {
@@ -44,23 +52,25 @@ function itemTag(build) {
   if (!build || !build.held_item) return '';
   const icon = build.held_item_image
     ? `<img class="item-img" src="${build.held_item_image}" alt="" loading="lazy">` : '🎒';
-  return `<div class="card-item">${icon}<span>${build.held_item}</span></div>`;
+  return `<div class="card-item">${icon}<span>${tItem(build.held_item)}</span></div>`;
 }
 
 // Any element with data-poke opens the detail modal (event delegation).
+// The canonical English name is always carried here, never the translation.
 function pokeRef(name) {
   return `data-poke="${encodeURIComponent(name)}"`;
 }
 
 function pokeCard(p, build = null, role = null) {
   const types = (p.types || []).map(typeBadge).join('');
-  const nat   = build ? `<div class="card-nature">${build.nature} | ${build.ability}</div>` : '';
-  const roleHtml = role ? `<div class="card-role">${role}</div>` : '';
+  const nat   = build
+    ? `<div class="card-nature">${tNature(build.nature)} | ${tAbility(build.ability)}</div>` : '';
+  const roleHtml = role ? `<div class="card-role">${roleLabel(role)}</div>` : '';
   return `
     <div class="poke-card clickable" ${pokeRef(p.name)}>
       <div class="card-head">
         ${sprite(p, 'sprite sm')}
-        <div class="card-name">${p.name} ${tierBadge(p.tier || '')}</div>
+        <div class="card-name">${tName(p.name)} ${tierBadge(p.tier || '')}</div>
       </div>
       ${roleHtml}
       <div style="margin-bottom:8px">${types}</div>
@@ -82,9 +92,24 @@ $$('.tab-btn').forEach(btn => {
 
 // ── Load data ─────────────────────────────────────────────────────────────────
 async function init() {
+  await initLang();
   ALL_POKEMON = await fetch('/api/pokemon').then(r => r.json());
   loadTierList();
   loadMetaTeams();
+}
+
+// Re-render every dynamic view in the active language (called by i18n.setLang).
+function rerenderAll() {
+  renderTierList(tierQuery);
+  renderMetaTeams();
+  CHIP_RENDERERS.forEach(fn => fn());
+  renderBox();
+  if (lastSuggest) renderSuggest(lastSuggest);
+  if (lastBuild) renderBuild(lastBuild);
+  if (lastMatchup) renderMatchup(lastMatchup);
+  if (currentModalName && !modal.classList.contains('hidden')) {
+    openPokemonModal(currentModalName);
+  }
 }
 
 // ── TIER LIST ─────────────────────────────────────────────────────────────────
@@ -97,32 +122,31 @@ async function loadTierList() {
 }
 
 function renderTierList(query) {
+  tierQuery = query;
   const q = query.trim().toLowerCase();
   const container = $('#tier-list-container');
 
   const html = TIER_ORDER.map(tier => {
-    const list = (TIER_DATA[tier] || []).filter(p =>
-      !q || p.name.toLowerCase().includes(q) ||
-      (p.types || []).some(t => t.toLowerCase().includes(q))
-    );
+    const list = (TIER_DATA[tier] || []).filter(p => searchMatch(p, q));
     if (!list.length) return '';
     const chips = list.map(p => {
       const types = (p.types || []).map(typeBadge).join('');
-      return `<div class="poke-chip clickable" ${pokeRef(p.name)} title="${(p.types||[]).join('/')}">
-        ${sprite(p, 'sprite tl')}<strong>${p.name}</strong> ${types}
+      const title = (p.types || []).map(tType).join('/');
+      return `<div class="poke-chip clickable" ${pokeRef(p.name)} title="${title}">
+        ${sprite(p, 'sprite tl')}<strong>${tName(p.name)}</strong> ${types}
       </div>`;
     }).join('');
     return `
       <div class="tier-section">
         <div class="tier-header">
           <div class="tier-badge ${BADGE_CLS[tier]}">${tier}</div>
-          <span class="muted">${list.length} Pokémon</span>
+          <span class="muted">${t('tier.count', { n: list.length })}</span>
         </div>
         <div class="tier-pokemon-row">${chips}</div>
       </div>`;
   }).join('');
 
-  container.innerHTML = html || '<p class="muted">No Pokémon match that filter.</p>';
+  container.innerHTML = html || `<p class="muted">${t('tier.nomatch')}</p>`;
 }
 
 const tierSearch = $('#tier-search');
@@ -142,7 +166,7 @@ tierClear.addEventListener('click', () => {
 const modal     = $('#poke-modal');
 const modalBody = $('#modal-body');
 
-function closeModal() { modal.classList.add('hidden'); }
+function closeModal() { modal.classList.add('hidden'); currentModalName = null; }
 function openModal()  { modal.classList.remove('hidden'); }
 
 $('#modal-close').addEventListener('click', closeModal);
@@ -158,21 +182,22 @@ document.addEventListener('click', e => {
 function matchupRow(label, entries, cls) {
   if (!entries.length) return '';
   const badges = entries.map(en =>
-    `<span class="type-badge type-${en.type}">${en.type}${en.mult && en.mult !== 0 ? ` ${en.mult}×` : ''}</span>`
+    `<span class="type-badge type-${en.type}">${tType(en.type)}${en.mult && en.mult !== 0 ? ` ${en.mult}×` : ''}</span>`
   ).join('');
   return `<div class="matchup-line"><span class="matchup-label ${cls}">${label}</span>${badges}</div>`;
 }
 
 async function openPokemonModal(name) {
+  currentModalName = name;
   openModal();
-  modalBody.innerHTML = '<p class="muted">Loading…</p>';
+  modalBody.innerHTML = `<p class="muted">${t('common.loading')}</p>`;
   let d;
   try {
     const res = await fetch('/api/pokemon/' + encodeURIComponent(name));
     if (!res.ok) throw new Error('not found');
     d = await res.json();
   } catch {
-    modalBody.innerHTML = `<p class="warn">Could not load ${name}.</p>`;
+    modalBody.innerHTML = `<p class="warn">${t('modal.notfound', { name: tName(name) })}</p>`;
     return;
   }
 
@@ -184,7 +209,7 @@ async function openPokemonModal(name) {
       const v = stats[k];
       const pct = Math.min(100, Math.round((v / 200) * 100));
       return `<div class="stat-row">
-        <span class="stat-key">${k.toUpperCase()}</span>
+        <span class="stat-key">${statLabel(k)}</span>
         <span class="stat-bar"><span class="stat-fill" style="width:${pct}%"></span></span>
         <span class="stat-val">${v}</span>
       </div>`;
@@ -194,26 +219,26 @@ async function openPokemonModal(name) {
 
   const builds = (d.builds || []).map((b, i) => `
     <div class="build-block">
-      <div class="build-title">Build ${i + 1} — ${b.nature || ''} ${b.ability ? '| ' + b.ability : ''}</div>
+      <div class="build-title">${t('modal.build', { n: i + 1 })} — ${tNature(b.nature) || ''} ${b.ability ? '| ' + tAbility(b.ability) : ''}</div>
       ${itemTag(b)}
       ${moveList(b)}
     </div>`).join('');
 
   const sources = (d.sources || []).length
-    ? `<div class="sources">Data: ${d.sources.join(' · ')}</div>` : '';
+    ? `<div class="sources">${t('modal.data', { sources: d.sources.join(' · ') })}</div>` : '';
 
   const teammates = (d.best_teammates || []).map(n =>
-    `<span class="poke-chip clickable inline" ${pokeRef(n)}>${n}</span>`).join('');
+    `<span class="poke-chip clickable inline" ${pokeRef(n)}>${tName(n)}</span>`).join('');
   const counters = (d.counters || []).map(n =>
-    `<span class="poke-chip clickable inline" ${pokeRef(n)}>${n}</span>`).join('');
+    `<span class="poke-chip clickable inline" ${pokeRef(n)}>${tName(n)}</span>`).join('');
 
   modalBody.innerHTML = `
     <div class="modal-header">
-      ${d.image_url ? `<img class="sprite lg" src="${d.image_url}" alt="${d.name}">` : ''}
+      ${d.image_url ? `<img class="sprite lg" src="${d.image_url}" alt="${tName(d.name)}">` : ''}
       <div>
-        <h2 class="modal-name">${d.name} ${d.tier ? tierBadge(d.tier) : ''}</h2>
+        <h2 class="modal-name">${tName(d.name)} ${d.tier ? tierBadge(d.tier) : ''}</h2>
         <div class="modal-types">${types}</div>
-        ${d.build_url ? `<a class="muted source-link" href="${d.build_url}" target="_blank" rel="noopener">Game8 build ↗</a>` : ''}
+        ${d.build_url ? `<a class="muted source-link" href="${d.build_url}" target="_blank" rel="noopener">${t('modal.game8')}</a>` : ''}
         ${sources}
       </div>
     </div>
@@ -222,20 +247,20 @@ async function openPokemonModal(name) {
 
     <div class="modal-grid">
       <div class="modal-col">
-        ${statRows ? `<h4 class="modal-sub">Base Stats</h4><div class="stats">${statRows}</div>` : ''}
-        <h4 class="modal-sub">Type Matchups</h4>
-        ${matchupRow('Weak to', d.weak_to || [], 'bad')}
-        ${matchupRow('Resists', d.resists || [], 'good')}
-        ${matchupRow('Immune', d.immune_to || [], 'good')}
+        ${statRows ? `<h4 class="modal-sub">${t('modal.stats')}</h4><div class="stats">${statRows}</div>` : ''}
+        <h4 class="modal-sub">${t('modal.matchups')}</h4>
+        ${matchupRow(t('modal.weak'), d.weak_to || [], 'bad')}
+        ${matchupRow(t('modal.resists'), d.resists || [], 'good')}
+        ${matchupRow(t('modal.immune'), d.immune_to || [], 'good')}
       </div>
       <div class="modal-col">
-        ${moves ? `<h4 class="modal-sub">Best Moves</h4><div class="move-list">${moves}</div>` : ''}
-        ${teammates ? `<h4 class="modal-sub">Best Teammates</h4><div class="chip-wrap">${teammates}</div>` : ''}
-        ${counters ? `<h4 class="modal-sub">Countered By</h4><div class="chip-wrap">${counters}</div>` : ''}
+        ${moves ? `<h4 class="modal-sub">${t('modal.moves')}</h4><div class="move-list">${moves}</div>` : ''}
+        ${teammates ? `<h4 class="modal-sub">${t('modal.teammates')}</h4><div class="chip-wrap">${teammates}</div>` : ''}
+        ${counters ? `<h4 class="modal-sub">${t('modal.counters')}</h4><div class="chip-wrap">${counters}</div>` : ''}
       </div>
     </div>
 
-    ${builds ? `<h4 class="modal-sub">Recommended Builds</h4><div class="build-grid">${builds}</div>` : ''}
+    ${builds ? `<h4 class="modal-sub">${t('modal.builds')}</h4><div class="build-grid">${builds}</div>` : ''}
   `;
 }
 
@@ -260,7 +285,7 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable, onChange = nu
     chips.innerHTML = pool.map((p, i) => {
       const types = (p.types || []).map(typeBadge).join('');
       return `<div class="chip">
-        ${sprite(p, 'sprite xs')}${types} <span class="clickable" ${pokeRef(p.name)}>${p.name}</span>
+        ${sprite(p, 'sprite xs')}${types} <span class="clickable" ${pokeRef(p.name)}>${tName(p.name)}</span>
         <span class="remove" data-i="${i}">✕</span>
       </div>`;
     }).join('');
@@ -273,6 +298,7 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable, onChange = nu
       });
     });
   }
+  CHIP_RENDERERS.push(renderChips);
 
   // Expose addPoke so suggestion clicks can push into the pool.
   makeSearch._pools = makeSearch._pools || {};
@@ -290,18 +316,19 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable, onChange = nu
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
     if (!q) { sug.classList.remove('open'); return; }
-    const matches = ALL_POKEMON.filter(p => p.name.toLowerCase().includes(q)).slice(0, 12);
+    const matches = ALL_POKEMON.filter(p => searchMatch(p, q)).slice(0, 12);
     if (!matches.length) { sug.classList.remove('open'); return; }
     sug.innerHTML = matches.map(p => {
       const types = (p.types || []).map(typeBadge).join('');
-      return `<div class="suggestion-item" data-name="${p.name}">
-        ${sprite(p, 'sprite xs')}${tierBadge(p.tier)} <strong>${p.name}</strong> ${types}
+      return `<div class="suggestion-item" data-name="${encodeURIComponent(p.name)}">
+        ${sprite(p, 'sprite xs')}${tierBadge(p.tier)} <strong>${tName(p.name)}</strong> ${types}
       </div>`;
     }).join('');
     sug.classList.add('open');
     sug.querySelectorAll('.suggestion-item').forEach(el => {
       el.addEventListener('click', () => {
-        const poke = ALL_POKEMON.find(p => p.name === el.dataset.name);
+        const name = decodeURIComponent(el.dataset.name);
+        const poke = ALL_POKEMON.find(p => p.name === name);
         if (poke) addPoke(poke);
       });
     });
@@ -319,7 +346,7 @@ function typeBadgeList(types) { return (types || []).map(typeBadge).join(' '); }
 
 async function refreshTbSuggest() {
   const panel = $('#tb-suggest');
-  if (!tbPool.length) { panel.classList.add('hidden'); panel.innerHTML = ''; return; }
+  if (!tbPool.length) { panel.classList.add('hidden'); panel.innerHTML = ''; lastSuggest = null; return; }
 
   const res = await fetch('/api/team/suggest', {
     method: 'POST',
@@ -327,7 +354,12 @@ async function refreshTbSuggest() {
     body: JSON.stringify({ pokemon: tbPool.map(p => p.name) }),
   }).then(r => r.json()).catch(() => null);
   if (!res) return;
+  renderSuggest(res);
+}
 
+function renderSuggest(res) {
+  lastSuggest = res;
+  const panel = $('#tb-suggest');
   const attack = res.attack_types_needed || [];
   const weak   = res.weak_spots || [];
   const def    = res.defensive_types_needed || [];
@@ -336,22 +368,22 @@ async function refreshTbSuggest() {
     <div class="suggest-card" data-add="${encodeURIComponent(s.name)}">
       ${sprite(s, 'sprite sm')}
       <div class="suggest-card-body">
-        <div class="suggest-name">${s.name} ${tierBadge(s.tier)}</div>
+        <div class="suggest-name">${tName(s.name)} ${tierBadge(s.tier)}</div>
         <div>${typeBadgeList(s.types)}</div>
-        <div class="suggest-role">${s.role} · +${s.gain}</div>
+        <div class="suggest-role">${roleLabel(s.role)} · +${s.gain}</div>
       </div>
       <span class="suggest-add">+</span>
     </div>`).join('');
 
   panel.innerHTML = `
-    <h3>Suggested Additions</h3>
+    <h3>${t('tb.suggest.title')}</h3>
     <div class="suggest-types">
-      ${attack.length ? `<div class="suggest-line"><span class="suggest-label good">Attack types missing</span>${typeBadgeList(attack)}</div>` : '<div class="suggest-line good">✅ Full offensive type coverage</div>'}
-      ${weak.length ? `<div class="suggest-line"><span class="suggest-label bad">Stacked weakness</span>${typeBadgeList(weak)}</div>` : ''}
-      ${def.length ? `<div class="suggest-line"><span class="suggest-label">Add a Pokémon of type</span>${typeBadgeList(def)}</div>` : ''}
+      ${attack.length ? `<div class="suggest-line"><span class="suggest-label good">${t('tb.suggest.attack')}</span>${typeBadgeList(attack)}</div>` : `<div class="suggest-line good">${t('tb.suggest.fullcover')}</div>`}
+      ${weak.length ? `<div class="suggest-line"><span class="suggest-label bad">${t('tb.suggest.stacked')}</span>${typeBadgeList(weak)}</div>` : ''}
+      ${def.length ? `<div class="suggest-line"><span class="suggest-label">${t('tb.suggest.addtype')}</span>${typeBadgeList(def)}</div>` : ''}
     </div>
     <div class="suggest-grid">${cards}</div>
-    <p class="muted suggest-hint">Click a suggestion to add it to your pool.</p>`;
+    <p class="muted suggest-hint">${t('tb.suggest.hint')}</p>`;
   panel.classList.remove('hidden');
 }
 
@@ -367,7 +399,7 @@ $('#tb-suggest').addEventListener('click', e => {
 
 // Pull owned Pokémon (base forms) from My Box into the builder pool.
 $('#tb-load-box').addEventListener('click', () => {
-  if (!BOX.length) { alert('Your box is empty. Add Pokémon in the My Box tab first.'); return; }
+  if (!BOX.length) { alert(t('tb.box.empty')); return; }
   const add = makeSearch._pools && makeSearch._pools['tb-search'];
   BOX.forEach(b => {
     const poke = ALL_POKEMON.find(p => p.name.toLowerCase() === b.name.toLowerCase()) || b;
@@ -378,7 +410,7 @@ $('#tb-clear').addEventListener('click', () => makeSearch._clear['tb-search']())
 
 $('#tb-build-btn').addEventListener('click', async () => {
   const btn = $('#tb-build-btn');
-  btn.textContent = 'Building…';
+  btn.textContent = t('tb.building');
   btn.disabled = true;
 
   const res = await fetch('/api/team/build', {
@@ -387,37 +419,47 @@ $('#tb-build-btn').addEventListener('click', async () => {
     body: JSON.stringify({ pokemon: tbPool.map(p => p.name) }),
   }).then(r => r.json());
 
-  btn.textContent = 'Build Best Team';
+  btn.textContent = t('tb.build');
   btn.disabled = tbPool.length === 0;
 
   if (res.error) { alert(res.error); return; }
+  renderBuild(res);
+});
 
+function renderBuild(res) {
+  lastBuild = res;
   $('#tb-team-cards').innerHTML = res.team.map(p => pokeCard(p, p.best_build, p.role)).join('');
 
   const a = res.analysis;
   const weakHtml = Object.entries(a.shared_weaknesses)
-    .map(([t, members]) => `<span class="warn">${t}: ${members.join(', ')}</span>`)
+    .map(([ty, members]) => {
+      const ms = members.map(m => {
+        const ix = m.lastIndexOf(' (');
+        return ix > 0 ? tName(m.slice(0, ix)) + m.slice(ix) : tName(m);
+      }).join(', ');
+      return `<span class="warn">${tType(ty)}: ${ms}</span>`;
+    })
     .join('<br>');
 
   $('#tb-analysis').innerHTML = `
-    <h4>Team Analysis  (score: ${a.score})</h4>
-    <p class="good">✅ Covers: ${a.covered_types.map(typeBadge).join(' ')}</p>
-    ${a.uncovered_types.length ? `<p class="warn">⚠️ No coverage vs: ${a.uncovered_types.map(typeBadge).join(' ')}</p>` : ''}
-    ${weakHtml ? `<p style="margin-top:8px"><strong>Shared weaknesses:</strong><br>${weakHtml}</p>` : ''}
+    <h4>${t('tb.analysis.title', { score: a.score })}</h4>
+    <p class="good">${t('tb.analysis.covers')} ${a.covered_types.map(typeBadge).join(' ')}</p>
+    ${a.uncovered_types.length ? `<p class="warn">${t('tb.analysis.nocover')} ${a.uncovered_types.map(typeBadge).join(' ')}</p>` : ''}
+    ${weakHtml ? `<p style="margin-top:8px"><strong>${t('tb.analysis.shared')}</strong><br>${weakHtml}</p>` : ''}
   `;
 
   $('#tb-result').classList.remove('hidden');
-});
+}
 
 // ── MATCHUP ADVISOR ───────────────────────────────────────────────────────────
 makeSearch('my-search',  'my-suggestions',  myPool,  'my-pool',  null);
 makeSearch('opp-search', 'opp-suggestions', oppPool, 'opp-pool', null);
 
 $('#matchup-btn').addEventListener('click', async () => {
-  if (!myPool.length) { alert('Add at least one Pokémon to your team.'); return; }
+  if (!myPool.length) { alert(t('mu.needteam')); return; }
 
   const btn = $('#matchup-btn');
-  btn.textContent = 'Analysing…';
+  btn.textContent = t('mu.analysing');
   btn.disabled = true;
 
   const res = await fetch('/api/matchup', {
@@ -429,22 +471,29 @@ $('#matchup-btn').addEventListener('click', async () => {
     }),
   }).then(r => r.json());
 
-  btn.textContent = 'Analyse Matchup';
+  btn.textContent = t('mu.analyse');
   btn.disabled = false;
 
   if (res.error) { alert(res.error); return; }
+  renderMatchup(res);
+});
 
+function renderMatchup(res) {
+  lastMatchup = res;
   $('#bring-cards').innerHTML = res.bring.map(p => pokeCard(p, p.best_build)).join('');
 
   if (res.lead) {
     const lead = res.bring.find(p => p.name === res.lead.name) || res.lead;
     $('#lead-card').innerHTML = pokeCard(lead, lead.best_build);
-    $('#lead-reason').textContent = res.lead_reasoning;
+    const target = res.lead_target || (res.lead_reasoning || '');
+    $('#lead-reason').textContent = res.lead_target
+      ? t('mu.lead.reason', { name: tName(res.lead_target) })
+      : res.lead_reasoning;
   }
 
   if (res.full_scores.length) {
-    const thead = `<tr><th>Pokémon</th><th>Tier</th><th>Score</th>
-      ${(res.full_scores[0].per_opponent || []).map(o => `<th>vs ${o.name}</th>`).join('')}
+    const thead = `<tr><th>${t('mu.col.pokemon')}</th><th>${t('mu.col.tier')}</th><th>${t('mu.col.score')}</th>
+      ${(res.full_scores[0].per_opponent || []).map(o => `<th>${t('mu.col.vs', { name: tName(o.name) })}</th>`).join('')}
     </tr>`;
     const rows = res.full_scores.map(s => {
       const isBring = res.bring.some(p => p.name === s.name);
@@ -454,7 +503,7 @@ $('#matchup-btn').addEventListener('click', async () => {
         </td>`
       ).join('');
       return `<tr ${isBring ? 'style="font-weight:600"' : ''}>
-        <td class="clickable" ${pokeRef(s.name)}>${isBring ? '✅ ' : ''}${s.name}</td>
+        <td class="clickable" ${pokeRef(s.name)}>${isBring ? '✅ ' : ''}${tName(s.name)}</td>
         <td>${tierBadge(s.tier)}</td>
         <td>${s.total_score}</td>
         ${oppCells}
@@ -464,27 +513,31 @@ $('#matchup-btn').addEventListener('click', async () => {
   }
 
   $('#matchup-result').classList.remove('hidden');
-});
+}
 
 // ── META TEAMS ────────────────────────────────────────────────────────────────
 async function loadMetaTeams() {
-  const teams = await fetch('/api/teams').then(r => r.json());
-  const container = $('#meta-teams-container');
-  if (!teams.length) { container.textContent = 'No teams available.'; return; }
+  META_TEAMS = await fetch('/api/teams').then(r => r.json());
+  renderMetaTeams();
+}
 
-  container.innerHTML = teams.map(team => {
+function renderMetaTeams() {
+  const container = $('#meta-teams-container');
+  if (!META_TEAMS.length) { container.textContent = t('meta.none'); return; }
+
+  container.innerHTML = META_TEAMS.map(team => {
     const members = team.members.map(m => `
       <div class="team-member clickable" ${pokeRef(m.pokemon)}>
         ${sprite(m, 'sprite md')}
-        <div class="team-member-name">${m.pokemon}</div>
+        <div class="team-member-name">${tName(m.pokemon)}</div>
         <div class="team-member-types">${(m.types || []).map(typeBadge).join('')}</div>
-        ${m.held_item ? `<div class="team-member-item">${m.held_item_image ? `<img class="item-img" src="${m.held_item_image}" alt="" loading="lazy">` : '🎒'}${m.held_item}</div>` : ''}
+        ${m.held_item ? `<div class="team-member-item">${m.held_item_image ? `<img class="item-img" src="${m.held_item_image}" alt="" loading="lazy">` : '🎒'}${tItem(m.held_item)}</div>` : ''}
       </div>`).join('');
     return `
       <div class="team-card">
         <div class="team-card-head">
           <h4>${team.name}</h4>
-          ${team.source_url ? `<a class="muted source-link" href="${team.source_url}" target="_blank" rel="noopener">guide ↗</a>` : ''}
+          ${team.source_url ? `<a class="muted source-link" href="${team.source_url}" target="_blank" rel="noopener">${t('meta.guide')}</a>` : ''}
         </div>
         ${team.strategy ? `<p class="team-strategy">${team.strategy}</p>` : ''}
         <div class="team-member-grid">${members}</div>
@@ -532,7 +585,7 @@ function renderBox() {
   const perm = BOX.filter(b => b.kind === 'permanent').length;
   const trial = BOX.length - perm;
   $('#box-count').textContent = BOX.length
-    ? `${BOX.length} in box · ${perm} permanent · ${trial} trial` : '';
+    ? t('box.count', { n: BOX.length, perm, trial }) : '';
   $('#box-empty').classList.toggle('hidden', BOX.length > 0);
 
   const items = BOX.filter(b => boxFilter === 'all' || b.kind === boxFilter);
@@ -540,26 +593,27 @@ function renderBox() {
     const types = (b.types || []).map(typeBadge).join('');
     const isTrial = b.kind === 'trial';
     const expired = isTrial && b.daysLeft <= 0;
+    const dayWord = b.daysLeft === 1 ? t('box.day') : t('box.days');
     const trialCtrls = isTrial ? `
       <div class="box-trial ${expired ? 'expired' : ''}">
-        <label class="box-days-label">Days left
+        <label class="box-days-label">${t('box.daysleft')}
           <input type="number" min="0" max="7" value="${b.daysLeft}" class="box-days" data-id="${b.id}">
         </label>
-        ${expired ? '<span class="warn">⚠ expired</span>'
-                  : `<span class="muted">${b.daysLeft} day${b.daysLeft === 1 ? '' : 's'} on the 7-day clock</span>`}
-        <button class="mini-btn promote" data-id="${b.id}">Make Permanent</button>
+        ${expired ? `<span class="warn">${t('box.expired')}</span>`
+                  : `<span class="muted">${t('box.clock', { n: b.daysLeft, dayWord })}</span>`}
+        <button class="mini-btn promote" data-id="${b.id}">${t('box.makeperm')}</button>
       </div>` : '';
     return `
       <div class="poke-card box-card ${b.kind} ${expired ? 'expired' : ''}">
         <div class="card-head">
           ${sprite(b, 'sprite sm')}
-          <div class="card-name clickable" ${pokeRef(b.name)}>${b.name} ${b.tier ? tierBadge(b.tier) : ''}</div>
-          <button class="box-remove" data-id="${b.id}" title="Remove">✕</button>
+          <div class="card-name clickable" ${pokeRef(b.name)}>${tName(b.name)} ${b.tier ? tierBadge(b.tier) : ''}</div>
+          <button class="box-remove" data-id="${b.id}" title="${t('box.remove')}">✕</button>
         </div>
         <div style="margin-bottom:8px">${types}</div>
         <div class="box-kind">
-          <button class="kind-btn ${!isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="permanent">Permanent</button>
-          <button class="kind-btn ${isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="trial">Trial</button>
+          <button class="kind-btn ${!isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="permanent">${t('box.kind.permanent')}</button>
+          <button class="kind-btn ${isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="trial">${t('box.kind.trial')}</button>
         </div>
         ${trialCtrls}
       </div>`;
@@ -596,16 +650,16 @@ $$('.box-filter').forEach(btn => btn.addEventListener('click', () => {
     const q = input.value.trim().toLowerCase();
     if (!q) { sug.classList.remove('open'); return; }
     const matches = ALL_POKEMON
-      .filter(p => !p.is_mega && p.name.toLowerCase().includes(q)).slice(0, 12);
+      .filter(p => !p.is_mega && searchMatch(p, q)).slice(0, 12);
     if (!matches.length) { sug.classList.remove('open'); return; }
     sug.innerHTML = matches.map(p =>
-      `<div class="suggestion-item" data-name="${p.name}">
-        ${sprite(p, 'sprite xs')}${tierBadge(p.tier)} <strong>${p.name}</strong>
+      `<div class="suggestion-item" data-name="${encodeURIComponent(p.name)}">
+        ${sprite(p, 'sprite xs')}${tierBadge(p.tier)} <strong>${tName(p.name)}</strong>
         ${(p.types || []).map(typeBadge).join('')}
       </div>`).join('');
     sug.classList.add('open');
     sug.querySelectorAll('.suggestion-item').forEach(el => el.addEventListener('click', () => {
-      const poke = ALL_POKEMON.find(p => p.name === el.dataset.name);
+      const poke = ALL_POKEMON.find(p => p.name === decodeURIComponent(el.dataset.name));
       if (poke) boxAdd(poke);
       input.value = ''; sug.classList.remove('open');
     }));

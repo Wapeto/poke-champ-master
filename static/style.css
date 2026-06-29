@@ -42,14 +42,32 @@ header {
   padding: 16px 32px;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px 32px;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-header h1 { font-size: 1.25rem; white-space: nowrap; }
+header h1 { font-size: 1.25rem; }
 
 nav { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Language toggle, pinned to the right of the header. */
+.lang-toggle {
+  margin-left: auto;
+  flex-shrink: 0;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all 0.15s;
+}
+.lang-toggle:hover { border-color: var(--accent); color: #fff; }
 .tab-btn {
   background: none;
   border: 1px solid var(--border);
@@ -295,6 +313,7 @@ h3 { font-size: 1.1rem; margin-bottom: 12px; }
 @media (max-width: 640px) { .matchup-grid { grid-template-columns: 1fr; } }
 
 /* ── SCORE TABLE ── */
+#score-table { overflow-x: auto; }
 .score-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
 .score-table th, .score-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
 .score-table th { color: var(--muted); font-weight: 600; }

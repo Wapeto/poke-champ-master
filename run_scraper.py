@@ -86,6 +86,16 @@ def main() -> None:
     except Exception as e:
         print(f"  ERROR: {e}")
 
+    # French translation dictionaries (authoritative names from PokeAPI).
+    print("\n" + "=" * 60)
+    print("POKEAPI — French translations (data/i18n/fr.json)")
+    print("=" * 60)
+    try:
+        from scrapers.translate_fr import run as run_translate
+        run_translate(args.data_dir)
+    except Exception as e:
+        print(f"  ERROR: {e}")
+
     print(f"\nAll done. Data saved to: {args.data_dir.resolve()}")
     print("\nOutput structure:")
     for path in sorted(args.data_dir.rglob("*.json")):

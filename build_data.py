@@ -20,6 +20,13 @@ def main() -> None:
     print(f"Wrote {len(roster)} Pokemon to {ROSTER_CACHE} "
           f"({ROSTER_CACHE.stat().st_size:,} bytes)")
 
+    # Refresh French translations (needs network; skip silently if offline).
+    try:
+        from scrapers.translate_fr import run as run_translate
+        run_translate(ROSTER_CACHE.parent)
+    except Exception as e:  # pragma: no cover - best-effort, offline-safe
+        print(f"  (skipped fr.json refresh: {e})")
+
 
 if __name__ == "__main__":
     main()

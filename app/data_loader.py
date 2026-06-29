@@ -202,6 +202,14 @@ def build_roster() -> dict[str, dict]:
     return {k: p for k, p in roster.items() if p["types"]}
 
 
+def load_i18n(lang: str) -> dict[str, dict[str, str]]:
+    """Return the data-label translation dictionaries for a language, or {} if none."""
+    safe = "".join(c for c in lang if c.isalpha())
+    if not safe:
+        return {}
+    return _load(DATA_DIR.parent / "i18n" / f"{safe}.json") or {}
+
+
 def load_teams() -> list[dict]:
     """Load all scraped team compositions."""
     all_teams = _load(DATA_DIR / "all_teams.json") or []

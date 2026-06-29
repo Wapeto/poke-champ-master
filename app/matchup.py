@@ -129,5 +129,6 @@ def recommend(my_team: list[dict], opponent_team: list[dict]) -> dict[str, Any]:
         "bring": bring_pokemon,
         "lead": lead,
         "scores": scores,
+        "lead_target": lead_target["name"],
         "lead_reasoning": f"Best matchup vs {lead_target['name']} (opponent's strongest)",
     }

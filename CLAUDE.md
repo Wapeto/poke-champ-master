@@ -40,11 +40,21 @@ the serverless bundle stays small; scraping deps live in `requirements-dev.txt`.
   one best form per owned slot. Suggestions rank by complementarity (offensive gaps +
   stacked-weakness resists), not raw tier.
 - `app/matchup.py`, `app/type_chart.py` — domain logic.
+- **i18n (EN/FR):** `data_loader.load_i18n(lang)` reads `data/i18n/<lang>.json` (committed,
+  built by `scrapers/translate_fr.py` from authoritative PokeAPI French names — Pokémon, types,
+  moves, items, abilities, natures). Served at `/api/i18n/<lang>`. `static/i18n.js` holds the
+  UI-string tables + `LANG` state (localStorage `pokeLang`) + helpers (`t`, `tName`, `tType`,
+  `tMove`, `tItem`, `tAbility`, `tNature`, `searchMatch`). Translation is **display-only**:
+  canonical data keys, `data-poke` refs, the box (localStorage) and all API payloads stay
+  English; `static/app.js` re-renders via `rerenderAll()` on language switch. Scraped prose
+  (Pokémon descriptions, meta-team names/strategy) is intentionally left English — no official
+  French exists. Champions-invented Mega Stones / abilities fall back to English too. Regenerate
+  `fr.json` with `python build_data.py` or `run_scraper.py` (needs network).
 - `app/pokemon_card.py` — detail-card payload (`best_moves` capped at top 4).
   `app/meta_teams.py` — cleaned meta teams.
 - `scrapers/` — `game8_scraper.py`, `pokeapi_enrich.py`, `pokechamps_scraper.py` (⚠️ needs
   rewrite — see `GAME_KNOWLEDGE.md` §9; pokechamps is server-rendered HTML, not a Next.js SPA).
-- `templates/index.html`, `static/app.js`, `static/style.css` — single-page UI.
+- `templates/index.html`, `static/app.js`, `static/i18n.js`, `static/style.css` — single-page UI.
 
 ## Conventions
 - Type annotations on function signatures; small focused modules; no comments unless asked.
