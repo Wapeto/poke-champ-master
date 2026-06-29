@@ -15,11 +15,14 @@ Pokémon detail cards. Data is scraped (Game8) and enriched (PokeAPI), committed
 ## Commands
 ```bash
 python -m venv .venv && source .venv/bin/activate   # Python 3.11+ (3.14 ok)
-pip install -r requirements.txt
+pip install -r requirements.txt       # runtime only (Flask) — also what Vercel installs
+pip install -r requirements-dev.txt   # + scraping deps (requests, bs4, lxml, playwright)
 python serve.py                       # http://localhost:5000
 python run_scraper.py --source game8  # refresh Game8 data + PokeAPI enrichment
 python -m pytest tests/ -q            # tests
 ```
+
+Deploy on Vercel: `vercel.json` + `api/index.py` serve the Flask app via `@vercel/python`.
 
 ## Architecture
 - `app/main.py` — Flask routes (thin handlers).

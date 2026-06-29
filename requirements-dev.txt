@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# Scraping / data-refresh only (not needed to run the web app)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+playwright>=1.40.0
