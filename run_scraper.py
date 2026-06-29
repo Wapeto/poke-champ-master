@@ -76,10 +76,13 @@ def main() -> None:
     print("=" * 60)
     try:
         sys.path.insert(0, str(Path(__file__).parent))
-        from app.data_loader import load_roster
+        from app.data_loader import build_roster, precompute_roster
         from scrapers.pokeapi_enrich import run as run_enrich
-        names = sorted({p["name"] for p in load_roster().values()})
+        names = sorted({p["name"] for p in build_roster().values()})
         run_enrich(args.data_dir, names)
+        # Rebuild the precomputed roster now that enrichment is fresh.
+        precompute_roster()
+        print("  Rebuilt data/roster.json")
     except Exception as e:
         print(f"  ERROR: {e}")
 

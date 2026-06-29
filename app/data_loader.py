@@ -6,6 +6,11 @@ from typing import Any
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "game8"
 
+# Precomputed, fully-merged roster. Built ahead of time (see precompute_roster /
+# build_data.py) and committed, so each request — and every serverless cold start —
+# reads one JSON instead of globbing + merging the whole data/ tree.
+ROSTER_CACHE = DATA_DIR.parent / "roster.json"
+
 TIER_ORDER = {"S": 6, "A+": 5, "A": 4, "B": 3, "C": 2, "D": 1}
 
 _REGION_PREFIXES = ("alolan ", "galarian ", "hisuian ", "paldean ")
@@ -47,7 +52,25 @@ def _load_pokechamps() -> dict[str, dict]:
 
 
 def load_roster() -> dict[str, dict]:
-    """Return {name_lower: pokemon_dict} merged from tier list + build pages."""
+    """
+    Return the merged roster. Uses the precomputed data/roster.json when present
+    (fast path for production); otherwise builds it from the raw data on the fly.
+    """
+    cached = _load(ROSTER_CACHE)
+    if cached:
+        return cached
+    return build_roster()
+
+
+def precompute_roster(path: Path = ROSTER_CACHE) -> dict[str, dict]:
+    """Build the roster from raw data and write it to `path` as a single JSON."""
+    roster = build_roster()
+    path.write_text(json.dumps(roster, ensure_ascii=False), encoding="utf-8")
+    return roster
+
+
+def build_roster() -> dict[str, dict]:
+    """Merge tier list + build pages + PokeAPI/Pokechamps enrichment from raw data."""
     roster: dict[str, dict] = {}
 
     # ── Tier list: base data for all Pokemon ──
