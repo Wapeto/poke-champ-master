@@ -240,7 +240,7 @@ async function openPokemonModal(name) {
 }
 
 // ── SEARCH AUTOCOMPLETE ───────────────────────────────────────────────────────
-function makeSearch(inputId, sugId, pool, chipListId, btnToEnable) {
+function makeSearch(inputId, sugId, pool, chipListId, btnToEnable, onChange = null) {
   const input = $('#' + inputId);
   const sug   = $('#' + sugId);
   const chips = $('#' + chipListId);
@@ -253,6 +253,7 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable) {
     sug.classList.remove('open');
     sug.innerHTML = '';
     if (btnToEnable) $('#' + btnToEnable).disabled = pool.length === 0;
+    if (onChange) onChange();
   }
 
   function renderChips() {
@@ -268,9 +269,14 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable) {
         pool.splice(+el.dataset.i, 1);
         renderChips();
         if (btnToEnable) $('#' + btnToEnable).disabled = pool.length === 0;
+        if (onChange) onChange();
       });
     });
   }
+
+  // Expose addPoke so suggestion clicks can push into the pool.
+  makeSearch._pools = makeSearch._pools || {};
+  makeSearch._pools[inputId] = addPoke;
 
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
@@ -298,7 +304,57 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable) {
 }
 
 // ── TEAM BUILDER ──────────────────────────────────────────────────────────────
-makeSearch('tb-search', 'tb-suggestions', tbPool, 'tb-pool', 'tb-build-btn');
+makeSearch('tb-search', 'tb-suggestions', tbPool, 'tb-pool', 'tb-build-btn', refreshTbSuggest);
+
+function typeBadgeList(types) { return (types || []).map(typeBadge).join(' '); }
+
+async function refreshTbSuggest() {
+  const panel = $('#tb-suggest');
+  if (!tbPool.length) { panel.classList.add('hidden'); panel.innerHTML = ''; return; }
+
+  const res = await fetch('/api/team/suggest', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ pokemon: tbPool.map(p => p.name) }),
+  }).then(r => r.json()).catch(() => null);
+  if (!res) return;
+
+  const attack = res.attack_types_needed || [];
+  const weak   = res.weak_spots || [];
+  const def    = res.defensive_types_needed || [];
+
+  const cards = (res.suggestions || []).map(s => `
+    <div class="suggest-card" data-add="${encodeURIComponent(s.name)}">
+      ${sprite(s, 'sprite sm')}
+      <div class="suggest-card-body">
+        <div class="suggest-name">${s.name} ${tierBadge(s.tier)}</div>
+        <div>${typeBadgeList(s.types)}</div>
+        <div class="suggest-role">${s.role} · +${s.gain}</div>
+      </div>
+      <span class="suggest-add">＋</span>
+    </div>`).join('');
+
+  panel.innerHTML = `
+    <h3>Suggested Additions</h3>
+    <div class="suggest-types">
+      ${attack.length ? `<div class="suggest-line"><span class="suggest-label good">Attack types missing</span>${typeBadgeList(attack)}</div>` : '<div class="suggest-line good">✅ Full offensive type coverage</div>'}
+      ${weak.length ? `<div class="suggest-line"><span class="suggest-label bad">Stacked weakness</span>${typeBadgeList(weak)}</div>` : ''}
+      ${def.length ? `<div class="suggest-line"><span class="suggest-label">Add a Pokémon of type</span>${typeBadgeList(def)}</div>` : ''}
+    </div>
+    <div class="suggest-grid">${cards}</div>
+    <p class="muted suggest-hint">Click a suggestion to add it to your pool.</p>`;
+  panel.classList.remove('hidden');
+}
+
+// Add suggested Pokemon to the pool on click (name still opens modal via its own ref).
+$('#tb-suggest').addEventListener('click', e => {
+  const card = e.target.closest('[data-add]');
+  if (!card) return;
+  const name = decodeURIComponent(card.dataset.add);
+  const poke = ALL_POKEMON.find(p => p.name === name);
+  const add = makeSearch._pools && makeSearch._pools['tb-search'];
+  if (poke && add) add(poke);
+});
 
 $('#tb-build-btn').addEventListener('click', async () => {
   const btn = $('#tb-build-btn');

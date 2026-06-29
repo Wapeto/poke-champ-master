@@ -2,7 +2,7 @@
 
 from flask import Flask, jsonify, render_template, request
 from .data_loader import load_roster, load_teams, load_moves, load_abilities, load_items
-from .team_builder import build_best_team, explain_team
+from .team_builder import build_best_team, explain_team, suggest_additions
 from .matchup import recommend
 from .pokemon_card import build_card, attach_item_images
 from .meta_teams import build_meta_teams
@@ -111,6 +111,20 @@ def api_team_build():
             "shared_weaknesses": explanation["shared_weaknesses"],
         },
     })
+
+
+@app.post("/api/team/suggest")
+def api_team_suggest():
+    """
+    Body: {"pokemon": ["Garchomp", ...]}
+    Suggest which Pokemon to add next and which types would most help.
+    """
+    body = request.get_json(silent=True) or {}
+    current = _resolve_names(body.get("pokemon", []))
+    if not current:
+        return jsonify({"suggestions": [], "attack_types_needed": [],
+                        "weak_spots": [], "defensive_types_needed": []})
+    return jsonify(suggest_additions(current, POKEMON_LIST))
 
 
 @app.post("/api/matchup")

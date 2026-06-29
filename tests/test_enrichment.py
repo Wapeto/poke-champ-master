@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from app.data_loader import _base_form_key, load_roster
 from app.meta_teams import _clean_name
 from app.pokemon_card import _matchups
+from app.team_builder import suggest_additions
 from scrapers.pokeapi_enrich import candidate_slugs
 
 
@@ -80,3 +81,26 @@ class TestRosterIntegration:
     def test_junk_entry_dropped(self):
         roster = load_roster()
         assert "pokemon champions best teams" not in roster
+
+
+class TestTeamSuggestions:
+    def _roster_list(self):
+        return list(load_roster().values())
+
+    def test_suggests_pokemon_not_already_in_team(self):
+        roster = self._roster_list()
+        current = [roster[0], roster[1]]
+        out = suggest_additions(current, roster, limit=5)
+        names = {s["name"] for s in out["suggestions"]}
+        assert current[0]["name"] not in names
+        assert current[1]["name"] not in names
+        assert 0 < len(out["suggestions"]) <= 5
+
+    def test_flags_stacked_weakness_and_resist_types(self):
+        roster = {p["name"].lower(): p for p in self._roster_list()}
+        team = [roster[n] for n in ("garchomp", "hippowdon", "archaludon") if n in roster]
+        out = suggest_additions(team, list(roster.values()))
+        # Garchomp + Hippowdon + Archaludon all take super-effective Ice damage.
+        assert "Ice" in out["weak_spots"]
+        # Steel resists Ice, so it should be recommended defensively.
+        assert "Steel" in out["defensive_types_needed"]
