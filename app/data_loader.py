@@ -36,6 +36,12 @@ def _load_enrichment() -> dict[str, dict]:
     return _load(DATA_DIR.parent / "pokeapi" / "enrichment.json") or {}
 
 
+def _load_pokechamps() -> dict[str, dict]:
+    """Pokechamps index: {name_lower: {description, art_url, types, base_stats}}."""
+    from .pokechamps_data import load_pokemon_index
+    return load_pokemon_index()
+
+
 def load_roster() -> dict[str, dict]:
     """Return {name_lower: pokemon_dict} merged from tier list + build pages."""
     roster: dict[str, dict] = {}
@@ -111,13 +117,29 @@ def load_roster() -> dict[str, dict]:
     # ── PokeAPI enrichment: fill missing types, attach official artwork ──
     enrichment = _load_enrichment()
     for key, poke in roster.items():
+        poke["image_url"] = None
+        poke["description"] = None
+        poke["sources"] = ["Game8"]
         extra = enrichment.get(key)
-        if not extra:
-            poke.setdefault("image_url", None)
+        if extra:
+            if not poke["types"] and extra.get("types"):
+                poke["types"] = extra["types"]
+            poke["image_url"] = extra.get("image_url")
+
+    # ── Pokechamps (DotGG): description, Champions artwork (preferred image) ──
+    pc_index = _load_pokechamps()
+    for key, poke in roster.items():
+        pc = pc_index.get(key)
+        if not pc:
             continue
-        if not poke["types"] and extra.get("types"):
-            poke["types"] = extra["types"]
-        poke["image_url"] = extra.get("image_url")
+        poke["sources"].append("Pokéchamps")
+        poke["description"] = pc.get("description")
+        if pc.get("art_url"):
+            poke["image_url"] = pc["art_url"]
+        if not poke["types"] and pc.get("types"):
+            poke["types"] = pc["types"]
+        if not poke["base_stats"] and pc.get("base_stats"):
+            poke["base_stats"] = pc["base_stats"]
 
     # Drop scrape artifacts that never resolved to a real Pokemon (no types).
     return {k: p for k, p in roster.items() if p["types"]}

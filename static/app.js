@@ -25,6 +25,28 @@ function sprite(p, cls = 'sprite') {
   return `<img class="${cls}" src="${p.image_url}" alt="${p.name}" loading="lazy">`;
 }
 
+const CAT_ABBR = { Physical: 'PHY', Special: 'SPE', Status: 'STA' };
+
+function movePill(m) {
+  const t = m.type || '';
+  const bg = t ? `style="background:var(--${t})"` : '';
+  const cat = m.category
+    ? `<span class="move-cat cat-${m.category}">${CAT_ABBR[m.category] || ''}</span>` : '';
+  return `<span class="move-pill type-text-${t}" ${bg} data-type="${t}">${m.name}${cat}</span>`;
+}
+
+function moveList(build) {
+  if (!build || !build.moves) return '';
+  return `<div class="move-pills">${build.moves.map(movePill).join('')}</div>`;
+}
+
+function itemTag(build) {
+  if (!build || !build.held_item) return '';
+  const icon = build.held_item_image
+    ? `<img class="item-img" src="${build.held_item_image}" alt="" loading="lazy">` : '🎒';
+  return `<div class="card-item">${icon}<span>${build.held_item}</span></div>`;
+}
+
 // Any element with data-poke opens the detail modal (event delegation).
 function pokeRef(name) {
   return `data-poke="${encodeURIComponent(name)}"`;
@@ -32,8 +54,6 @@ function pokeRef(name) {
 
 function pokeCard(p, build = null, role = null) {
   const types = (p.types || []).map(typeBadge).join('');
-  const moves = build ? build.moves.map(m => `<span>• ${m.name}</span>`).join('') : '';
-  const item  = build && build.held_item ? `<div class="card-item">🎒 ${build.held_item}</div>` : '';
   const nat   = build ? `<div class="card-nature">${build.nature} | ${build.ability}</div>` : '';
   const roleHtml = role ? `<div class="card-role">${role}</div>` : '';
   return `
@@ -45,8 +65,8 @@ function pokeCard(p, build = null, role = null) {
       ${roleHtml}
       <div style="margin-bottom:8px">${types}</div>
       ${nat}
-      ${item}
-      <div class="card-moves">${moves}</div>
+      ${itemTag(build)}
+      ${moveList(build)}
     </div>`;
 }
 
@@ -105,7 +125,18 @@ function renderTierList(query) {
   container.innerHTML = html || '<p class="muted">No Pokémon match that filter.</p>';
 }
 
-$('#tier-search').addEventListener('input', e => renderTierList(e.target.value));
+const tierSearch = $('#tier-search');
+const tierClear = $('#tier-search-clear');
+tierSearch.addEventListener('input', e => {
+  renderTierList(e.target.value);
+  tierClear.classList.toggle('hidden', !e.target.value);
+});
+tierClear.addEventListener('click', () => {
+  tierSearch.value = '';
+  renderTierList('');
+  tierClear.classList.add('hidden');
+  tierSearch.focus();
+});
 
 // ── POKÉMON DETAIL MODAL ──────────────────────────────────────────────────────
 const modal     = $('#poke-modal');
@@ -159,16 +190,17 @@ async function openPokemonModal(name) {
       </div>`;
     }).join('');
 
-  const moves = (d.best_moves || []).map(m =>
-    `<span class="move-pill">${m.type ? typeBadge(m.type) : ''} ${m.name}</span>`
-  ).join('');
+  const moves = (d.best_moves || []).map(movePill).join('');
 
   const builds = (d.builds || []).map((b, i) => `
     <div class="build-block">
       <div class="build-title">Build ${i + 1} — ${b.nature || ''} ${b.ability ? '| ' + b.ability : ''}</div>
-      ${b.held_item ? `<div class="card-item">🎒 ${b.held_item}</div>` : ''}
-      <div class="card-moves">${(b.moves || []).map(m => `<span>• ${m.name}</span>`).join('')}</div>
+      ${itemTag(b)}
+      ${moveList(b)}
     </div>`).join('');
+
+  const sources = (d.sources || []).length
+    ? `<div class="sources">Data: ${d.sources.join(' · ')}</div>` : '';
 
   const teammates = (d.best_teammates || []).map(n =>
     `<span class="poke-chip clickable inline" ${pokeRef(n)}>${n}</span>`).join('');
@@ -182,8 +214,11 @@ async function openPokemonModal(name) {
         <h2 class="modal-name">${d.name} ${d.tier ? tierBadge(d.tier) : ''}</h2>
         <div class="modal-types">${types}</div>
         ${d.build_url ? `<a class="muted source-link" href="${d.build_url}" target="_blank" rel="noopener">Game8 build ↗</a>` : ''}
+        ${sources}
       </div>
     </div>
+
+    ${d.description ? `<p class="modal-desc">${d.description}</p>` : ''}
 
     <div class="modal-grid">
       <div class="modal-col">
@@ -367,7 +402,7 @@ async function loadMetaTeams() {
         ${sprite(m, 'sprite md')}
         <div class="team-member-name">${m.pokemon}</div>
         <div class="team-member-types">${(m.types || []).map(typeBadge).join('')}</div>
-        ${m.held_item ? `<div class="team-member-item">🎒 ${m.held_item}</div>` : ''}
+        ${m.held_item ? `<div class="team-member-item">${m.held_item_image ? `<img class="item-img" src="${m.held_item_image}" alt="" loading="lazy">` : '🎒'}${m.held_item}</div>` : ''}
       </div>`).join('');
     return `
       <div class="team-card">
@@ -381,4 +416,125 @@ async function loadMetaTeams() {
   }).join('');
 }
 
+// ── MY BOX ────────────────────────────────────────────────────────────────────
+const BOX_KEY = 'pokeBox.v1';
+let BOX = [];
+let boxFilter = 'all';
+
+function loadBox() {
+  try { BOX = JSON.parse(localStorage.getItem(BOX_KEY)) || []; }
+  catch { BOX = []; }
+}
+function saveBox() { localStorage.setItem(BOX_KEY, JSON.stringify(BOX)); }
+
+function boxAdd(p) {
+  if (BOX.find(b => b.name.toLowerCase() === p.name.toLowerCase())) return;
+  BOX.push({ name: p.name, types: p.types || [], image_url: p.image_url, tier: p.tier,
+             kind: 'permanent', daysLeft: 7 });
+  saveBox(); renderBox();
+}
+function boxRemove(name) { BOX = BOX.filter(b => b.name !== name); saveBox(); renderBox(); }
+function boxSetKind(name, kind) {
+  const b = BOX.find(x => x.name === name);
+  if (!b) return;
+  b.kind = kind;
+  if (kind === 'trial' && !(b.daysLeft > 0)) b.daysLeft = 7;
+  saveBox(); renderBox();
+}
+function boxSetDays(name, days) {
+  const b = BOX.find(x => x.name === name);
+  if (b) b.daysLeft = Math.max(0, Math.min(7, days | 0));
+  saveBox(); renderBox();
+}
+
+function renderBox() {
+  const grid = $('#box-grid');
+  const perm = BOX.filter(b => b.kind === 'permanent').length;
+  const trial = BOX.length - perm;
+  $('#box-count').textContent = BOX.length
+    ? `${BOX.length} in box · ${perm} permanent · ${trial} trial` : '';
+  $('#box-empty').classList.toggle('hidden', BOX.length > 0);
+
+  const items = BOX.filter(b => boxFilter === 'all' || b.kind === boxFilter);
+  grid.innerHTML = items.map(b => {
+    const enc = encodeURIComponent(b.name);
+    const types = (b.types || []).map(typeBadge).join('');
+    const isTrial = b.kind === 'trial';
+    const expired = isTrial && b.daysLeft <= 0;
+    const trialCtrls = isTrial ? `
+      <div class="box-trial ${expired ? 'expired' : ''}">
+        <label class="box-days-label">Days left
+          <input type="number" min="0" max="7" value="${b.daysLeft}" class="box-days" data-name="${enc}">
+        </label>
+        ${expired ? '<span class="warn">⚠ expired</span>'
+                  : `<span class="muted">${b.daysLeft} day${b.daysLeft === 1 ? '' : 's'} on the 7-day clock</span>`}
+        <button class="mini-btn promote" data-name="${enc}">Make Permanent</button>
+      </div>` : '';
+    return `
+      <div class="poke-card box-card ${b.kind} ${expired ? 'expired' : ''}">
+        <div class="card-head">
+          ${sprite(b, 'sprite sm')}
+          <div class="card-name clickable" ${pokeRef(b.name)}>${b.name} ${b.tier ? tierBadge(b.tier) : ''}</div>
+          <button class="box-remove" data-name="${enc}" title="Remove">✕</button>
+        </div>
+        <div style="margin-bottom:8px">${types}</div>
+        <div class="box-kind">
+          <button class="kind-btn ${!isTrial ? 'active' : ''}" data-name="${enc}" data-kind="permanent">Permanent</button>
+          <button class="kind-btn ${isTrial ? 'active' : ''}" data-name="${enc}" data-kind="trial">Trial</button>
+        </div>
+        ${trialCtrls}
+      </div>`;
+  }).join('');
+}
+
+// Box grid event delegation
+$('#box-grid').addEventListener('click', e => {
+  const kindBtn = e.target.closest('.kind-btn');
+  if (kindBtn) { boxSetKind(decodeURIComponent(kindBtn.dataset.name), kindBtn.dataset.kind); return; }
+  const promote = e.target.closest('.promote');
+  if (promote) { boxSetKind(decodeURIComponent(promote.dataset.name), 'permanent'); return; }
+  const rm = e.target.closest('.box-remove');
+  if (rm) { boxRemove(decodeURIComponent(rm.dataset.name)); return; }
+});
+$('#box-grid').addEventListener('change', e => {
+  const days = e.target.closest('.box-days');
+  if (days) boxSetDays(decodeURIComponent(days.dataset.name), +days.value);
+});
+
+// Box filters
+$$('.box-filter').forEach(btn => btn.addEventListener('click', () => {
+  $$('.box-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  boxFilter = btn.dataset.filter;
+  renderBox();
+}));
+
+// Box search (adds to box instead of a team pool)
+(function boxSearch() {
+  const input = $('#box-search');
+  const sug = $('#box-suggestions');
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { sug.classList.remove('open'); return; }
+    const matches = ALL_POKEMON.filter(p => p.name.toLowerCase().includes(q)).slice(0, 12);
+    if (!matches.length) { sug.classList.remove('open'); return; }
+    sug.innerHTML = matches.map(p =>
+      `<div class="suggestion-item" data-name="${p.name}">
+        ${sprite(p, 'sprite xs')}${tierBadge(p.tier)} <strong>${p.name}</strong>
+        ${(p.types || []).map(typeBadge).join('')}
+      </div>`).join('');
+    sug.classList.add('open');
+    sug.querySelectorAll('.suggestion-item').forEach(el => el.addEventListener('click', () => {
+      const poke = ALL_POKEMON.find(p => p.name === el.dataset.name);
+      if (poke) boxAdd(poke);
+      input.value = ''; sug.classList.remove('open');
+    }));
+  });
+  document.addEventListener('click', e => {
+    if (!input.contains(e.target) && !sug.contains(e.target)) sug.classList.remove('open');
+  });
+})();
+
+loadBox();
+renderBox();
 init();

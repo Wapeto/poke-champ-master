@@ -4,8 +4,9 @@ from flask import Flask, jsonify, render_template, request
 from .data_loader import load_roster, load_teams, load_moves, load_abilities, load_items
 from .team_builder import build_best_team, explain_team
 from .matchup import recommend
-from .pokemon_card import build_card
+from .pokemon_card import build_card, attach_item_images
 from .meta_teams import build_meta_teams
+from .pokechamps_data import load_item_images
 
 app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
@@ -15,6 +16,7 @@ TEAMS  = load_teams()
 MOVES  = load_moves()
 ABILITIES = load_abilities()
 ITEMS  = load_items()
+ITEM_IMAGES = load_item_images()
 
 POKEMON_LIST = sorted(ROSTER.values(), key=lambda p: (-p["tier_score"], p["name"]))
 
@@ -53,7 +55,7 @@ def api_pokemon_detail(name: str):
     p = _find(name)
     if not p:
         return jsonify({"error": "Not found"}), 404
-    return jsonify(build_card(p, TEAMS))
+    return jsonify(build_card(p, TEAMS, ITEM_IMAGES))
 
 
 @app.get("/api/tier-list")
@@ -97,7 +99,7 @@ def api_team_build():
                 "types": p["types"],
                 "image_url": p.get("image_url"),
                 "role": explanation["roles"].get(p["name"], ""),
-                "best_build": p["builds"][0] if p.get("builds") else None,
+                "best_build": attach_item_images(p["builds"][0] if p.get("builds") else None, ITEM_IMAGES),
                 "build_url": p.get("build_url", ""),
             }
             for p in team
@@ -136,7 +138,7 @@ def api_matchup():
                 "tier": p["tier"],
                 "types": p["types"],
                 "image_url": p.get("image_url"),
-                "best_build": p["builds"][0] if p.get("builds") else None,
+                "best_build": attach_item_images(p["builds"][0] if p.get("builds") else None, ITEM_IMAGES),
             }
             for p in result["bring"]
         ],
@@ -160,4 +162,4 @@ def api_matchup():
 @app.get("/api/teams")
 def api_teams():
     """Cleaned, enriched meta teams from Game8."""
-    return jsonify(build_meta_teams(TEAMS, ROSTER))
+    return jsonify(build_meta_teams(TEAMS, ROSTER, ITEM_IMAGES))

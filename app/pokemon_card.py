@@ -51,19 +51,30 @@ def _matchups(types: list[str]) -> dict[str, list[dict[str, Any]]]:
     return {"weak_to": weak, "resists": resist, "immune_to": immune}
 
 
-def build_card(pokemon: dict, teams: list[dict]) -> dict[str, Any]:
+def attach_item_images(build: dict | None, item_images: dict[str, str]) -> dict | None:
+    """Return a copy of a build with the held item's image URL attached."""
+    if not build:
+        return build
+    item = build.get("held_item", "")
+    return {**build, "held_item_image": item_images.get(item.lower()) if item else None}
+
+
+def build_card(pokemon: dict, teams: list[dict], item_images: dict[str, str]) -> dict[str, Any]:
     """Full detail payload for the Pokemon card / page."""
     types = pokemon.get("types", [])
     matchups = _matchups(types)
+    builds = [attach_item_images(b, item_images) for b in pokemon.get("builds", [])]
     return {
         "name": pokemon["name"],
         "tier": pokemon.get("tier", ""),
         "types": types,
         "image_url": pokemon.get("image_url"),
+        "description": pokemon.get("description"),
+        "sources": pokemon.get("sources", []),
         "base_stats": pokemon.get("base_stats", {}),
         "abilities": pokemon.get("abilities", []),
         "build_url": pokemon.get("build_url", ""),
-        "builds": pokemon.get("builds", []),
+        "builds": builds,
         "best_moves": _best_moves(pokemon),
         "best_teammates": _best_teammates(pokemon, teams),
         "counters": pokemon.get("counters", []),

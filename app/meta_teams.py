@@ -31,9 +31,10 @@ def _clean_name(raw: str) -> str:
     return label or raw.strip()
 
 
-def _member(member: dict, roster: dict[str, dict]) -> dict[str, Any]:
+def _member(member: dict, roster: dict[str, dict], item_images: dict[str, str]) -> dict[str, Any]:
     name = member.get("pokemon", "")
     poke = roster.get(name.lower(), {})
+    item = member.get("held_item") or ""
     return {
         "pokemon": name,
         "image_url": poke.get("image_url"),
@@ -42,13 +43,17 @@ def _member(member: dict, roster: dict[str, dict]) -> dict[str, Any]:
         "nature": member.get("nature"),
         "ability": member.get("ability"),
         "held_item": member.get("held_item"),
+        "held_item_image": item_images.get(item.lower()) if item else None,
         "moves": [mv["name"] for mv in member.get("moves", []) if mv.get("name")],
         "ev_spread": member.get("ev_spread"),
     }
 
 
-def build_meta_teams(teams: list[dict], roster: dict[str, dict]) -> list[dict[str, Any]]:
+def build_meta_teams(
+    teams: list[dict], roster: dict[str, dict], item_images: dict[str, str] | None = None
+) -> list[dict[str, Any]]:
     """Clean, enriched meta teams with a full 6-member roster only."""
+    item_images = item_images or {}
     result: list[dict[str, Any]] = []
     for team in teams:
         members = team.get("members", [])
@@ -59,6 +64,6 @@ def build_meta_teams(teams: list[dict], roster: dict[str, dict]) -> list[dict[st
             "raw_name": team.get("name", ""),
             "strategy": team.get("strategy"),
             "source_url": team.get("source_url", ""),
-            "members": [_member(m, roster) for m in members],
+            "members": [_member(m, roster, item_images) for m in members],
         })
     return result
