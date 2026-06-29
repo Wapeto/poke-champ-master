@@ -190,6 +190,20 @@ h3 { font-size: 1.1rem; margin-bottom: 12px; }
 .primary-btn:hover { opacity: 0.85; }
 .primary-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
+.tb-actions { display: flex; gap: 8px; margin-bottom: 12px; }
+.ghost-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ghost-btn:hover { border-color: var(--accent); background: var(--surface2); }
+
 /* ── CARDS ── */
 .card-grid {
   display: grid;
@@ -312,6 +326,7 @@ h3 { font-size: 1.1rem; margin-bottom: 12px; }
 .sprite.xs { width: 28px; height: 28px; }
 .sprite.sm { width: 40px; height: 40px; }
 .sprite.md { width: 64px; height: 64px; }
+.sprite.tl { width: 52px; height: 52px; }
 .sprite.lg { width: 140px; height: 140px; }
 .clickable { cursor: pointer; }
 

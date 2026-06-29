@@ -109,7 +109,7 @@ function renderTierList(query) {
     const chips = list.map(p => {
       const types = (p.types || []).map(typeBadge).join('');
       return `<div class="poke-chip clickable" ${pokeRef(p.name)} title="${(p.types||[]).join('/')}">
-        ${sprite(p, 'sprite xs')}<strong>${p.name}</strong> ${types}
+        ${sprite(p, 'sprite tl')}<strong>${p.name}</strong> ${types}
       </div>`;
     }).join('');
     return `
@@ -278,6 +278,15 @@ function makeSearch(inputId, sugId, pool, chipListId, btnToEnable, onChange = nu
   makeSearch._pools = makeSearch._pools || {};
   makeSearch._pools[inputId] = addPoke;
 
+  // Expose a clear so toolbar buttons can empty the pool with full side effects.
+  makeSearch._clear = makeSearch._clear || {};
+  makeSearch._clear[inputId] = () => {
+    pool.length = 0;
+    renderChips();
+    if (btnToEnable) $('#' + btnToEnable).disabled = true;
+    if (onChange) onChange();
+  };
+
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
     if (!q) { sug.classList.remove('open'); return; }
@@ -331,7 +340,7 @@ async function refreshTbSuggest() {
         <div>${typeBadgeList(s.types)}</div>
         <div class="suggest-role">${s.role} · +${s.gain}</div>
       </div>
-      <span class="suggest-add">＋</span>
+      <span class="suggest-add">+</span>
     </div>`).join('');
 
   panel.innerHTML = `
@@ -355,6 +364,17 @@ $('#tb-suggest').addEventListener('click', e => {
   const add = makeSearch._pools && makeSearch._pools['tb-search'];
   if (poke && add) add(poke);
 });
+
+// Pull owned Pokémon (base forms) from My Box into the builder pool.
+$('#tb-load-box').addEventListener('click', () => {
+  if (!BOX.length) { alert('Your box is empty. Add Pokémon in the My Box tab first.'); return; }
+  const add = makeSearch._pools && makeSearch._pools['tb-search'];
+  BOX.forEach(b => {
+    const poke = ALL_POKEMON.find(p => p.name.toLowerCase() === b.name.toLowerCase()) || b;
+    if (add) add(poke);
+  });
+});
+$('#tb-clear').addEventListener('click', () => makeSearch._clear['tb-search']());
 
 $('#tb-build-btn').addEventListener('click', async () => {
   const btn = $('#tb-build-btn');
@@ -477,28 +497,32 @@ const BOX_KEY = 'pokeBox.v1';
 let BOX = [];
 let boxFilter = 'all';
 
+let _boxSeq = 0;
+function boxId() { return 'b' + Date.now().toString(36) + (_boxSeq++); }
+
 function loadBox() {
   try { BOX = JSON.parse(localStorage.getItem(BOX_KEY)) || []; }
   catch { BOX = []; }
+  BOX.forEach(b => { if (!b.id) b.id = boxId(); });  // backfill legacy entries
 }
 function saveBox() { localStorage.setItem(BOX_KEY, JSON.stringify(BOX)); }
 
 function boxAdd(p) {
-  if (BOX.find(b => b.name.toLowerCase() === p.name.toLowerCase())) return;
-  BOX.push({ name: p.name, types: p.types || [], image_url: p.image_url, tier: p.tier,
-             kind: 'permanent', daysLeft: 7 });
+  if (p.is_mega) return;  // Megas are battle forms (a stone), not owned Pokémon
+  BOX.push({ id: boxId(), name: p.name, types: p.types || [], image_url: p.image_url,
+             tier: p.tier, kind: 'permanent', daysLeft: 7 });
   saveBox(); renderBox();
 }
-function boxRemove(name) { BOX = BOX.filter(b => b.name !== name); saveBox(); renderBox(); }
-function boxSetKind(name, kind) {
-  const b = BOX.find(x => x.name === name);
+function boxRemove(id) { BOX = BOX.filter(b => b.id !== id); saveBox(); renderBox(); }
+function boxSetKind(id, kind) {
+  const b = BOX.find(x => x.id === id);
   if (!b) return;
   b.kind = kind;
   if (kind === 'trial' && !(b.daysLeft > 0)) b.daysLeft = 7;
   saveBox(); renderBox();
 }
-function boxSetDays(name, days) {
-  const b = BOX.find(x => x.name === name);
+function boxSetDays(id, days) {
+  const b = BOX.find(x => x.id === id);
   if (b) b.daysLeft = Math.max(0, Math.min(7, days | 0));
   saveBox(); renderBox();
 }
@@ -513,30 +537,29 @@ function renderBox() {
 
   const items = BOX.filter(b => boxFilter === 'all' || b.kind === boxFilter);
   grid.innerHTML = items.map(b => {
-    const enc = encodeURIComponent(b.name);
     const types = (b.types || []).map(typeBadge).join('');
     const isTrial = b.kind === 'trial';
     const expired = isTrial && b.daysLeft <= 0;
     const trialCtrls = isTrial ? `
       <div class="box-trial ${expired ? 'expired' : ''}">
         <label class="box-days-label">Days left
-          <input type="number" min="0" max="7" value="${b.daysLeft}" class="box-days" data-name="${enc}">
+          <input type="number" min="0" max="7" value="${b.daysLeft}" class="box-days" data-id="${b.id}">
         </label>
         ${expired ? '<span class="warn">⚠ expired</span>'
                   : `<span class="muted">${b.daysLeft} day${b.daysLeft === 1 ? '' : 's'} on the 7-day clock</span>`}
-        <button class="mini-btn promote" data-name="${enc}">Make Permanent</button>
+        <button class="mini-btn promote" data-id="${b.id}">Make Permanent</button>
       </div>` : '';
     return `
       <div class="poke-card box-card ${b.kind} ${expired ? 'expired' : ''}">
         <div class="card-head">
           ${sprite(b, 'sprite sm')}
           <div class="card-name clickable" ${pokeRef(b.name)}>${b.name} ${b.tier ? tierBadge(b.tier) : ''}</div>
-          <button class="box-remove" data-name="${enc}" title="Remove">✕</button>
+          <button class="box-remove" data-id="${b.id}" title="Remove">✕</button>
         </div>
         <div style="margin-bottom:8px">${types}</div>
         <div class="box-kind">
-          <button class="kind-btn ${!isTrial ? 'active' : ''}" data-name="${enc}" data-kind="permanent">Permanent</button>
-          <button class="kind-btn ${isTrial ? 'active' : ''}" data-name="${enc}" data-kind="trial">Trial</button>
+          <button class="kind-btn ${!isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="permanent">Permanent</button>
+          <button class="kind-btn ${isTrial ? 'active' : ''}" data-id="${b.id}" data-kind="trial">Trial</button>
         </div>
         ${trialCtrls}
       </div>`;
@@ -546,15 +569,15 @@ function renderBox() {
 // Box grid event delegation
 $('#box-grid').addEventListener('click', e => {
   const kindBtn = e.target.closest('.kind-btn');
-  if (kindBtn) { boxSetKind(decodeURIComponent(kindBtn.dataset.name), kindBtn.dataset.kind); return; }
+  if (kindBtn) { boxSetKind(kindBtn.dataset.id, kindBtn.dataset.kind); return; }
   const promote = e.target.closest('.promote');
-  if (promote) { boxSetKind(decodeURIComponent(promote.dataset.name), 'permanent'); return; }
+  if (promote) { boxSetKind(promote.dataset.id, 'permanent'); return; }
   const rm = e.target.closest('.box-remove');
-  if (rm) { boxRemove(decodeURIComponent(rm.dataset.name)); return; }
+  if (rm) { boxRemove(rm.dataset.id); return; }
 });
 $('#box-grid').addEventListener('change', e => {
   const days = e.target.closest('.box-days');
-  if (days) boxSetDays(decodeURIComponent(days.dataset.name), +days.value);
+  if (days) boxSetDays(days.dataset.id, +days.value);
 });
 
 // Box filters
@@ -572,7 +595,8 @@ $$('.box-filter').forEach(btn => btn.addEventListener('click', () => {
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
     if (!q) { sug.classList.remove('open'); return; }
-    const matches = ALL_POKEMON.filter(p => p.name.toLowerCase().includes(q)).slice(0, 12);
+    const matches = ALL_POKEMON
+      .filter(p => !p.is_mega && p.name.toLowerCase().includes(q)).slice(0, 12);
     if (!matches.length) { sug.classList.remove('open'); return; }
     sug.innerHTML = matches.map(p =>
       `<div class="suggestion-item" data-name="${p.name}">

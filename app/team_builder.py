@@ -101,6 +101,20 @@ def score_team(team: list[dict]) -> float:
     return tier_total * 2.0 + offense * 1.5 + defense * 1.0 + role_div * 2.0
 
 
+def expand_forms(name: str, roster: dict[str, dict]) -> list[dict]:
+    """
+    Battle forms available from owning one Pokemon: the base form plus any Mega
+    it can evolve into (the Mega is an equippable stone, not a separate owned mon).
+    """
+    base = roster.get(name.strip().lower())
+    forms: list[dict] = [base] if base else []
+    base_key = name.strip().lower()
+    for poke in roster.values():
+        if poke.get("is_mega") and poke.get("base_form") == base_key and poke is not base:
+            forms.append(poke)
+    return forms
+
+
 def build_best_team(pool: list[dict], team_size: int = 6) -> list[dict]:
     """
     Greedy team builder: iteratively add the Pokemon that maximises
@@ -108,27 +122,39 @@ def build_best_team(pool: list[dict], team_size: int = 6) -> list[dict]:
     """
     if not pool:
         return []
+    return build_best_team_from_groups([(i, [p]) for i, p in enumerate(pool)], team_size)
 
-    # Sort pool by tier descending as a starting heuristic
-    sorted_pool = sorted(pool, key=lambda p: TIER_SCORE.get(p.get("tier", ""), 0), reverse=True)
 
-    team: list[dict] = [sorted_pool[0]]
-    remaining = sorted_pool[1:]
+def build_best_team_from_groups(
+    groups: list[tuple[Any, list[dict]]], team_size: int = 6
+) -> list[dict]:
+    """
+    Greedy builder over groups of interchangeable forms. Each group is one owned
+    Pokemon offering several battle forms (base / Mega); at most one form per group
+    is chosen, so duplicates in the pool become independent groups.
+    """
+    team: list[dict] = []
+    used: set[Any] = set()
 
-    while len(team) < team_size and remaining:
-        best_candidate = None
+    while len(team) < team_size:
+        best_form = None
+        best_gid = None
         best_score = -9999.0
-        for candidate in remaining:
-            candidate_team = team + [candidate]
-            s = score_team(candidate_team)
-            if s > best_score:
-                best_score = s
-                best_candidate = candidate
-        if best_candidate:
-            team.append(best_candidate)
-            remaining = [p for p in remaining if p is not best_candidate]
-        else:
+        for gid, forms in groups:
+            if gid in used:
+                continue
+            for form in forms:
+                if not form:
+                    continue
+                s = score_team(team + [form])
+                if s > best_score:
+                    best_score = s
+                    best_form = form
+                    best_gid = gid
+        if best_form is None:
             break
+        team.append(best_form)
+        used.add(best_gid)
 
     return team
 
@@ -141,29 +167,9 @@ def suggest_additions(
     and which types would most help, based on marginal team-score gain.
     """
     chosen = {p["name"].lower() for p in current}
-    base = score_team(current)
+    # Forms already represented (so we don't suggest a Mega of something owned).
+    families = {p.get("base_form") or p["name"].lower() for p in current}
 
-    scored: list[tuple[float, dict]] = []
-    for cand in roster:
-        if cand["name"].lower() in chosen:
-            continue
-        gain = score_team(current + [cand]) - base
-        scored.append((gain, cand))
-    scored.sort(key=lambda gc: -gc[0])
-
-    suggestions = [
-        {
-            "name": c["name"],
-            "tier": c.get("tier", ""),
-            "types": c.get("types", []),
-            "image_url": c.get("image_url"),
-            "role": _role(c),
-            "gain": round(gain, 1),
-        }
-        for gain, c in scored[:limit]
-    ]
-
-    # Type guidance: offensive coverage gaps + stacked defensive weaknesses.
     covered = _covered_types(current)
     attack_types_needed = [t for t in TYPES if t not in covered]
 
@@ -175,6 +181,34 @@ def suggest_additions(
         (t for t, c in weakness_counts.items() if c >= 2),
         key=lambda t: -weakness_counts[t],
     )
+
+    # Rank candidates by how well they COMPLEMENT the current team:
+    #   + new offensive types they unlock
+    #   + how many of the team's stacked weaknesses they resist/are immune to
+    # Tier is only a small tiebreak, so suggestions stop being "just the top Megas".
+    scored: list[tuple[float, int, float, int, dict]] = []
+    for cand in roster:
+        if cand["name"].lower() in chosen or (cand.get("base_form") or cand["name"].lower()) in families:
+            continue
+        new_cover = len(_covered_types([cand]) & set(attack_types_needed))
+        cand_types = cand.get("types", [])
+        resist = sum(1 for spot in weak_spots if effectiveness(spot, cand_types) < 1)
+        tier = TIER_SCORE.get(cand.get("tier", ""), 0)
+        gain = new_cover * 2.0 + resist * 2.0 + tier * 0.4
+        scored.append((gain, new_cover, float(resist), tier, cand))
+    scored.sort(key=lambda t: (-t[0], -t[3]))
+
+    suggestions = [
+        {
+            "name": c["name"],
+            "tier": c.get("tier", ""),
+            "types": c.get("types", []),
+            "image_url": c.get("image_url"),
+            "role": _role(c),
+            "gain": round(gain, 1),
+        }
+        for gain, _nc, _r, _t, c in scored[:limit]
+    ]
     # Defensive types worth adding: rank by how many of the team's weak spots
     # each candidate type resists.
     resist_scores = {

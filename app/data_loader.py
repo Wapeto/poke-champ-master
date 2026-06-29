@@ -11,6 +11,10 @@ TIER_ORDER = {"S": 6, "A+": 5, "A": 4, "B": 3, "C": 2, "D": 1}
 _REGION_PREFIXES = ("alolan ", "galarian ", "hisuian ", "paldean ")
 
 
+def _is_mega(name: str) -> bool:
+    return name.lower().strip().startswith("mega ")
+
+
 def _base_form_key(name: str) -> str | None:
     """Roster key of a form's base Pokemon, e.g. 'Mega Charizard Y' -> 'charizard'."""
     low = name.lower().strip()
@@ -114,12 +118,42 @@ def load_roster() -> dict[str, dict]:
             if not poke["base_stats"]:
                 poke["base_stats"] = base["base_stats"]
 
-    # ── PokeAPI enrichment: fill missing types, attach official artwork ──
     enrichment = _load_enrichment()
+
+    # ── Synthesize base forms for Megas that lack one ──
+    # A Mega is just a battle form of an owned base Pokemon. Game8 sometimes only
+    # ranks the Mega, so create the base entry (from PokeAPI types/art) to keep it
+    # selectable in My Box, where Megas are hidden.
+    for key in list(roster):
+        poke = roster[key]
+        if not _is_mega(poke["name"]):
+            continue
+        base_key = _base_form_key(poke["name"])
+        if not base_key or base_key in roster:
+            continue
+        extra = enrichment.get(base_key, {})
+        types = extra.get("types") or list(poke["types"])
+        if not types:
+            continue
+        roster[base_key] = {
+            "name": base_key.title(),
+            "tier": "",
+            "tier_score": 0,
+            "types": types,
+            "base_stats": poke.get("base_stats", {}),
+            "abilities": [],
+            "build_url": poke.get("build_url", ""),
+            "builds": poke.get("builds", []),
+            "counters": poke.get("counters", []),
+        }
+
+    # ── PokeAPI enrichment: fill missing types, attach official artwork ──
     for key, poke in roster.items():
         poke["image_url"] = None
         poke["description"] = None
         poke["sources"] = ["Game8"]
+        poke["is_mega"] = _is_mega(poke["name"])
+        poke["base_form"] = _base_form_key(poke["name"]) if poke["is_mega"] else None
         extra = enrichment.get(key)
         if extra:
             if not poke["types"] and extra.get("types"):

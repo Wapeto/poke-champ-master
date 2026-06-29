@@ -11,8 +11,11 @@ from typing import Any
 from .type_chart import resistances, weaknesses
 
 
-def _best_moves(pokemon: dict) -> list[dict[str, str]]:
-    """Deduplicated moves across all builds, preserving first-seen order."""
+def _best_moves(pokemon: dict, limit: int = 4) -> list[dict[str, str]]:
+    """
+    The Pokemon's best 4 moves. Builds are ordered best-first, so the top build's
+    moveset wins; remaining slots are filled from later builds without duplicates.
+    """
     seen: set[str] = set()
     moves: list[dict[str, str]] = []
     for build in pokemon.get("builds", []):
@@ -25,6 +28,8 @@ def _best_moves(pokemon: dict) -> list[dict[str, str]]:
                     "type": move.get("type", ""),
                     "category": move.get("category", ""),
                 })
+                if len(moves) >= limit:
+                    return moves
     return moves
 
 

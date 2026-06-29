@@ -34,11 +34,17 @@
 <!-- ── TEAM BUILDER ── -->
 <section id="team-builder" class="tab-content">
   <h2>Team Builder</h2>
-  <p class="subtitle">Add the Pokémon you own, then generate the best team of 6.</p>
+  <p class="subtitle">Pull in the Pokémon from My Box (or add more below), then generate the best
+    team of 6. Megas are picked automatically when they're the strongest form of a Pokémon you own.</p>
 
   <div class="search-row">
     <input id="tb-search" type="text" placeholder="Search Pokémon…" autocomplete="off">
     <div id="tb-suggestions" class="suggestions"></div>
+  </div>
+
+  <div class="tb-actions">
+    <button id="tb-load-box" class="ghost-btn" type="button">Load My Box</button>
+    <button id="tb-clear" class="ghost-btn" type="button">Clear</button>
   </div>
 
   <div id="tb-pool" class="chip-list"></div>

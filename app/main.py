@@ -2,7 +2,12 @@
 
 from flask import Flask, jsonify, render_template, request
 from .data_loader import load_roster, load_teams, load_moves, load_abilities, load_items
-from .team_builder import build_best_team, explain_team, suggest_additions
+from .team_builder import (
+    build_best_team_from_groups,
+    expand_forms,
+    explain_team,
+    suggest_additions,
+)
 from .matchup import recommend
 from .pokemon_card import build_card, attach_item_images
 from .meta_teams import build_meta_teams
@@ -45,7 +50,8 @@ def index():
 def api_pokemon_list():
     """All Pokemon names + tier for autocomplete."""
     return jsonify([
-        {"name": p["name"], "tier": p["tier"], "types": p["types"], "image_url": p.get("image_url")}
+        {"name": p["name"], "tier": p["tier"], "types": p["types"],
+         "image_url": p.get("image_url"), "is_mega": p.get("is_mega", False)}
         for p in POKEMON_LIST
     ])
 
@@ -83,12 +89,16 @@ def api_team_build():
     """
     body = request.get_json(silent=True) or {}
     names = body.get("pokemon", [])
-    pool = _resolve_names(names)
 
-    if not pool:
+    # Each owned Pokemon is one group of interchangeable battle forms (base + Mega),
+    # so duplicates stay independent and a Mega is picked only when it's the best form.
+    groups = [(i, expand_forms(n, ROSTER)) for i, n in enumerate(names)]
+    groups = [(i, forms) for i, forms in groups if forms]
+
+    if not groups:
         return jsonify({"error": "No valid Pokemon found in the list"}), 400
 
-    team = build_best_team(pool)
+    team = build_best_team_from_groups(groups)
     explanation = explain_team(team)
 
     return jsonify({
